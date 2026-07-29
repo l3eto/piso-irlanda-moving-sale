@@ -1,0 +1,450 @@
+[
+  {
+    "id": 1,
+    "area": "Lavanderia",
+    "nombre": "Lavadora",
+    "unidades": 1,
+    "precioVenta": 250,
+    "wallapop": ""
+  },
+  {
+    "id": 2,
+    "area": "Patio",
+    "nombre": "Parrillada",
+    "unidades": 1,
+    "precioVenta": 15,
+    "wallapop": ""
+  },
+  {
+    "id": 3,
+    "area": "Patio",
+    "nombre": "Tumbona",
+    "unidades": 1,
+    "precioVenta": 70,
+    "wallapop": ""
+  },
+  {
+    "id": 4,
+    "area": "Patio",
+    "nombre": "Bici",
+    "unidades": 1,
+    "precioVenta": 80,
+    "wallapop": ""
+  },
+  {
+    "id": 5,
+    "area": "Habitación",
+    "nombre": "Espejo",
+    "unidades": 1,
+    "precioVenta": 80,
+    "wallapop": ""
+  },
+  {
+    "id": 6,
+    "area": "Habitación",
+    "nombre": "Armario",
+    "unidades": 1,
+    "precioVenta": 250,
+    "wallapop": ""
+  },
+  {
+    "id": 7,
+    "area": "Salon",
+    "nombre": "Asientos Cajonera - Kallax",
+    "unidades": 2,
+    "precioVenta": 50,
+    "wallapop": ""
+  },
+  {
+    "id": 8,
+    "area": "Comedor",
+    "nombre": "Mesa Comedor",
+    "unidades": 1,
+    "precioVenta": 100,
+    "wallapop": ""
+  },
+  {
+    "id": 10,
+    "area": "Salon",
+    "nombre": "Sillas mesa (+cojin 18eur)",
+    "unidades": 4,
+    "precioVenta": 25,
+    "wallapop": ""
+  },
+  {
+    "id": 11,
+    "area": "Salon",
+    "nombre": "Mesita salón",
+    "unidades": 1,
+    "precioVenta": 60,
+    "wallapop": ""
+  },
+  {
+    "id": 12,
+    "area": "Salon",
+    "nombre": "Mesita TV",
+    "unidades": 1,
+    "precioVenta": 80,
+    "wallapop": ""
+  },
+  {
+    "id": 13,
+    "area": "Salon",
+    "nombre": "TV",
+    "unidades": 1,
+    "precioVenta": 80,
+    "wallapop": ""
+  },
+  {
+    "id": 14,
+    "area": "Salon",
+    "nombre": "Sofá",
+    "unidades": 1,
+    "precioVenta": 650,
+    "wallapop": ""
+  },
+  {
+    "id": 15,
+    "area": "Salon",
+    "nombre": "Puf",
+    "unidades": 1,
+    "precioVenta": 70,
+    "wallapop": ""
+  },
+  {
+    "id": 16,
+    "area": "Salon",
+    "nombre": "Asiento salón",
+    "unidades": 1,
+    "precioVenta": 170,
+    "wallapop": ""
+  },
+  {
+    "id": 17,
+    "area": "Oficina",
+    "nombre": "Asiento oficina",
+    "unidades": 1,
+    "precioVenta": 60,
+    "wallapop": ""
+  },
+  {
+    "id": 18,
+    "area": "Habitacion",
+    "nombre": "Cómoda Habitacion",
+    "unidades": 1,
+    "precioVenta": 150,
+    "wallapop": ""
+  },
+  {
+    "id": 19,
+    "area": "Habitacion",
+    "nombre": "Mesita noche blanca",
+    "unidades": 2,
+    "precioVenta": 60,
+    "wallapop": ""
+  },
+  {
+    "id": 20,
+    "area": "Habitacion",
+    "nombre": "Mesita noche marrón",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 21,
+    "area": "Habitacion",
+    "nombre": "Cama",
+    "unidades": 1,
+    "precioVenta": 140,
+    "wallapop": ""
+  },
+  {
+    "id": 22,
+    "area": "Habitacion",
+    "nombre": "Colchón",
+    "unidades": 1,
+    "precioVenta": 400,
+    "wallapop": ""
+  },
+  {
+    "id": 23,
+    "area": "Patio",
+    "nombre": "Caja herramientas (falta algo)",
+    "unidades": 1,
+    "precioVenta": 50,
+    "wallapop": ""
+  },
+  {
+    "id": 24,
+    "area": "Lavanderia",
+    "nombre": "Plancha",
+    "unidades": 1,
+    "precioVenta": 20,
+    "wallapop": ""
+  },
+  {
+    "id": 25,
+    "area": "Cocina",
+    "nombre": "Nevera",
+    "unidades": 1,
+    "precioVenta": 300,
+    "wallapop": ""
+  },
+  {
+    "id": 26,
+    "area": "Cocina",
+    "nombre": "Airfryer",
+    "unidades": 1,
+    "precioVenta": 100,
+    "wallapop": ""
+  },
+  {
+    "id": 27,
+    "area": "Baño",
+    "nombre": "Mesita baño",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 28,
+    "area": "Baño",
+    "nombre": "Estantería baño",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 29,
+    "area": "Baño",
+    "nombre": "Cajas baño",
+    "unidades": 5,
+    "precioVenta": 15,
+    "wallapop": ""
+  },
+  {
+    "id": 30,
+    "area": "Baño",
+    "nombre": "Cómoda baño",
+    "unidades": 1,
+    "precioVenta": 10,
+    "wallapop": ""
+  },
+  {
+    "id": 31,
+    "area": "Recibidor",
+    "nombre": "Colgador",
+    "unidades": 2,
+    "precioVenta": 70,
+    "wallapop": ""
+  },
+  {
+    "id": 32,
+    "area": "Recibidor",
+    "nombre": "Banco entrada",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 33,
+    "area": "Oficina",
+    "nombre": "Estantería Oficina - Kallax",
+    "unidades": 1,
+    "precioVenta": 50,
+    "wallapop": ""
+  },
+  {
+    "id": 34,
+    "area": "Oficina",
+    "nombre": "Estantería libros Kallax",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 35,
+    "area": "Oficina",
+    "nombre": "Asiento con bici",
+    "unidades": 1,
+    "precioVenta": 70,
+    "wallapop": ""
+  },
+  {
+    "id": 36,
+    "area": "Oficina",
+    "nombre": "Mesa blanca plegable",
+    "unidades": 1,
+    "precioVenta": 100,
+    "wallapop": ""
+  },
+  {
+    "id": 37,
+    "area": "Oficina",
+    "nombre": "Camilla masajes",
+    "unidades": 1,
+    "precioVenta": 100,
+    "wallapop": ""
+  },
+  {
+    "id": 38,
+    "area": "Oficina",
+    "nombre": "Escritorio sube y baja",
+    "unidades": 1,
+    "precioVenta": 140,
+    "wallapop": ""
+  },
+  {
+    "id": 39,
+    "area": "Oficina",
+    "nombre": "Pantalla Asus",
+    "unidades": 1,
+    "precioVenta": 15,
+    "wallapop": ""
+  },
+  {
+    "id": 40,
+    "area": "Oficina",
+    "nombre": "Cestas oficina",
+    "unidades": 2,
+    "precioVenta": 12,
+    "wallapop": ""
+  },
+  {
+    "id": 41,
+    "area": "Salon",
+    "nombre": "Estantería esquina bambú",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 42,
+    "area": "Salon",
+    "nombre": "Estantería escalera bambú",
+    "unidades": 2,
+    "precioVenta": 50,
+    "wallapop": ""
+  },
+  {
+    "id": 43,
+    "area": "Salon",
+    "nombre": "Alfombra gruesa",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 44,
+    "area": "Salon",
+    "nombre": "Alfombra fina algodón",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 45,
+    "area": "Habitacion",
+    "nombre": "Lámpara rosa",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 46,
+    "area": "Habitacion",
+    "nombre": "Cojín meditación",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 47,
+    "area": "Habitacion",
+    "nombre": "Difusor aromas",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 48,
+    "area": "Habitacion",
+    "nombre": "Lámpara negra",
+    "unidades": 1,
+    "precioVenta": 15,
+    "wallapop": ""
+  },
+  {
+    "id": 49,
+    "area": "Salon",
+    "nombre": "Cuadro marco",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 50,
+    "area": "Salon",
+    "nombre": "Cestas círculo",
+    "unidades": 2,
+    "precioVenta": 8,
+    "wallapop": ""
+  },
+  {
+    "id": 51,
+    "area": "Lavanderia",
+    "nombre": "Aspiradora",
+    "unidades": 1,
+    "precioVenta": 60,
+    "wallapop": ""
+  },
+  {
+    "id": 52,
+    "area": "Recibidor",
+    "nombre": "Cestas entrada",
+    "unidades": 2,
+    "precioVenta": 8,
+    "wallapop": ""
+  },
+  {
+    "id": 53,
+    "area": "Comedor",
+    "nombre": "Lámpara comedor",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  },
+  {
+    "id": 54,
+    "area": "Habitacion",
+    "nombre": "Pistola masajes",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 55,
+    "area": "Habitacion",
+    "nombre": "Masajeador espalda",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 56,
+    "area": "Cocina",
+    "nombre": "Raclette 10",
+    "unidades": 1,
+    "precioVenta": 40,
+    "wallapop": ""
+  },
+  {
+    "id": 57,
+    "area": "Cocina",
+    "nombre": "Reclette 2",
+    "unidades": 1,
+    "precioVenta": 30,
+    "wallapop": ""
+  }
+]
