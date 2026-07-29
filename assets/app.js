@@ -7,6 +7,11 @@ const state = {
     search: "",
     area: "",
     sort: "id"
+  },
+  modal: {
+    item: null,
+    images: [],
+    index: 0
   }
 };
 
@@ -16,7 +21,17 @@ const elements = {
   countLabel: document.getElementById("countLabel"),
   searchInput: document.getElementById("searchInput"),
   areaFilter: document.getElementById("areaFilter"),
-  sortFilter: document.getElementById("sortFilter")
+  sortFilter: document.getElementById("sortFilter"),
+  galleryModal: document.getElementById("galleryModal"),
+  modalTitle: document.getElementById("modalTitle"),
+  modalMeta: document.getElementById("modalMeta"),
+  modalMainImage: document.getElementById("modalMainImage"),
+  modalPrice: document.getElementById("modalPrice"),
+  modalWallapop: document.getElementById("modalWallapop"),
+  modalThumbs: document.getElementById("modalThumbs"),
+  modalCounter: document.getElementById("modalCounter"),
+  modalPrev: document.getElementById("modalPrev"),
+  modalNext: document.getElementById("modalNext")
 };
 
 function formatPrice(value) {
@@ -27,6 +42,10 @@ function formatPrice(value) {
 function getImagesForItem(itemId) {
   const key = String(itemId);
   return state.imagesById[key] || [];
+}
+
+function getItemById(itemId) {
+  return state.items.find((item) => item.id === itemId);
 }
 
 function itemMatchesFilters(item) {
@@ -66,8 +85,10 @@ function renderCards(items) {
 
   for (const item of items) {
     const node = elements.cardTemplate.content.cloneNode(true);
+    const card = node.querySelector(".item-card");
     const image = node.querySelector(".item-image");
     const imagePlaceholder = node.querySelector(".item-image-placeholder");
+    const photosBadge = node.querySelector(".item-photos-badge");
     const id = node.querySelector(".item-id");
     const name = node.querySelector(".item-name");
     const area = node.querySelector(".item-area");
@@ -81,11 +102,24 @@ function renderCards(items) {
       image.alt = `Foto de ${item.nombre}`;
       image.classList.remove("hidden");
       imagePlaceholder.classList.add("hidden");
+      photosBadge.textContent = `${itemImages.length} foto(s)`;
+      photosBadge.classList.remove("hidden");
+      card.dataset.itemId = String(item.id);
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("aria-label", `Abrir galeria de ${item.nombre}`);
+      card.classList.add("cursor-pointer");
     } else {
       image.removeAttribute("src");
       image.alt = "";
       image.classList.add("hidden");
       imagePlaceholder.classList.remove("hidden");
+      photosBadge.classList.add("hidden");
+      delete card.dataset.itemId;
+      card.removeAttribute("role");
+      card.removeAttribute("tabindex");
+      card.removeAttribute("aria-label");
+      card.classList.remove("cursor-pointer");
     }
 
     id.textContent = String(item.id);
@@ -108,6 +142,104 @@ function renderCards(items) {
   }
 
   elements.grid.appendChild(fragment);
+}
+
+function setDisabled(button, disabled) {
+  button.disabled = disabled;
+  if (disabled) {
+    button.classList.add("cursor-not-allowed", "opacity-40");
+  } else {
+    button.classList.remove("cursor-not-allowed", "opacity-40");
+  }
+}
+
+function renderModal() {
+  const { item, images, index } = state.modal;
+  if (!item || images.length === 0) {
+    return;
+  }
+
+  const safeIndex = Math.max(0, Math.min(index, images.length - 1));
+  state.modal.index = safeIndex;
+  const currentImage = images[safeIndex];
+
+  elements.modalTitle.textContent = item.nombre;
+  elements.modalMeta.textContent = `#${item.id} · ${item.area} · ${item.unidades} ud.`;
+  elements.modalMainImage.src = `./${currentImage}`;
+  elements.modalMainImage.alt = `Foto ${safeIndex + 1} de ${item.nombre}`;
+  elements.modalPrice.textContent = formatPrice(item.precioVenta);
+  elements.modalCounter.textContent = `${safeIndex + 1} / ${images.length}`;
+
+  const singleImage = images.length <= 1;
+  setDisabled(elements.modalPrev, singleImage);
+  setDisabled(elements.modalNext, singleImage);
+
+  elements.modalThumbs.innerHTML = "";
+  const thumbsFragment = document.createDocumentFragment();
+  images.forEach((imagePath, imageIndex) => {
+    const thumbButton = document.createElement("button");
+    thumbButton.type = "button";
+    thumbButton.className = "overflow-hidden rounded-lg border transition";
+    thumbButton.classList.add(imageIndex === safeIndex ? "border-sky-500 ring-2 ring-sky-100" : "border-slate-200 hover:border-slate-300");
+    thumbButton.dataset.thumbIndex = String(imageIndex);
+
+    const thumbImage = document.createElement("img");
+    thumbImage.src = `./${imagePath}`;
+    thumbImage.alt = `Miniatura ${imageIndex + 1} de ${item.nombre}`;
+    thumbImage.className = "h-16 w-full object-cover";
+    thumbButton.appendChild(thumbImage);
+
+    thumbsFragment.appendChild(thumbButton);
+  });
+  elements.modalThumbs.appendChild(thumbsFragment);
+
+  if (item.wallapop) {
+    elements.modalWallapop.href = item.wallapop;
+    elements.modalWallapop.textContent = "Ver en Wallapop";
+    elements.modalWallapop.removeAttribute("aria-disabled");
+    elements.modalWallapop.classList.remove("cursor-not-allowed", "bg-slate-300", "text-slate-600");
+    elements.modalWallapop.classList.add("bg-sky-600", "text-white", "hover:bg-sky-700");
+  } else {
+    elements.modalWallapop.removeAttribute("href");
+    elements.modalWallapop.textContent = "Enlace de compra aun no disponible";
+    elements.modalWallapop.setAttribute("aria-disabled", "true");
+    elements.modalWallapop.classList.remove("bg-sky-600", "text-white", "hover:bg-sky-700");
+    elements.modalWallapop.classList.add("cursor-not-allowed", "bg-slate-300", "text-slate-600");
+  }
+}
+
+function openModalForItem(itemId) {
+  const item = getItemById(itemId);
+  if (!item) {
+    return;
+  }
+  const images = getImagesForItem(item.id);
+  if (images.length === 0) {
+    return;
+  }
+
+  state.modal.item = item;
+  state.modal.images = images;
+  state.modal.index = 0;
+  renderModal();
+  elements.galleryModal.classList.remove("hidden");
+  elements.galleryModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeModal() {
+  elements.galleryModal.classList.add("hidden");
+  elements.galleryModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("overflow-hidden");
+}
+
+function changeModalImage(step) {
+  if (state.modal.images.length <= 1) {
+    return;
+  }
+  const nextIndex = (state.modal.index + step + state.modal.images.length) % state.modal.images.length;
+  state.modal.index = nextIndex;
+  renderModal();
 }
 
 function render() {
@@ -142,6 +274,67 @@ function setupFilters() {
   });
 }
 
+function setupCardInteraction() {
+  elements.grid.addEventListener("click", (event) => {
+    if (event.target.closest(".item-link")) {
+      return;
+    }
+    const card = event.target.closest(".item-card");
+    if (!card || !card.dataset.itemId) {
+      return;
+    }
+    openModalForItem(Number.parseInt(card.dataset.itemId, 10));
+  });
+
+  elements.grid.addEventListener("keydown", (event) => {
+    const isActivationKey = event.key === "Enter" || event.key === " ";
+    if (!isActivationKey) {
+      return;
+    }
+    const card = event.target.closest(".item-card");
+    if (!card || !card.dataset.itemId) {
+      return;
+    }
+    event.preventDefault();
+    openModalForItem(Number.parseInt(card.dataset.itemId, 10));
+  });
+}
+
+function setupModalInteraction() {
+  elements.galleryModal.addEventListener("click", (event) => {
+    if (event.target.closest("[data-modal-close='true']")) {
+      closeModal();
+      return;
+    }
+
+    const thumb = event.target.closest("[data-thumb-index]");
+    if (thumb) {
+      state.modal.index = Number.parseInt(thumb.dataset.thumbIndex, 10);
+      renderModal();
+    }
+  });
+
+  elements.modalPrev.addEventListener("click", () => changeModalImage(-1));
+  elements.modalNext.addEventListener("click", () => changeModalImage(1));
+
+  document.addEventListener("keydown", (event) => {
+    if (elements.galleryModal.classList.contains("hidden")) {
+      return;
+    }
+    if (event.key === "Escape") {
+      closeModal();
+      return;
+    }
+    if (event.key === "ArrowLeft") {
+      changeModalImage(-1);
+      return;
+    }
+    if (event.key === "ArrowRight") {
+      changeModalImage(1);
+    }
+  });
+}
+
 async function loadData() {
   const [itemsResponse, imagesResponse] = await Promise.all([
     fetch("./data/items.json"),
@@ -160,6 +353,8 @@ async function init() {
   try {
     await loadData();
     setupFilters();
+    setupCardInteraction();
+    setupModalInteraction();
     render();
   } catch (error) {
     elements.grid.innerHTML = `<p class="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">${error.message}</p>`;
