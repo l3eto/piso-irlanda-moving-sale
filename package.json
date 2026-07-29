@@ -1,0 +1,11 @@
+{
+  "name": "moving-sale-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "dev": "npx serve docs -l 4173"
+  }
+}
+
