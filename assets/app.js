@@ -39,6 +39,15 @@ function formatPrice(value) {
   return Number.isFinite(number) ? EURO.format(number) : "-";
 }
 
+function toAssetUrl(assetPath) {
+  const normalized = String(assetPath || "").replace(/\\/g, "/");
+  const encodedPath = normalized
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+  return `./${encodedPath}`;
+}
+
 function getImagesForItem(itemId) {
   const key = String(itemId);
   return state.imagesById[key] || [];
@@ -98,8 +107,14 @@ function renderCards(items) {
 
     const itemImages = getImagesForItem(item.id);
     if (itemImages.length > 0) {
-      image.src = `./${itemImages[0]}`;
+      image.src = toAssetUrl(itemImages[0]);
       image.alt = `Foto de ${item.nombre}`;
+      image.onerror = () => {
+        image.removeAttribute("src");
+        image.alt = "";
+        image.classList.add("hidden");
+        imagePlaceholder.classList.remove("hidden");
+      };
       image.classList.remove("hidden");
       imagePlaceholder.classList.add("hidden");
       photosBadge.textContent = `${itemImages.length} foto(s)`;
@@ -165,8 +180,12 @@ function renderModal() {
 
   elements.modalTitle.textContent = item.nombre;
   elements.modalMeta.textContent = `#${item.id} · ${item.area} · ${item.unidades} ud.`;
-  elements.modalMainImage.src = `./${currentImage}`;
+  elements.modalMainImage.src = toAssetUrl(currentImage);
   elements.modalMainImage.alt = `Foto ${safeIndex + 1} de ${item.nombre}`;
+  elements.modalMainImage.onerror = () => {
+    elements.modalMainImage.removeAttribute("src");
+    elements.modalMainImage.alt = "Imagen no disponible";
+  };
   elements.modalPrice.textContent = formatPrice(item.precioVenta);
   elements.modalCounter.textContent = `${safeIndex + 1} / ${images.length}`;
 
@@ -180,11 +199,15 @@ function renderModal() {
     const thumbButton = document.createElement("button");
     thumbButton.type = "button";
     thumbButton.className = "overflow-hidden rounded-lg border transition";
-    thumbButton.classList.add(imageIndex === safeIndex ? "border-sky-500 ring-2 ring-sky-100" : "border-slate-200 hover:border-slate-300");
+    if (imageIndex === safeIndex) {
+      thumbButton.classList.add("border-sky-500", "ring-2", "ring-sky-100");
+    } else {
+      thumbButton.classList.add("border-slate-200", "hover:border-slate-300");
+    }
     thumbButton.dataset.thumbIndex = String(imageIndex);
 
     const thumbImage = document.createElement("img");
-    thumbImage.src = `./${imagePath}`;
+    thumbImage.src = toAssetUrl(imagePath);
     thumbImage.alt = `Miniatura ${imageIndex + 1} de ${item.nombre}`;
     thumbImage.className = "h-16 w-full object-cover";
     thumbButton.appendChild(thumbImage);
