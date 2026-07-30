@@ -190,15 +190,13 @@ function renderCards(items) {
     if (wallapopUrl) {
       link.href = wallapopUrl;
       link.textContent = `Ver en Wallapop (${formatPrice(item.precioVenta)})`;
+      link.classList.remove("hidden");
       link.removeAttribute("aria-disabled");
       link.classList.remove("cursor-not-allowed", "bg-slate-300", "text-slate-600");
       link.classList.add("bg-sky-600", "text-white", "hover:bg-sky-700");
     } else {
       link.removeAttribute("href");
-      link.classList.remove("bg-sky-600", "hover:bg-sky-700");
-      link.classList.add("cursor-not-allowed", "bg-slate-300", "text-slate-600");
-      link.textContent = "Enlace de compra aun no disponible";
-      link.setAttribute("aria-disabled", "true");
+      link.classList.add("hidden");
     }
 
     fragment.appendChild(node);
@@ -269,15 +267,13 @@ function renderModal() {
   if (wallapopUrl) {
     elements.modalWallapop.href = wallapopUrl;
     elements.modalWallapop.textContent = `Ver en Wallapop (${formatPrice(item.precioVenta)})`;
+    elements.modalWallapop.classList.remove("hidden");
     elements.modalWallapop.removeAttribute("aria-disabled");
     elements.modalWallapop.classList.remove("cursor-not-allowed", "bg-slate-300", "text-slate-600");
     elements.modalWallapop.classList.add("bg-sky-600", "text-white", "hover:bg-sky-700");
   } else {
     elements.modalWallapop.removeAttribute("href");
-    elements.modalWallapop.textContent = "Enlace de compra aun no disponible";
-    elements.modalWallapop.setAttribute("aria-disabled", "true");
-    elements.modalWallapop.classList.remove("bg-sky-600", "text-white", "hover:bg-sky-700");
-    elements.modalWallapop.classList.add("cursor-not-allowed", "bg-slate-300", "text-slate-600");
+    elements.modalWallapop.classList.add("hidden");
   }
 }
 

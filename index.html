@@ -50,7 +50,7 @@
 
     <template id="itemCardTemplate">
       <article class="item-card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition md:hover:shadow-md">
-        <div class="relative aspect-[4/3] bg-slate-100">
+        <div class="relative aspect-square bg-slate-100 md:aspect-[4/3]">
           <img class="item-image hidden h-full w-full object-cover" alt="" />
           <div class="item-image-placeholder absolute inset-0 flex flex-col items-center justify-center gap-2 bg-slate-200 text-slate-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -65,19 +65,19 @@
           </div>
           <div class="item-photos-badge absolute right-2 top-2 hidden rounded-full bg-black/65 px-2 py-1 text-xs font-medium text-white"></div>
         </div>
-        <div class="space-y-3 p-4">
+        <div class="space-y-3 p-3 md:p-4">
           <div class="space-y-1">
             <h2 class="item-name text-base font-semibold leading-tight md:text-lg"></h2>
             <span class="item-area inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600"></span>
           </div>
-          <div class="grid grid-cols-2 gap-2 text-sm">
+          <div class="space-y-1 text-sm">
+            <p class="rounded-lg bg-emerald-50 px-2 py-1 text-emerald-700">
+              <span>Precio aqui (ud):</span>
+              <span class="item-here-price ml-1 text-base font-bold"></span>
+            </p>
             <p class="rounded-lg bg-slate-50 px-2 py-1">
               <span class="text-slate-500">Unidades:</span>
               <span class="item-units font-medium"></span>
-            </p>
-            <p class="col-span-1 rounded-lg bg-emerald-50 px-2 py-1">
-              <span class="text-emerald-700">Precio aqui (ud):</span>
-              <span class="item-here-price text-base font-bold text-emerald-700"></span>
             </p>
             <p class="item-size-row rounded-lg bg-slate-50 px-2 py-1">
               <span class="text-slate-500">Medidas:</span>
