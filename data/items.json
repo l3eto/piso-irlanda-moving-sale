@@ -466,7 +466,7 @@
   {
     "id": 31,
     "area": "Recibidor",
-    "nombre": "Colgador",
+    "nombre": "Estanteria zapatero y perchero",
     "unidades": 2,
     "precioWeb": 50,
     "precioVenta": 70,
@@ -475,7 +475,7 @@
       "ancho": 78,
       "largo": 33
     },
-    "descripcion": "",
+    "descripcion": "buen estado, con ganchos",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -631,11 +631,11 @@
     "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 100,
+      "ancho": 35,
+      "largo": 35
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -754,16 +754,16 @@
   {
     "id": 49,
     "area": "Salon",
-    "nombre": "Cuadro marco",
+    "nombre": "Cuadro madera marco",
     "unidades": 1,
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 4,
+      "ancho": 73,
+      "largo": 104
     },
-    "descripcion": "",
+    "descripcion": "se puede cambiar imagen o quedarsela",
     "estado": "disponible",
     "wallapop": ""
   },
