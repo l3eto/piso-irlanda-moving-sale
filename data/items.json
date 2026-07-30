@@ -130,9 +130,9 @@
   {
     "id": 10,
     "area": "Salon",
-    "nombre": "Sillas mesa (+cojin 18eur)",
+    "nombre": "Sillas mesa con cojin",
     "unidades": 4,
-    "precioWeb": 18,
+    "precioWeb": 15,
     "precioVenta": 25,
     "medidas": {
       "alto": 90,
@@ -141,7 +141,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "Botas Caterpillar marrón de segunda mano por 40 EUR en Santa Coloma de Gramenet en WALLAPOP"
+    "wallapop": ""
   },
   {
     "id": 11,
@@ -974,5 +974,53 @@
     "descripcion": "buen estado, la imagen abierta se genero con ia para quitar contenido,es bastante fiel",
     "estado": "disponible",
     "wallapop": ""
+  },
+  {
+    "id": 63,
+    "area": "Patio",
+    "nombre": "Patinete Mini Cruiser Verde",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 15,
+    "medidas": {
+      "alto": 22,
+      "ancho": 15,
+      "largo": 56
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": "Patinete Mini Cruiser Verde de segunda mano por 15 EUR en Santa Coloma de Gramenet en WALLAPOP"
+  },
+  {
+    "id": 64,
+    "area": "Patio",
+    "nombre": "Patinete infantil azul Oxelo",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 15,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
+    "descripcion": "buen estado incluye correa",
+    "estado": "disponible",
+    "wallapop": "Patinete infantil azul Oxelo de segunda mano por 15 EUR en Santa Coloma de Gramenet en WALLAPOP"
+  },
+  {
+    "id": 65,
+    "area": "Patio",
+    "nombre": "Carretilla de carga",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 15,
+    "medidas": {
+      "alto": 96,
+      "ancho": 25,
+      "largo": 33
+    },
+    "descripcion": "buen estado con ganchos desplegable",
+    "estado": "disponible",
+    "wallapop": "Carretilla de carga con ganchos desplegable. en Santa Coloma de Gramenet en WALLAPOP"
   }
 ]

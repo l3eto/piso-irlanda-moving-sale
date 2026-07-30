@@ -146,5 +146,21 @@
     "data/images/62/ang.jpeg",
     "data/images/62/arriba.jpeg",
     "data/images/62/frente.jpeg"
+  ],
+  "63": [
+    "data/images/63/abajo.webp",
+    "data/images/63/arriba.webp",
+    "data/images/63/lateral.webp"
+  ],
+  "64": [
+    "data/images/64/arriba.webp",
+    "data/images/64/front.webp",
+    "data/images/64/lateral.webp"
+  ],
+  "65": [
+    "data/images/65/abierto.webp",
+    "data/images/65/ganchos.webp",
+    "data/images/65/plegado.webp",
+    "data/images/65/subido.webp"
   ]
 }
