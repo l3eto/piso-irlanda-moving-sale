@@ -59,6 +59,22 @@
     "data/images/16/frente.jpeg",
     "data/images/16/lateral.jpeg"
   ],
+  "18": [
+    "data/images/18/abierto.jpeg",
+    "data/images/18/ang.jpeg",
+    "data/images/18/frente.jpeg"
+  ],
+  "23": [
+    "data/images/23/abierto.jpeg",
+    "data/images/23/cerrado.jpeg"
+  ],
+  "24": [
+    "data/images/24/abajo.jpeg",
+    "data/images/24/arriba.jpeg",
+    "data/images/24/atras.jpeg",
+    "data/images/24/cerca.jpeg",
+    "data/images/24/lateral.jpeg"
+  ],
   "32": [
     "data/images/32/angulo.jpeg",
     "data/images/32/frente.jpeg",
@@ -119,6 +135,17 @@
     "data/images/53/abajo.jpeg",
     "data/images/53/cerca.jpeg",
     "data/images/53/lateral.jpeg"
+  ],
+  "54": [
+    "data/images/54/abajo.jpeg",
+    "data/images/54/atras.jpeg",
+    "data/images/54/funda.jpeg",
+    "data/images/54/vel.jpeg"
+  ],
+  "55": [
+    "data/images/55/frente.jpeg",
+    "data/images/55/masajeadores.jpeg",
+    "data/images/55/todo.jpeg"
   ],
   "58": [
     "data/images/58/cerca.jpeg",

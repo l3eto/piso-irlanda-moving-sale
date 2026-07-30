@@ -263,11 +263,11 @@
     "precioWeb": 120,
     "precioVenta": 150,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 114,
+      "ancho": 90,
+      "largo": 45
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -338,16 +338,16 @@
   {
     "id": 23,
     "area": "Patio",
-    "nombre": "Caja herramientas (falta algo)",
+    "nombre": "Caja herramientas",
     "unidades": 1,
     "precioWeb": 40,
     "precioVenta": 50,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 9,
+      "ancho": 33,
+      "largo": 25
     },
-    "descripcion": "",
+    "descripcion": "falta alguna cosa, pero casi todo esta",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -359,11 +359,11 @@
     "precioWeb": 15,
     "precioVenta": 20,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 15,
+      "ancho": 15,
+      "largo": 30
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -839,11 +839,11 @@
     "precioWeb": 25,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 9,
+      "ancho": 27,
+      "largo": 25
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -855,11 +855,11 @@
     "precioWeb": 20,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 10,
+      "ancho": 40,
+      "largo": 30
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
