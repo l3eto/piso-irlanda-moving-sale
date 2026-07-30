@@ -340,14 +340,14 @@
     "area": "Patio",
     "nombre": "Caja herramientas",
     "unidades": 1,
-    "precioWeb": 40,
+    "precioWeb": 30,
     "precioVenta": 50,
     "medidas": {
       "alto": 9,
       "ancho": 33,
       "largo": 25
     },
-    "descripcion": "falta alguna cosa, pero casi todo esta",
+    "descripcion": "falta alguna cosilla, pero esta casi todo",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -471,9 +471,9 @@
     "precioWeb": 50,
     "precioVenta": 70,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 193,
+      "ancho": 78,
+      "largo": 33
     },
     "descripcion": "",
     "estado": "disponible",
@@ -546,16 +546,16 @@
   {
     "id": 36,
     "area": "Oficina",
-    "nombre": "Mesa blanca plegable",
+    "nombre": "Mesa plegable extensible con cajonera",
     "unidades": 1,
     "precioWeb": 80,
     "precioVenta": 100,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 75,
+      "ancho": 153,
+      "largo": 80
     },
-    "descripcion": "",
+    "descripcion": "buen estado, alguna mancha, blanco, plegado 33cm de ancho, se levantan ambas alas, con 6 cajones",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -578,16 +578,16 @@
   {
     "id": 38,
     "area": "Oficina",
-    "nombre": "Escritorio sube y baja",
+    "nombre": "Escritorio elevable electrico",
     "unidades": 1,
     "precioWeb": 120,
     "precioVenta": 140,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 112,
+      "ancho": 140,
+      "largo": 60
     },
-    "descripcion": "",
+    "descripcion": "baja hasta 79cm altura, sube hasta 112cm altura, entradas cables, enganches, colgador cascos",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -612,14 +612,14 @@
     "area": "Oficina",
     "nombre": "Cestas oficina",
     "unidades": 2,
-    "precioWeb": 12,
+    "precioWeb": 10,
     "precioVenta": 12,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 32,
+      "ancho": 32,
+      "largo": 32
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -802,16 +802,16 @@
   {
     "id": 52,
     "area": "Recibidor",
-    "nombre": "Cestas entrada",
-    "unidades": 2,
-    "precioWeb": 5,
-    "precioVenta": 8,
+    "nombre": "Cesta organizadora de bambú",
+    "unidades": 4,
+    "precioWeb": 8,
+    "precioVenta": 10,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 32,
+      "ancho": 32,
+      "largo": 32
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
