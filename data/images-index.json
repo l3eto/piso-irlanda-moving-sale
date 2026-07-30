@@ -53,6 +53,12 @@
     "data/images/15/frente.jpeg",
     "data/images/15/lateral.jpeg"
   ],
+  "16": [
+    "data/images/16/ang.jpeg",
+    "data/images/16/atras.jpeg",
+    "data/images/16/frente.jpeg",
+    "data/images/16/lateral.jpeg"
+  ],
   "32": [
     "data/images/32/angulo.jpeg",
     "data/images/32/frente.jpeg",
@@ -134,5 +140,11 @@
     "data/images/61/abierto.jpeg",
     "data/images/61/arriba.jpeg",
     "data/images/61/lateral.jpeg"
+  ],
+  "62": [
+    "data/images/62/abierto.png",
+    "data/images/62/ang.jpeg",
+    "data/images/62/arriba.jpeg",
+    "data/images/62/frente.jpeg"
   ]
 }
