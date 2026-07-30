@@ -19,10 +19,32 @@
     "data/images/4/frente.jpeg",
     "data/images/4/lateral.jpeg"
   ],
+  "7": [
+    "data/images/7/angulo.jpeg",
+    "data/images/7/arriba.jpeg",
+    "data/images/7/frente.jpeg"
+  ],
+  "8": [
+    "data/images/8/angulo.jpeg",
+    "data/images/8/arriba.jpeg",
+    "data/images/8/frnt.jpeg",
+    "data/images/8/lateral.jpeg"
+  ],
   "10": [
     "data/images/10/defrente.jpeg",
     "data/images/10/detras.jpeg",
     "data/images/10/lateral.jpeg"
+  ],
+  "11": [
+    "data/images/11/angulo.jpeg",
+    "data/images/11/frente.jpeg",
+    "data/images/11/lateral.jpeg"
+  ],
+  "15": [
+    "data/images/15/angulo.jpeg",
+    "data/images/15/arriba.jpeg",
+    "data/images/15/frente.jpeg",
+    "data/images/15/lateral.jpeg"
   ],
   "32": [
     "data/images/32/angulo.jpeg",
@@ -74,5 +96,11 @@
     "data/images/48/cerca.jpeg",
     "data/images/48/encendida.jpeg",
     "data/images/48/frente.jpeg"
+  ],
+  "58": [
+    "data/images/58/cerca.jpeg",
+    "data/images/58/lateral1.jpeg",
+    "data/images/58/lateral2.jpeg",
+    "data/images/58/todo.jpeg"
   ]
 }

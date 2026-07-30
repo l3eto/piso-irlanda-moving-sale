@@ -103,11 +103,11 @@
     "precioWeb": 40,
     "precioVenta": 50,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 41,
+      "ancho": 77,
+      "largo": 40
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -119,11 +119,11 @@
     "precioWeb": 80,
     "precioVenta": 100,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 80,
+      "ancho": 135,
+      "largo": 74
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -139,7 +139,7 @@
       "ancho": 40,
       "largo": 42
     },
-    "descripcion": "muy buen estado",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "Botas Caterpillar marrón de segunda mano por 40 EUR en Santa Coloma de Gramenet en WALLAPOP"
   },
@@ -151,11 +151,11 @@
     "precioWeb": 50,
     "precioVenta": 60,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 40,
+      "ancho": 110,
+      "largo": 50
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -215,11 +215,11 @@
     "precioWeb": 50,
     "precioVenta": 70,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 35,
+      "ancho": 53,
+      "largo": 53
     },
-    "descripcion": "",
+    "descripcion": "buen estado, se relleno el puf hace poco",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -667,7 +667,7 @@
       "ancho": 200,
       "largo": 135
     },
-    "descripcion": "buen estado",
+    "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -683,7 +683,7 @@
       "ancho": 162,
       "largo": 219
     },
-    "descripcion": "buena estado",
+    "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -747,7 +747,7 @@
       "ancho": 15,
       "largo": 15
     },
-    "descripcion": "algo antigua",
+    "descripcion": "algo antigua, pero funciona bien, intensidades",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -892,6 +892,22 @@
       "largo": null
     },
     "descripcion": "",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 58,
+    "area": "Salon",
+    "nombre": "Alfombra yute trenzado",
+    "unidades": 1,
+    "precioWeb": 25,
+    "precioVenta": 30,
+    "medidas": {
+      "alto": 2,
+      "ancho": 123,
+      "largo": 123
+    },
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   }
