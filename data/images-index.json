@@ -19,6 +19,13 @@
     "data/images/4/frente.jpeg",
     "data/images/4/lateral.jpeg"
   ],
+  "5": [
+    "data/images/5/abierto_der.png",
+    "data/images/5/abierto_izq.png",
+    "data/images/5/frente.jpeg",
+    "data/images/5/lateral.jpeg",
+    "data/images/5/todo.jpeg"
+  ],
   "7": [
     "data/images/7/angulo.jpeg",
     "data/images/7/arriba.jpeg",
@@ -86,6 +93,11 @@
     "data/images/45/frente.jpeg",
     "data/images/45/lado.jpeg"
   ],
+  "46": [
+    "data/images/46/arriba.jpeg",
+    "data/images/46/cerca.jpeg",
+    "data/images/46/lateral.jpeg"
+  ],
   "47": [
     "data/images/47/arriba.jpeg",
     "data/images/47/dentro.jpeg",
@@ -97,10 +109,30 @@
     "data/images/48/encendida.jpeg",
     "data/images/48/frente.jpeg"
   ],
+  "53": [
+    "data/images/53/abajo.jpeg",
+    "data/images/53/cerca.jpeg",
+    "data/images/53/lateral.jpeg"
+  ],
   "58": [
     "data/images/58/cerca.jpeg",
     "data/images/58/lateral1.jpeg",
     "data/images/58/lateral2.jpeg",
     "data/images/58/todo.jpeg"
+  ],
+  "59": [
+    "data/images/59/arriba.jpeg",
+    "data/images/59/frente.jpeg",
+    "data/images/59/lateral.jpeg"
+  ],
+  "60": [
+    "data/images/60/frente.jpeg",
+    "data/images/60/lateral.jpeg",
+    "data/images/60/plegado.jpeg"
+  ],
+  "61": [
+    "data/images/61/abierto.jpeg",
+    "data/images/61/arriba.jpeg",
+    "data/images/61/lateral.jpeg"
   ]
 }

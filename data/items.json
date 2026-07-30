@@ -65,23 +65,23 @@
   },
   {
     "id": 5,
-    "area": "Habitación",
+    "area": "Habitacion",
     "nombre": "Espejo",
     "unidades": 1,
     "precioWeb": 60,
     "precioVenta": 80,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 157,
+      "ancho": 41,
+      "largo": 10
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado, la parte abierta se uson ia para quitar las cosas, pero el mismo diseño",
     "estado": "disponible",
     "wallapop": ""
   },
   {
     "id": 6,
-    "area": "Habitación",
+    "area": "Habitacion",
     "nombre": "Armario",
     "unidades": 1,
     "precioWeb": 200,
@@ -226,16 +226,16 @@
   {
     "id": 16,
     "area": "Salon",
-    "nombre": "Asiento salón",
+    "nombre": "Sillon ratán con cojines",
     "unidades": 1,
-    "precioWeb": 140,
+    "precioWeb": 120,
     "precioVenta": 170,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 79,
+      "ancho": 81,
+      "largo": 81
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -711,11 +711,11 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 15,
+      "ancho": 30,
+      "largo": 30
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -823,11 +823,11 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 43,
+      "ancho": 40,
+      "largo": 40
     },
-    "descripcion": "",
+    "descripcion": "buen estado,cable 46cm + foco",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -908,6 +908,54 @@
       "largo": 123
     },
     "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 59,
+    "area": "Salon",
+    "nombre": "Taburete escalera de madera",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 20,
+    "medidas": {
+      "alto": 50,
+      "ancho": 38,
+      "largo": 38
+    },
+    "descripcion": "buen estado, pero sucio por antiguedad y uso",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 60,
+    "area": "Salon",
+    "nombre": "Silla plegable",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 25,
+    "medidas": {
+      "alto": 78,
+      "ancho": 42,
+      "largo": 47
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 61,
+    "area": "Salon",
+    "nombre": "Mesa auxiliar redonda",
+    "unidades": 1,
+    "precioWeb": 25,
+    "precioVenta": 30,
+    "medidas": {
+      "alto": 41,
+      "ancho": 40,
+      "largo": 40
+    },
+    "descripcion": "tabla desgastado, estructura buen estado",
     "estado": "disponible",
     "wallapop": ""
   }
