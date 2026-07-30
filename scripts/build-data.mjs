@@ -49,6 +49,7 @@ function normalizeHeader(header) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
@@ -64,7 +65,7 @@ function parseNumber(raw) {
 }
 
 function resolveHeaders(lines) {
-  const required = new Set(["area", "nombre", "unidades", "maximo", "wallapop"]);
+  const required = new Set(["area", "nombre", "unidades", "maximo"]);
   for (let i = 0; i < lines.length; i += 1) {
     const headers = parseCsvLine(lines[i]).map(normalizeHeader);
     const headerSet = new Set(headers);
@@ -74,6 +75,20 @@ function resolveHeaders(lines) {
     }
   }
   return { headers: [], startAt: lines.length };
+}
+
+function getRowValue(row, keys) {
+  for (const key of keys) {
+    if (key in row) {
+      return row[key];
+    }
+  }
+  return "";
+}
+
+function parseMeasure(raw) {
+  const parsed = parseNumber(raw);
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
 function parseCsv(csvText) {
@@ -110,6 +125,10 @@ function parseCsv(csvText) {
 
     const units = Number.parseInt(row.unidades || "0", 10);
     const salePrice = parseNumber(row.maximo);
+    const webPrice = parseNumber(getRowValue(row, ["web", "precio web"]));
+    const alto = parseMeasure(getRowValue(row, ["alto (z)", "alto"]));
+    const ancho = parseMeasure(getRowValue(row, ["ancho (x)", "ancho"]));
+    const largo = parseMeasure(getRowValue(row, ["largo (y)", "largo"]));
     const explicitId = Number.parseInt(String(row.id || "").trim(), 10);
     const id = Number.isFinite(explicitId) && explicitId > 0 ? explicitId : fallbackId;
     fallbackId += 1;
@@ -119,7 +138,13 @@ function parseCsv(csvText) {
       area,
       nombre,
       unidades: Number.isFinite(units) ? units : 0,
+      precioWeb: Number.isFinite(webPrice) ? webPrice : null,
       precioVenta: Number.isFinite(salePrice) ? salePrice : 0,
+      medidas: {
+        alto,
+        ancho,
+        largo
+      },
       wallapop: String(row.wallapop || "").trim()
     });
   }
