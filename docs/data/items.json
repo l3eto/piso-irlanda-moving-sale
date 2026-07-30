@@ -11,7 +11,7 @@
       "ancho": 60,
       "largo": 52
     },
-    "descripcion": "buen estado, cambiado hace un año la puerta",
+    "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -27,7 +27,7 @@
       "ancho": 48,
       "largo": 40
     },
-    "descripcion": "",
+    "descripcion": "se tiene que limpiar algo antes de calentar",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -43,7 +43,7 @@
       "ancho": 67,
       "largo": 169
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -52,14 +52,14 @@
     "area": "Patio",
     "nombre": "Bici",
     "unidades": 1,
-    "precioWeb": 65,
+    "precioWeb": 50,
     "precioVenta": 80,
     "medidas": {
       "alto": 90,
       "ancho": 45,
       "largo": 160
     },
-    "descripcion": "",
+    "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -139,7 +139,7 @@
       "ancho": 40,
       "largo": 42
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": "Botas Caterpillar marrón de segunda mano por 40 EUR en Santa Coloma de Gramenet en WALLAPOP"
   },
@@ -491,7 +491,7 @@
       "ancho": 28,
       "largo": 100
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -507,7 +507,7 @@
       "ancho": 77,
       "largo": 39
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -523,7 +523,7 @@
       "ancho": 66,
       "largo": 30
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
