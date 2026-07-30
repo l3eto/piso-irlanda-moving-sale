@@ -23,9 +23,9 @@
     "precioWeb": 12,
     "precioVenta": 15,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 93,
+      "ancho": 48,
+      "largo": 40
     },
     "descripcion": "",
     "estado": "disponible",
@@ -39,9 +39,9 @@
     "precioWeb": 50,
     "precioVenta": 70,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 100,
+      "ancho": 67,
+      "largo": 169
     },
     "descripcion": "",
     "estado": "disponible",
@@ -55,9 +55,9 @@
     "precioWeb": 65,
     "precioVenta": 80,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 90,
+      "ancho": 45,
+      "largo": 160
     },
     "descripcion": "",
     "estado": "disponible",

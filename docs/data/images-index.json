@@ -4,6 +4,21 @@
     "data/images/1/frente2.jpeg",
     "data/images/1/lateral.jpeg"
   ],
+  "2": [
+    "data/images/2/frente.jpeg",
+    "data/images/2/frente2.jpeg",
+    "data/images/2/lateral.jpeg"
+  ],
+  "3": [
+    "data/images/3/atras.jpeg",
+    "data/images/3/frente.jpeg",
+    "data/images/3/lateral.jpeg"
+  ],
+  "4": [
+    "data/images/4/atras.jpeg",
+    "data/images/4/frente.jpeg",
+    "data/images/4/lateral.jpeg"
+  ],
   "10": [
     "data/images/10/defrente.jpeg",
     "data/images/10/detras.jpeg",
