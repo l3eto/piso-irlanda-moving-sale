@@ -242,16 +242,16 @@
   {
     "id": 17,
     "area": "Oficina",
-    "nombre": "Asiento oficina",
+    "nombre": "Sillón de mimbre con cojín",
     "unidades": 1,
     "precioWeb": 50,
     "precioVenta": 60,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 79,
+      "ancho": 59,
+      "largo": 60
     },
-    "descripcion": "",
+    "descripcion": "buen estado, cojin algo sucio",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -507,7 +507,7 @@
       "ancho": 77,
       "largo": 39
     },
-    "descripcion": "buen estado",
+    "descripcion": "buen estado, no incluye cestas",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -1022,5 +1022,21 @@
     "descripcion": "buen estado con ganchos desplegable",
     "estado": "disponible",
     "wallapop": "Carretilla de carga con ganchos desplegable. en Santa Coloma de Gramenet en WALLAPOP"
+  },
+  {
+    "id": 66,
+    "area": "Patio",
+    "nombre": "Pelota de yoga",
+    "unidades": 1,
+    "precioWeb": 20,
+    "precioVenta": 25,
+    "medidas": {
+      "alto": 60,
+      "ancho": 60,
+      "largo": 60
+    },
+    "descripcion": "buen estado, esta sucio",
+    "estado": "disponible",
+    "wallapop": ""
   }
 ]
