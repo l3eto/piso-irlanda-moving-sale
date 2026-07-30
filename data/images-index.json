@@ -105,6 +105,11 @@
     "data/images/26/ang.jpeg",
     "data/images/26/frente.jpeg"
   ],
+  "31": [
+    "data/images/31/abajo.jpeg",
+    "data/images/31/arriba.jpeg",
+    "data/images/31/coimpleto.jpeg"
+  ],
   "32": [
     "data/images/32/angulo.jpeg",
     "data/images/32/frente.jpeg",
@@ -125,11 +130,31 @@
     "data/images/35/frente.jpeg",
     "data/images/35/lateral.jpeg"
   ],
+  "36": [
+    "data/images/36/abajo.jpeg",
+    "data/images/36/arriba.jpeg",
+    "data/images/36/cajon.jpeg",
+    "data/images/36/lat.jpeg",
+    "data/images/36/plegado.jpeg"
+  ],
+  "38": [
+    "data/images/38/ac1.jpeg",
+    "data/images/38/enganches.jpeg",
+    "data/images/38/entrtadas.jpeg",
+    "data/images/38/motor.jpeg",
+    "data/images/38/todo.jpeg"
+  ],
   "39": [
     "data/images/39/angulo.jpeg",
     "data/images/39/arriba.jpeg",
     "data/images/39/detras.jpeg",
     "data/images/39/frente.jpeg"
+  ],
+  "40": [
+    "data/images/40/abaji.jpeg",
+    "data/images/40/ang.jpeg",
+    "data/images/40/arriba.jpeg",
+    "data/images/40/front.jpeg"
   ],
   "43": [
     "data/images/43/cerca.jpeg",
@@ -160,6 +185,11 @@
     "data/images/48/cerca.jpeg",
     "data/images/48/encendida.jpeg",
     "data/images/48/frente.jpeg"
+  ],
+  "52": [
+    "data/images/52/abaio.jpeg",
+    "data/images/52/arriba.jpeg",
+    "data/images/52/front.jpeg"
   ],
   "53": [
     "data/images/53/abajo.jpeg",
