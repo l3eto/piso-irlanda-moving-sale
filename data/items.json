@@ -958,5 +958,21 @@
     "descripcion": "tabla desgastado, estructura buen estado",
     "estado": "disponible",
     "wallapop": ""
+  },
+  {
+    "id": 62,
+    "area": "Lavanderia",
+    "nombre": "Cesto ropa con tapa",
+    "unidades": 1,
+    "precioWeb": 15,
+    "precioVenta": 20,
+    "medidas": {
+      "alto": 62,
+      "ancho": 42,
+      "largo": 36
+    },
+    "descripcion": "buen estado, la imagen abierta se genero con ia para quitar contenido,es bastante fiel",
+    "estado": "disponible",
+    "wallapop": ""
   }
 ]
