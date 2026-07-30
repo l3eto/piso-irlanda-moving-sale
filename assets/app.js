@@ -26,7 +26,8 @@ const elements = {
   modalTitle: document.getElementById("modalTitle"),
   modalMeta: document.getElementById("modalMeta"),
   modalMainImage: document.getElementById("modalMainImage"),
-  modalPrice: document.getElementById("modalPrice"),
+  modalHerePrice: document.getElementById("modalHerePrice"),
+  modalWallapopPrice: document.getElementById("modalWallapopPrice"),
   modalWallapop: document.getElementById("modalWallapop"),
   modalThumbs: document.getElementById("modalThumbs"),
   modalCounter: document.getElementById("modalCounter"),
@@ -37,6 +38,39 @@ const elements = {
 function formatPrice(value) {
   const number = Number(value);
   return Number.isFinite(number) ? EURO.format(number) : "-";
+}
+
+function formatMeasure(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) {
+    return "-";
+  }
+  return `${number} cm`;
+}
+
+function formatSize(medidas) {
+  if (!medidas) {
+    return "-";
+  }
+  const alto = formatMeasure(medidas.alto);
+  const ancho = formatMeasure(medidas.ancho);
+  const largo = formatMeasure(medidas.largo);
+  if (alto === "-" && ancho === "-" && largo === "-") {
+    return "-";
+  }
+  return `Al ${alto} · An ${ancho} · La ${largo}`;
+}
+
+function getWallapopUrl(value) {
+  const raw = String(value || "").trim();
+  return raw;
+}
+
+function getHerePrice(item) {
+  if (Number.isFinite(Number(item.precioWeb))) {
+    return Number(item.precioWeb);
+  }
+  return Number(item.precioVenta);
 }
 
 function toAssetUrl(assetPath) {
@@ -67,10 +101,10 @@ function sortItems(items) {
   const sorted = [...items];
   switch (state.filters.sort) {
     case "priceAsc":
-      sorted.sort((a, b) => a.precioVenta - b.precioVenta);
+      sorted.sort((a, b) => getHerePrice(a) - getHerePrice(b));
       break;
     case "priceDesc":
-      sorted.sort((a, b) => b.precioVenta - a.precioVenta);
+      sorted.sort((a, b) => getHerePrice(b) - getHerePrice(a));
       break;
     case "nameAsc":
       sorted.sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
@@ -102,7 +136,9 @@ function renderCards(items) {
     const name = node.querySelector(".item-name");
     const area = node.querySelector(".item-area");
     const units = node.querySelector(".item-units");
-    const sale = node.querySelector(".item-sale");
+    const herePrice = node.querySelector(".item-here-price");
+    const sizeRow = node.querySelector(".item-size-row");
+    const size = node.querySelector(".item-size");
     const link = node.querySelector(".item-link");
 
     const itemImages = getImagesForItem(item.id);
@@ -141,10 +177,22 @@ function renderCards(items) {
     name.textContent = item.nombre;
     area.textContent = item.area;
     units.textContent = String(item.unidades);
-    sale.textContent = formatPrice(item.precioVenta);
+    herePrice.textContent = formatPrice(getHerePrice(item));
+    const sizeText = formatSize(item.medidas);
+    if (sizeText === "-") {
+      sizeRow.classList.add("hidden");
+    } else {
+      sizeRow.classList.remove("hidden");
+      size.textContent = sizeText;
+    }
 
-    if (item.wallapop) {
-      link.href = item.wallapop;
+    const wallapopUrl = getWallapopUrl(item.wallapop);
+    if (wallapopUrl) {
+      link.href = wallapopUrl;
+      link.textContent = `Ver en Wallapop (${formatPrice(item.precioVenta)})`;
+      link.removeAttribute("aria-disabled");
+      link.classList.remove("cursor-not-allowed", "bg-slate-300", "text-slate-600");
+      link.classList.add("bg-sky-600", "text-white", "hover:bg-sky-700");
     } else {
       link.removeAttribute("href");
       link.classList.remove("bg-sky-600", "hover:bg-sky-700");
@@ -186,7 +234,8 @@ function renderModal() {
     elements.modalMainImage.removeAttribute("src");
     elements.modalMainImage.alt = "Imagen no disponible";
   };
-  elements.modalPrice.textContent = formatPrice(item.precioVenta);
+  elements.modalHerePrice.textContent = formatPrice(getHerePrice(item));
+  elements.modalWallapopPrice.textContent = formatPrice(item.precioVenta);
   elements.modalCounter.textContent = `${safeIndex + 1} / ${images.length}`;
 
   const singleImage = images.length <= 1;
@@ -216,9 +265,10 @@ function renderModal() {
   });
   elements.modalThumbs.appendChild(thumbsFragment);
 
-  if (item.wallapop) {
-    elements.modalWallapop.href = item.wallapop;
-    elements.modalWallapop.textContent = "Ver en Wallapop";
+  const wallapopUrl = getWallapopUrl(item.wallapop);
+  if (wallapopUrl) {
+    elements.modalWallapop.href = wallapopUrl;
+    elements.modalWallapop.textContent = `Ver en Wallapop (${formatPrice(item.precioVenta)})`;
     elements.modalWallapop.removeAttribute("aria-disabled");
     elements.modalWallapop.classList.remove("cursor-not-allowed", "bg-slate-300", "text-slate-600");
     elements.modalWallapop.classList.add("bg-sky-600", "text-white", "hover:bg-sky-700");
