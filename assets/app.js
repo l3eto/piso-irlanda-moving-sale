@@ -35,6 +35,7 @@ const elements = {
   modalTitle: document.getElementById("modalTitle"),
   modalMeta: document.getElementById("modalMeta"),
   modalMainImage: document.getElementById("modalMainImage"),
+  modalImagePlaceholder: document.getElementById("modalImagePlaceholder"),
   modalHerePrice: document.getElementById("modalHerePrice"),
   modalWallapopPrice: document.getElementById("modalWallapopPrice"),
   modalDescriptionRow: document.getElementById("modalDescriptionRow"),
@@ -343,22 +344,34 @@ function setDisabled(button, disabled) {
 
 function renderModal() {
   const { item, images, index } = state.modal;
-  if (!item || images.length === 0) {
+  if (!item) {
     return;
   }
 
   const safeIndex = Math.max(0, Math.min(index, images.length - 1));
   state.modal.index = safeIndex;
-  const currentImage = images[safeIndex];
+  const currentImage = images.length > 0 ? images[safeIndex] : null;
 
   elements.modalTitle.textContent = item.nombre;
   elements.modalMeta.textContent = `Ref: #${item.id} · ${item.area} · ${item.unidades} ud.`;
-  elements.modalMainImage.src = toAssetUrl(currentImage);
-  elements.modalMainImage.alt = `Foto ${safeIndex + 1} de ${item.nombre}`;
-  elements.modalMainImage.onerror = () => {
+  
+  if (currentImage) {
+    elements.modalMainImage.src = toAssetUrl(currentImage);
+    elements.modalMainImage.alt = `Foto ${safeIndex + 1} de ${item.nombre}`;
+    elements.modalMainImage.onerror = () => {
+      elements.modalMainImage.removeAttribute("src");
+      elements.modalMainImage.alt = "Imagen no disponible";
+      elements.modalImagePlaceholder.classList.remove("hidden");
+    };
+    elements.modalMainImage.classList.remove("hidden");
+    elements.modalImagePlaceholder.classList.add("hidden");
+  } else {
     elements.modalMainImage.removeAttribute("src");
     elements.modalMainImage.alt = "Imagen no disponible";
-  };
+    elements.modalMainImage.classList.add("hidden");
+    elements.modalImagePlaceholder.classList.remove("hidden");
+  }
+
   elements.modalHerePrice.textContent = formatPrice(getHerePrice(item));
   elements.modalWallapopPrice.textContent = formatPrice(item.precioVenta);
   const description = String(item.descripcion || "").trim();
@@ -369,7 +382,7 @@ function renderModal() {
     elements.modalDescription.textContent = "";
     elements.modalDescriptionRow.classList.add("hidden");
   }
-  elements.modalCounter.textContent = `${safeIndex + 1} / ${images.length}`;
+  elements.modalCounter.textContent = images.length > 0 ? `${safeIndex + 1} / ${images.length}` : "Sin imágenes";
 
   const singleImage = images.length <= 1;
   setDisabled(elements.modalPrev, singleImage);
