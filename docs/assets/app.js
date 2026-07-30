@@ -140,6 +140,67 @@ function getItemById(itemId) {
   return state.items.find((item) => item.id === itemId);
 }
 
+function updateUrlWithFilters() {
+  const params = new URLSearchParams();
+  if (state.filters.search) params.set("search", state.filters.search);
+  if (state.filters.area) params.set("area", state.filters.area);
+  if (state.filters.status && state.filters.status !== "disponible") params.set("status", state.filters.status);
+  if (state.filters.sort && state.filters.sort !== "id") params.set("sort", state.filters.sort);
+
+  const queryString = params.toString();
+  const newUrl = queryString ? `?${queryString}` : window.location.pathname;
+  window.history.replaceState(null, "", newUrl + window.location.hash);
+}
+
+function loadFiltersFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  state.filters.search = params.get("search") || "";
+  state.filters.area = params.get("area") || "";
+  state.filters.status = params.get("status") || "disponible";
+  state.filters.sort = params.get("sort") || "id";
+
+  elements.searchInput.value = state.filters.search;
+  elements.areaFilter.value = state.filters.area;
+  elements.statusFilter.value = state.filters.status;
+  elements.sortFilter.value = state.filters.sort;
+  elements.areaFilterDesktop.value = state.filters.area;
+  elements.statusFilterDesktop.value = state.filters.status;
+  elements.sortFilterDesktop.value = state.filters.sort;
+}
+
+function openModalForItemId(itemId) {
+  const item = getItemById(itemId);
+  if (!item) {
+    return;
+  }
+
+  state.modal.item = item;
+  state.modal.images = getImagesForItem(item.id);
+  state.modal.index = 0;
+  renderModal();
+  elements.galleryModal.classList.remove("hidden");
+  elements.galleryModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("overflow-hidden");
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
+}
+
+function closeModalAndRestoreUrl() {
+  elements.galleryModal.classList.add("hidden");
+  elements.galleryModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("overflow-hidden");
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+}
+
+function checkUrlHash() {
+  const hash = window.location.hash;
+  if (hash.startsWith("#product-")) {
+    const productId = Number.parseInt(hash.substring("#product-".length), 10);
+    if (Number.isFinite(productId)) {
+      openModalForItemId(productId);
+    }
+  }
+}
+
 function itemMatchesFilters(item) {
   const bySearch = !state.filters.search || item.nombre.toLowerCase().includes(state.filters.search);
   const byArea = !state.filters.area || item.area === state.filters.area;
@@ -205,6 +266,8 @@ function renderCards(items) {
     const link = node.querySelector(".item-link");
 
     const itemImages = getImagesForItem(item.id);
+    
+    // Mostrar imagen si existe
     if (itemImages.length > 0) {
       image.src = toAssetUrl(itemImages[0]);
       image.alt = `Foto de ${item.nombre}`;
@@ -218,23 +281,20 @@ function renderCards(items) {
       imagePlaceholder.classList.add("hidden");
       photosBadge.textContent = `${itemImages.length} foto(s)`;
       photosBadge.classList.remove("hidden");
-      card.dataset.itemId = String(item.id);
-      card.setAttribute("role", "button");
-      card.setAttribute("tabindex", "0");
-      card.setAttribute("aria-label", `Abrir galeria de ${item.nombre}`);
-      card.classList.add("cursor-pointer");
     } else {
       image.removeAttribute("src");
       image.alt = "";
       image.classList.add("hidden");
       imagePlaceholder.classList.remove("hidden");
       photosBadge.classList.add("hidden");
-      delete card.dataset.itemId;
-      card.removeAttribute("role");
-      card.removeAttribute("tabindex");
-      card.removeAttribute("aria-label");
-      card.classList.remove("cursor-pointer");
     }
+    
+    // Hacer clickable todos los productos (con o sin imagen)
+    card.dataset.itemId = String(item.id);
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("aria-label", `Ver detalles de ${item.nombre}`);
+    card.classList.add("cursor-pointer");
 
     id.textContent = String(item.id);
     name.textContent = item.nombre;
@@ -363,29 +423,8 @@ function renderModal() {
   }
 }
 
-function openModalForItem(itemId) {
-  const item = getItemById(itemId);
-  if (!item) {
-    return;
-  }
-  const images = getImagesForItem(item.id);
-  if (images.length === 0) {
-    return;
-  }
-
-  state.modal.item = item;
-  state.modal.images = images;
-  state.modal.index = 0;
-  renderModal();
-  elements.galleryModal.classList.remove("hidden");
-  elements.galleryModal.setAttribute("aria-hidden", "false");
-  document.body.classList.add("overflow-hidden");
-}
-
 function closeModal() {
-  elements.galleryModal.classList.add("hidden");
-  elements.galleryModal.setAttribute("aria-hidden", "true");
-  document.body.classList.remove("overflow-hidden");
+  closeModalAndRestoreUrl();
 }
 
 function changeModalImage(step) {
@@ -488,6 +527,7 @@ function setupFilters() {
     elements.statusFilterDesktop.value = state.filters.status;
     elements.sortFilterDesktop.value = state.filters.sort;
     
+    updateUrlWithFilters();
     render();
   };
 
@@ -501,6 +541,7 @@ function setupFilters() {
     state.filters.status = elements.statusFilterDesktop.value;
     state.filters.sort = elements.sortFilterDesktop.value;
     
+    updateUrlWithFilters();
     render();
   };
 
@@ -527,7 +568,7 @@ function setupCardInteraction() {
     if (!card || !card.dataset.itemId) {
       return;
     }
-    openModalForItem(Number.parseInt(card.dataset.itemId, 10));
+    openModalForItemId(Number.parseInt(card.dataset.itemId, 10));
   });
 
   elements.grid.addEventListener("keydown", (event) => {
@@ -540,7 +581,7 @@ function setupCardInteraction() {
       return;
     }
     event.preventDefault();
-    openModalForItem(Number.parseInt(card.dataset.itemId, 10));
+    openModalForItemId(Number.parseInt(card.dataset.itemId, 10));
   });
 }
 
@@ -580,6 +621,14 @@ function setupModalInteraction() {
       changeModalImage(1);
     }
   });
+
+  window.addEventListener("hashchange", () => {
+    if (elements.galleryModal.classList.contains("hidden")) {
+      checkUrlHash();
+    } else {
+      closeModal();
+    }
+  });
 }
 
 async function loadData() {
@@ -600,9 +649,11 @@ async function init() {
   try {
     await loadData();
     setupFilters();
+    loadFiltersFromUrl();
     setupCardInteraction();
     setupModalInteraction();
     render();
+    checkUrlHash();
   } catch (error) {
     elements.grid.innerHTML = `<p class="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">${error.message}</p>`;
   }
