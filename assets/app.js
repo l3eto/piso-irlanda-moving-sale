@@ -12,7 +12,9 @@ const state = {
   modal: {
     item: null,
     images: [],
-    index: 0
+    index: 0,
+    visibleItems: [],
+    currentItemIndex: 0
   }
 };
 
@@ -24,6 +26,11 @@ const elements = {
   areaFilter: document.getElementById("areaFilter"),
   statusFilter: document.getElementById("statusFilter"),
   sortFilter: document.getElementById("sortFilter"),
+  areaFilterDesktop: document.getElementById("areaFilterDesktop"),
+  statusFilterDesktop: document.getElementById("statusFilterDesktop"),
+  sortFilterDesktop: document.getElementById("sortFilterDesktop"),
+  filterToggle: document.getElementById("filterToggle"),
+  filtersPanel: document.getElementById("filtersPanel"),
   galleryModal: document.getElementById("galleryModal"),
   modalTitle: document.getElementById("modalTitle"),
   modalMeta: document.getElementById("modalMeta"),
@@ -302,6 +309,17 @@ function renderModal() {
   setDisabled(elements.modalPrev, singleImage);
   setDisabled(elements.modalNext, singleImage);
 
+  const visibleItems = getVisibleItems();
+  const singleProduct = visibleItems.length <= 1;
+  setDisabled(document.getElementById("modalPrevProduct"), singleProduct);
+  setDisabled(document.getElementById("modalNextProduct"), singleProduct);
+  
+  const currentItemIndex = visibleItems.findIndex(i => i.id === item.id);
+  const productCounterEl = document.getElementById("modalProductCounter");
+  if (productCounterEl) {
+    productCounterEl.textContent = `${currentItemIndex + 1} / ${visibleItems.length}`;
+  }
+
   elements.modalThumbs.innerHTML = "";
   const thumbsFragment = document.createDocumentFragment();
   images.forEach((imagePath, imageIndex) => {
@@ -373,6 +391,33 @@ function changeModalImage(step) {
   renderModal();
 }
 
+function getVisibleItems() {
+  const filtered = state.items.filter(itemMatchesFilters);
+  const sorted = sortItems(filtered);
+  return sorted.filter(item => getImagesForItem(item.id).length > 0);
+}
+
+function changeModalProduct(step) {
+  const visibleItems = getVisibleItems();
+  if (visibleItems.length <= 1 || !state.modal.item) {
+    return;
+  }
+  
+  const currentIndex = visibleItems.findIndex(item => item.id === state.modal.item.id);
+  if (currentIndex === -1) {
+    return;
+  }
+  
+  const nextIndex = (currentIndex + step + visibleItems.length) % visibleItems.length;
+  const nextItem = visibleItems[nextIndex];
+  
+  state.modal.item = nextItem;
+  state.modal.images = getImagesForItem(nextItem.id);
+  state.modal.index = 0;
+  state.modal.currentItemIndex = nextIndex;
+  renderModal();
+}
+
 function render() {
   updateAreaFilterOptions();
   const filtered = state.items.filter(itemMatchesFilters);
@@ -393,49 +438,77 @@ function updateAreaFilterOptions() {
   }
 
   const sortedAreas = [...areaCounts.keys()].sort((a, b) => a.localeCompare(b, "es"));
-  elements.areaFilter.innerHTML = "";
+  
+  const updateSelect = (selectElement) => {
+    selectElement.innerHTML = "";
+    const allOption = document.createElement("option");
+    allOption.value = "";
+    allOption.textContent = `Todas las areas (${items.length})`;
+    selectElement.appendChild(allOption);
 
-  const allOption = document.createElement("option");
-  allOption.value = "";
-  allOption.textContent = `Todas las areas (${items.length})`;
-  elements.areaFilter.appendChild(allOption);
+    for (const area of sortedAreas) {
+      const option = document.createElement("option");
+      option.value = area;
+      option.textContent = `${area} (${areaCounts.get(area)})`;
+      selectElement.appendChild(option);
+    }
 
-  for (const area of sortedAreas) {
-    const option = document.createElement("option");
-    option.value = area;
-    option.textContent = `${area} (${areaCounts.get(area)})`;
-    elements.areaFilter.appendChild(option);
-  }
+    if (preserveArea && areaCounts.has(preserveArea)) {
+      selectElement.value = preserveArea;
+    } else {
+      selectElement.value = "";
+    }
+  };
 
-  if (preserveArea && areaCounts.has(preserveArea)) {
-    elements.areaFilter.value = preserveArea;
-  } else {
+  updateSelect(elements.areaFilter);
+  updateSelect(elements.areaFilterDesktop);
+
+  if (!preserveArea || !areaCounts.has(preserveArea)) {
     state.filters.area = "";
-    elements.areaFilter.value = "";
   }
 }
 
 function setupFilters() {
   elements.statusFilter.value = state.filters.status;
+  elements.statusFilterDesktop.value = state.filters.status;
 
-  elements.searchInput.addEventListener("input", (event) => {
-    state.filters.search = event.target.value.trim().toLowerCase();
+  const syncFilters = () => {
+    state.filters.search = elements.searchInput.value.trim().toLowerCase();
+    state.filters.area = elements.areaFilter.value;
+    state.filters.status = elements.statusFilter.value;
+    state.filters.sort = elements.sortFilter.value;
+    
+    elements.areaFilterDesktop.value = state.filters.area;
+    elements.statusFilterDesktop.value = state.filters.status;
+    elements.sortFilterDesktop.value = state.filters.sort;
+    
     render();
-  });
+  };
 
-  elements.areaFilter.addEventListener("change", (event) => {
-    state.filters.area = event.target.value;
+  const syncFromDesktop = () => {
+    elements.areaFilter.value = elements.areaFilterDesktop.value;
+    elements.statusFilter.value = elements.statusFilterDesktop.value;
+    elements.sortFilter.value = elements.sortFilterDesktop.value;
+    
+    state.filters.search = elements.searchInput.value.trim().toLowerCase();
+    state.filters.area = elements.areaFilterDesktop.value;
+    state.filters.status = elements.statusFilterDesktop.value;
+    state.filters.sort = elements.sortFilterDesktop.value;
+    
     render();
-  });
+  };
 
-  elements.statusFilter.addEventListener("change", (event) => {
-    state.filters.status = event.target.value;
-    render();
-  });
+  elements.searchInput.addEventListener("input", syncFilters);
+  elements.areaFilter.addEventListener("change", syncFilters);
+  elements.statusFilter.addEventListener("change", syncFilters);
+  elements.sortFilter.addEventListener("change", syncFilters);
 
-  elements.sortFilter.addEventListener("change", (event) => {
-    state.filters.sort = event.target.value;
-    render();
+  elements.areaFilterDesktop.addEventListener("change", syncFromDesktop);
+  elements.statusFilterDesktop.addEventListener("change", syncFromDesktop);
+  elements.sortFilterDesktop.addEventListener("change", syncFromDesktop);
+
+  elements.filterToggle.addEventListener("click", () => {
+    elements.filtersPanel.classList.toggle("hidden");
   });
 }
 
@@ -481,6 +554,9 @@ function setupModalInteraction() {
 
   elements.modalPrev.addEventListener("click", () => changeModalImage(-1));
   elements.modalNext.addEventListener("click", () => changeModalImage(1));
+
+  document.getElementById("modalPrevProduct").addEventListener("click", () => changeModalProduct(-1));
+  document.getElementById("modalNextProduct").addEventListener("click", () => changeModalProduct(1));
 
   document.addEventListener("keydown", (event) => {
     if (elements.galleryModal.classList.contains("hidden")) {
