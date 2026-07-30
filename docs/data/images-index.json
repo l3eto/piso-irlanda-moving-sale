@@ -28,5 +28,11 @@
     "data/images/35/arriba.jpeg",
     "data/images/35/frente.jpeg",
     "data/images/35/lateral.jpeg"
+  ],
+  "39": [
+    "data/images/39/angulo.jpeg",
+    "data/images/39/arriba.jpeg",
+    "data/images/39/detras.jpeg",
+    "data/images/39/frente.jpeg"
   ]
 }

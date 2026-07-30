@@ -91,6 +91,22 @@ function parseMeasure(raw) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function normalizeEstado(raw) {
+  const value = String(raw || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+
+  if (value.includes("vendid")) {
+    return "vendido";
+  }
+  if (value.includes("reserv")) {
+    return "reservado";
+  }
+  return "disponible";
+}
+
 function parseCsv(csvText) {
   const lines = csvText
     .split(/\r?\n/)
@@ -129,6 +145,8 @@ function parseCsv(csvText) {
     const alto = parseMeasure(getRowValue(row, ["alto (z)", "alto"]));
     const ancho = parseMeasure(getRowValue(row, ["ancho (x)", "ancho"]));
     const largo = parseMeasure(getRowValue(row, ["largo (y)", "largo"]));
+    const descripcion = String(getRowValue(row, ["descripcion", "descripcion breve", "detalle"]) || "").trim();
+    const estado = normalizeEstado(getRowValue(row, ["estado"]));
     const explicitId = Number.parseInt(String(row.id || "").trim(), 10);
     const id = Number.isFinite(explicitId) && explicitId > 0 ? explicitId : fallbackId;
     fallbackId += 1;
@@ -145,6 +163,8 @@ function parseCsv(csvText) {
         ancho,
         largo
       },
+      descripcion,
+      estado,
       wallapop: String(row.wallapop || "").trim()
     });
   }

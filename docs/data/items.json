@@ -11,6 +11,8 @@
       "ancho": 60,
       "largo": 52
     },
+    "descripcion": "buen estado, cambiado hace un año la puerta",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -25,6 +27,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -39,6 +43,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -53,6 +59,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -67,6 +75,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -81,6 +91,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -95,6 +107,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -109,6 +123,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -123,6 +139,8 @@
       "ancho": 40,
       "largo": 42
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": "Botas Caterpillar marrón de segunda mano por 40 EUR en Santa Coloma de Gramenet en WALLAPOP"
   },
   {
@@ -137,6 +155,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -151,6 +171,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -165,6 +187,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -179,6 +203,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -193,6 +219,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -207,6 +235,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -221,6 +251,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -235,6 +267,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -249,6 +283,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -263,6 +299,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -277,6 +315,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -291,6 +331,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -305,6 +347,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -319,6 +363,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -333,6 +379,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -347,6 +395,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -361,6 +411,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -375,6 +427,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -389,6 +443,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -403,6 +459,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -417,6 +475,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -427,10 +487,12 @@
     "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 45,
+      "ancho": 28,
+      "largo": 100
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -441,10 +503,12 @@
     "precioWeb": 40,
     "precioVenta": 50,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 147,
+      "ancho": 77,
+      "largo": 39
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -455,10 +519,12 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 98,
+      "ancho": 66,
+      "largo": 30
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -469,10 +535,12 @@
     "precioWeb": 60,
     "precioVenta": 70,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 76,
+      "ancho": 59,
+      "largo": 80
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -487,6 +555,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -501,6 +571,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -515,6 +587,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -525,10 +599,12 @@
     "precioWeb": 10,
     "precioVenta": 15,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 44,
+      "ancho": 47,
+      "largo": 21
     },
+    "descripcion": "Se vende con cable VGA y adaptador HDMI",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -543,6 +619,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -557,6 +635,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -571,6 +651,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -585,6 +667,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -599,6 +683,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -613,6 +699,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -627,6 +715,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -641,6 +731,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -655,6 +747,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -669,6 +763,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -683,6 +779,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -697,6 +795,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -711,6 +811,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -725,6 +827,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -739,6 +843,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -753,6 +859,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -767,6 +875,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   },
   {
@@ -781,6 +891,8 @@
       "ancho": null,
       "largo": null
     },
+    "descripcion": "",
+    "estado": "disponible",
     "wallapop": ""
   }
 ]
