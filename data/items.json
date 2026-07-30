@@ -155,39 +155,39 @@
       "ancho": 110,
       "largo": 50
     },
-    "descripcion": "buen estado",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
   {
     "id": 12,
     "area": "Salon",
-    "nombre": "Mesita TV",
+    "nombre": "Mueble para TV",
     "unidades": 1,
     "precioWeb": 60,
     "precioVenta": 80,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 40,
+      "ancho": 110,
+      "largo": 36
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado, de 2 puertas y estantes efecto roble",
     "estado": "disponible",
     "wallapop": ""
   },
   {
     "id": 13,
     "area": "Salon",
-    "nombre": "TV",
+    "nombre": "TV Toshiba",
     "unidades": 1,
-    "precioWeb": 60,
-    "precioVenta": 80,
+    "precioWeb": 50,
+    "precioVenta": 70,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 44,
+      "ancho": 77,
+      "largo": 18
     },
-    "descripcion": "",
+    "descripcion": "sin problemas de calidad, no es smarttv, necesita un firetv o similar",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -375,11 +375,11 @@
     "precioWeb": 250,
     "precioVenta": 300,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 182,
+      "ancho": 55,
+      "largo": 60
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -391,11 +391,11 @@
     "precioWeb": 80,
     "precioVenta": 100,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 32,
+      "ancho": 29,
+      "largo": 29
     },
-    "descripcion": "",
+    "descripcion": "buen estado, algo de grasa",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -871,11 +871,11 @@
     "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 12,
+      "ancho": 66,
+      "largo": 25
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -887,11 +887,11 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 12,
+      "ancho": 32,
+      "largo": 11
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
     "wallapop": ""
   },
