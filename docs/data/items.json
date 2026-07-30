@@ -539,7 +539,7 @@
       "ancho": 59,
       "largo": 80
     },
-    "descripcion": "",
+    "descripcion": "casi nuevo",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -663,11 +663,11 @@
     "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 4,
+      "ancho": 200,
+      "largo": 135
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -679,11 +679,11 @@
     "precioWeb": 25,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 2,
+      "ancho": 162,
+      "largo": 219
     },
-    "descripcion": "",
+    "descripcion": "buena estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -695,11 +695,11 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 23,
+      "ancho": 20,
+      "largo": 20
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -727,11 +727,11 @@
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 20,
+      "ancho": 10,
+      "largo": 10
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -743,11 +743,11 @@
     "precioWeb": 10,
     "precioVenta": 15,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 24,
+      "ancho": 15,
+      "largo": 15
     },
-    "descripcion": "",
+    "descripcion": "algo antigua",
     "estado": "disponible",
     "wallapop": ""
   },

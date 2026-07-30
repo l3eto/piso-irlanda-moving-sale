@@ -49,5 +49,30 @@
     "data/images/39/arriba.jpeg",
     "data/images/39/detras.jpeg",
     "data/images/39/frente.jpeg"
+  ],
+  "43": [
+    "data/images/43/cerca.jpeg",
+    "data/images/43/lejos.jpeg"
+  ],
+  "44": [
+    "data/images/44/cerca.jpeg",
+    "data/images/44/lejos.jpeg"
+  ],
+  "45": [
+    "data/images/45/arriba.jpeg",
+    "data/images/45/encendida.jpeg",
+    "data/images/45/frente.jpeg",
+    "data/images/45/lado.jpeg"
+  ],
+  "47": [
+    "data/images/47/arriba.jpeg",
+    "data/images/47/dentro.jpeg",
+    "data/images/47/frente.jpeg"
+  ],
+  "48": [
+    "data/images/48/arriba.jpeg",
+    "data/images/48/cerca.jpeg",
+    "data/images/48/encendida.jpeg",
+    "data/images/48/frente.jpeg"
   ]
 }
