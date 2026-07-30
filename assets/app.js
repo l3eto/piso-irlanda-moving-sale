@@ -166,7 +166,13 @@ function sortItems(items) {
       sorted.sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
       break;
     default:
-      sorted.sort((a, b) => a.id - b.id);
+      sorted.sort((a, b) => {
+        const areaCompare = a.area.localeCompare(b.area, "es");
+        if (areaCompare !== 0) {
+          return areaCompare;
+        }
+        return a.nombre.localeCompare(b.nombre, "es");
+      });
       break;
   }
   return sorted;
@@ -286,7 +292,7 @@ function renderModal() {
   const currentImage = images[safeIndex];
 
   elements.modalTitle.textContent = item.nombre;
-  elements.modalMeta.textContent = `#${item.id} · ${item.area} · ${item.unidades} ud.`;
+  elements.modalMeta.textContent = `Ref: #${item.id} · ${item.area} · ${item.unidades} ud.`;
   elements.modalMainImage.src = toAssetUrl(currentImage);
   elements.modalMainImage.alt = `Foto ${safeIndex + 1} de ${item.nombre}`;
   elements.modalMainImage.onerror = () => {
