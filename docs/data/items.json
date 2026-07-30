@@ -508,7 +508,7 @@
     "area": "Oficina",
     "nombre": "Escritorio sube y baja",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 120,
     "precioVenta": 140,
     "medidas": {
       "alto": null,
@@ -522,7 +522,7 @@
     "area": "Oficina",
     "nombre": "Pantalla Asus",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 10,
     "precioVenta": 15,
     "medidas": {
       "alto": null,
@@ -536,7 +536,7 @@
     "area": "Oficina",
     "nombre": "Cestas oficina",
     "unidades": 2,
-    "precioWeb": null,
+    "precioWeb": 12,
     "precioVenta": 12,
     "medidas": {
       "alto": null,
@@ -550,7 +550,7 @@
     "area": "Salon",
     "nombre": "Estantería esquina bambú",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
       "alto": null,
@@ -564,7 +564,7 @@
     "area": "Salon",
     "nombre": "Estantería escalera bambú",
     "unidades": 2,
-    "precioWeb": null,
+    "precioWeb": 40,
     "precioVenta": 50,
     "medidas": {
       "alto": null,
@@ -578,7 +578,7 @@
     "area": "Salon",
     "nombre": "Alfombra gruesa",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
       "alto": null,
@@ -592,7 +592,7 @@
     "area": "Salon",
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 25,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -606,7 +606,7 @@
     "area": "Habitacion",
     "nombre": "Lámpara rosa",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -620,7 +620,7 @@
     "area": "Habitacion",
     "nombre": "Cojín meditación",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -634,7 +634,7 @@
     "area": "Habitacion",
     "nombre": "Difusor aromas",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -648,7 +648,7 @@
     "area": "Habitacion",
     "nombre": "Lámpara negra",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 10,
     "precioVenta": 15,
     "medidas": {
       "alto": null,
@@ -662,7 +662,7 @@
     "area": "Salon",
     "nombre": "Cuadro marco",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -676,7 +676,7 @@
     "area": "Salon",
     "nombre": "Cestas círculo",
     "unidades": 2,
-    "precioWeb": null,
+    "precioWeb": 5,
     "precioVenta": 8,
     "medidas": {
       "alto": null,
@@ -690,7 +690,7 @@
     "area": "Lavanderia",
     "nombre": "Aspiradora",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 50,
     "precioVenta": 60,
     "medidas": {
       "alto": null,
@@ -704,7 +704,7 @@
     "area": "Recibidor",
     "nombre": "Cestas entrada",
     "unidades": 2,
-    "precioWeb": null,
+    "precioWeb": 5,
     "precioVenta": 8,
     "medidas": {
       "alto": null,
@@ -718,7 +718,7 @@
     "area": "Comedor",
     "nombre": "Lámpara comedor",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
@@ -732,7 +732,7 @@
     "area": "Habitacion",
     "nombre": "Pistola masajes",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 25,
     "precioVenta": 40,
     "medidas": {
       "alto": null,
@@ -746,7 +746,7 @@
     "area": "Habitacion",
     "nombre": "Masajeador espalda",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 40,
     "medidas": {
       "alto": null,
@@ -760,7 +760,7 @@
     "area": "Cocina",
     "nombre": "Raclette 10",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
       "alto": null,
@@ -774,7 +774,7 @@
     "area": "Cocina",
     "nombre": "Reclette 2",
     "unidades": 1,
-    "precioWeb": null,
+    "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
       "alto": null,
