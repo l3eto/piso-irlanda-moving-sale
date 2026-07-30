@@ -7,16 +7,16 @@
     "precioWeb": 210,
     "precioVenta": 250,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 84,
+      "ancho": 60,
+      "largo": 52
     },
     "wallapop": ""
   },
   {
     "id": 2,
     "area": "Patio",
-    "nombre": "Parrillada",
+    "nombre": "Parrilla",
     "unidades": 1,
     "precioWeb": 12,
     "precioVenta": 15,
