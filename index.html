@@ -14,7 +14,7 @@
           <p class="text-sm text-slate-500">Muebles y cosas del piso, con precio directo aqui</p>
           <p class="text-xs text-slate-400">* Todos los precios mostrados son por unidad.</p>
         </div>
-        <div class="grid w-full gap-2 md:w-auto md:grid-cols-3">
+        <div class="grid w-full gap-2 md:w-auto md:grid-cols-4">
           <input
             id="searchInput"
             type="search"
@@ -25,7 +25,16 @@
             id="areaFilter"
             class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
           >
-            <option value="">Todas las areas</option>
+            <option value="">Todas las areas (0)</option>
+          </select>
+          <select
+            id="statusFilter"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
+          >
+            <option value="disponible" selected>Disponible</option>
+            <option value="reservado">Reservado</option>
+            <option value="vendido">Vendido</option>
+            <option value="">Todos</option>
           </select>
           <select
             id="sortFilter"
@@ -68,7 +77,10 @@
         <div class="space-y-3 p-3 md:p-4">
           <div class="space-y-1">
             <h2 class="item-name text-base font-semibold leading-tight md:text-lg"></h2>
-            <span class="item-area inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600"></span>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="item-area inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600"></span>
+              <span class="item-status inline-flex rounded-full px-2 py-0.5 text-xs font-medium"></span>
+            </div>
           </div>
           <div class="space-y-1 text-sm">
             <p class="rounded-lg bg-emerald-50 px-2 py-1 text-emerald-700">
@@ -144,6 +156,10 @@
               <div class="rounded-xl bg-slate-50 p-3">
                 <p class="text-xs uppercase tracking-wide text-slate-500">Precio Wallapop (por unidad)</p>
                 <p id="modalWallapopPrice" class="text-xl font-bold text-sky-700"></p>
+              </div>
+              <div id="modalDescriptionRow" class="hidden rounded-xl bg-slate-50 p-3">
+                <p class="text-xs uppercase tracking-wide text-slate-500">Descripcion</p>
+                <p id="modalDescription" class="mt-1 text-sm text-slate-700"></p>
               </div>
               <a
                 id="modalWallapop"

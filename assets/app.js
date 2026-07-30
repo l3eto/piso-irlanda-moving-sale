@@ -6,6 +6,7 @@ const state = {
   filters: {
     search: "",
     area: "",
+    status: "disponible",
     sort: "id"
   },
   modal: {
@@ -21,6 +22,7 @@ const elements = {
   countLabel: document.getElementById("countLabel"),
   searchInput: document.getElementById("searchInput"),
   areaFilter: document.getElementById("areaFilter"),
+  statusFilter: document.getElementById("statusFilter"),
   sortFilter: document.getElementById("sortFilter"),
   galleryModal: document.getElementById("galleryModal"),
   modalTitle: document.getElementById("modalTitle"),
@@ -28,6 +30,8 @@ const elements = {
   modalMainImage: document.getElementById("modalMainImage"),
   modalHerePrice: document.getElementById("modalHerePrice"),
   modalWallapopPrice: document.getElementById("modalWallapopPrice"),
+  modalDescriptionRow: document.getElementById("modalDescriptionRow"),
+  modalDescription: document.getElementById("modalDescription"),
   modalWallapop: document.getElementById("modalWallapop"),
   modalThumbs: document.getElementById("modalThumbs"),
   modalCounter: document.getElementById("modalCounter"),
@@ -66,6 +70,44 @@ function getWallapopUrl(value) {
   return raw;
 }
 
+function normalizeEstado(value) {
+  const raw = String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+  if (raw.includes("vendid")) {
+    return "vendido";
+  }
+  if (raw.includes("reserv")) {
+    return "reservado";
+  }
+  return "disponible";
+}
+
+function getStatusMeta(estado) {
+  const normalized = normalizeEstado(estado);
+  if (normalized === "reservado") {
+    return {
+      value: "reservado",
+      label: "Reservado",
+      classes: ["bg-amber-100", "text-amber-700"]
+    };
+  }
+  if (normalized === "vendido") {
+    return {
+      value: "vendido",
+      label: "Vendido",
+      classes: ["bg-rose-100", "text-rose-700"]
+    };
+  }
+  return {
+    value: "disponible",
+    label: "Disponible",
+    classes: ["bg-emerald-100", "text-emerald-700"]
+  };
+}
+
 function getHerePrice(item) {
   if (Number.isFinite(Number(item.precioWeb))) {
     return Number(item.precioWeb);
@@ -94,7 +136,14 @@ function getItemById(itemId) {
 function itemMatchesFilters(item) {
   const bySearch = !state.filters.search || item.nombre.toLowerCase().includes(state.filters.search);
   const byArea = !state.filters.area || item.area === state.filters.area;
-  return bySearch && byArea;
+  const byStatus = !state.filters.status || normalizeEstado(item.estado) === state.filters.status;
+  return bySearch && byArea && byStatus;
+}
+
+function itemMatchesSearchAndStatus(item) {
+  const bySearch = !state.filters.search || item.nombre.toLowerCase().includes(state.filters.search);
+  const byStatus = !state.filters.status || normalizeEstado(item.estado) === state.filters.status;
+  return bySearch && byStatus;
 }
 
 function sortItems(items) {
@@ -135,6 +184,7 @@ function renderCards(items) {
     const id = node.querySelector(".item-id");
     const name = node.querySelector(".item-name");
     const area = node.querySelector(".item-area");
+    const status = node.querySelector(".item-status");
     const units = node.querySelector(".item-units");
     const herePrice = node.querySelector(".item-here-price");
     const sizeRow = node.querySelector(".item-size-row");
@@ -176,6 +226,10 @@ function renderCards(items) {
     id.textContent = String(item.id);
     name.textContent = item.nombre;
     area.textContent = item.area;
+    const statusMeta = getStatusMeta(item.estado);
+    status.textContent = statusMeta.label;
+    status.classList.remove("bg-amber-100", "text-amber-700", "bg-rose-100", "text-rose-700", "bg-emerald-100", "text-emerald-700");
+    status.classList.add(...statusMeta.classes);
     units.textContent = String(item.unidades);
     herePrice.textContent = formatPrice(getHerePrice(item));
     const sizeText = formatSize(item.medidas);
@@ -234,6 +288,14 @@ function renderModal() {
   };
   elements.modalHerePrice.textContent = formatPrice(getHerePrice(item));
   elements.modalWallapopPrice.textContent = formatPrice(item.precioVenta);
+  const description = String(item.descripcion || "").trim();
+  if (description) {
+    elements.modalDescription.textContent = description;
+    elements.modalDescriptionRow.classList.remove("hidden");
+  } else {
+    elements.modalDescription.textContent = "";
+    elements.modalDescriptionRow.classList.add("hidden");
+  }
   elements.modalCounter.textContent = `${safeIndex + 1} / ${images.length}`;
 
   const singleImage = images.length <= 1;
@@ -312,20 +374,49 @@ function changeModalImage(step) {
 }
 
 function render() {
+  updateAreaFilterOptions();
   const filtered = state.items.filter(itemMatchesFilters);
   const sorted = sortItems(filtered);
   elements.countLabel.textContent = `${sorted.length} articulo(s)`;
   renderCards(sorted);
 }
 
-function setupFilters() {
-  const areas = [...new Set(state.items.map((item) => item.area).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
-  for (const area of areas) {
+function updateAreaFilterOptions() {
+  const preserveArea = state.filters.area;
+  const items = state.items.filter(itemMatchesSearchAndStatus);
+  const areaCounts = new Map();
+  for (const item of items) {
+    if (!item.area) {
+      continue;
+    }
+    areaCounts.set(item.area, (areaCounts.get(item.area) || 0) + 1);
+  }
+
+  const sortedAreas = [...areaCounts.keys()].sort((a, b) => a.localeCompare(b, "es"));
+  elements.areaFilter.innerHTML = "";
+
+  const allOption = document.createElement("option");
+  allOption.value = "";
+  allOption.textContent = `Todas las areas (${items.length})`;
+  elements.areaFilter.appendChild(allOption);
+
+  for (const area of sortedAreas) {
     const option = document.createElement("option");
     option.value = area;
-    option.textContent = area;
+    option.textContent = `${area} (${areaCounts.get(area)})`;
     elements.areaFilter.appendChild(option);
   }
+
+  if (preserveArea && areaCounts.has(preserveArea)) {
+    elements.areaFilter.value = preserveArea;
+  } else {
+    state.filters.area = "";
+    elements.areaFilter.value = "";
+  }
+}
+
+function setupFilters() {
+  elements.statusFilter.value = state.filters.status;
 
   elements.searchInput.addEventListener("input", (event) => {
     state.filters.search = event.target.value.trim().toLowerCase();
@@ -334,6 +425,11 @@ function setupFilters() {
 
   elements.areaFilter.addEventListener("change", (event) => {
     state.filters.area = event.target.value;
+    render();
+  });
+
+  elements.statusFilter.addEventListener("change", (event) => {
+    state.filters.status = event.target.value;
     render();
   });
 
