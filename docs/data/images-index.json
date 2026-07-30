@@ -47,6 +47,19 @@
     "data/images/11/frente.jpeg",
     "data/images/11/lateral.jpeg"
   ],
+  "12": [
+    "data/images/12/abierto.jpeg",
+    "data/images/12/arriba.jpeg",
+    "data/images/12/atras.jpeg",
+    "data/images/12/cerrado.jpeg"
+  ],
+  "13": [
+    "data/images/13/arriba.jpeg",
+    "data/images/13/atras.jpeg",
+    "data/images/13/atras2.jpeg",
+    "data/images/13/atras3.jpeg",
+    "data/images/13/frente.jpeg"
+  ],
   "15": [
     "data/images/15/angulo.jpeg",
     "data/images/15/arriba.jpeg",
@@ -79,6 +92,18 @@
     "data/images/24/atras.jpeg",
     "data/images/24/cerca.jpeg",
     "data/images/24/lateral.jpeg"
+  ],
+  "25": [
+    "data/images/25/abajo.jpeg",
+    "data/images/25/abierta.jpeg",
+    "data/images/25/arriba.jpeg",
+    "data/images/25/congelador.jpeg",
+    "data/images/25/frente.jpeg"
+  ],
+  "26": [
+    "data/images/26/abierto.jpeg",
+    "data/images/26/ang.jpeg",
+    "data/images/26/frente.jpeg"
   ],
   "32": [
     "data/images/32/angulo.jpeg",
@@ -151,6 +176,18 @@
     "data/images/55/frente.jpeg",
     "data/images/55/masajeadores.jpeg",
     "data/images/55/todo.jpeg"
+  ],
+  "56": [
+    "data/images/56/caja.jpeg",
+    "data/images/56/raq.jpeg",
+    "data/images/56/reja.jpeg",
+    "data/images/56/temp.jpeg",
+    "data/images/56/todo.jpeg"
+  ],
+  "57": [
+    "data/images/57/caja.jpeg",
+    "data/images/57/frente.jpeg",
+    "data/images/57/palas.jpeg"
   ],
   "58": [
     "data/images/58/cerca.jpeg",
