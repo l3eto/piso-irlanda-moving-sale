@@ -156,6 +156,11 @@
     "data/images/40/arriba.jpeg",
     "data/images/40/front.jpeg"
   ],
+  "41": [
+    "data/images/41/arriba.jpeg",
+    "data/images/41/atras.jpeg",
+    "data/images/41/frente.jpeg"
+  ],
   "43": [
     "data/images/43/cerca.jpeg",
     "data/images/43/lejos.jpeg"
@@ -185,6 +190,11 @@
     "data/images/48/cerca.jpeg",
     "data/images/48/encendida.jpeg",
     "data/images/48/frente.jpeg"
+  ],
+  "49": [
+    "data/images/49/atras.jpeg",
+    "data/images/49/frente.jpeg",
+    "data/images/49/lateral.jpeg"
   ],
   "52": [
     "data/images/52/abaio.jpeg",
