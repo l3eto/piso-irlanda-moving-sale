@@ -4,7 +4,13 @@
     "area": "Lavanderia",
     "nombre": "Lavadora",
     "unidades": 1,
+    "precioWeb": 210,
     "precioVenta": 250,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -12,7 +18,13 @@
     "area": "Patio",
     "nombre": "Parrillada",
     "unidades": 1,
+    "precioWeb": 12,
     "precioVenta": 15,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -20,7 +32,13 @@
     "area": "Patio",
     "nombre": "Tumbona",
     "unidades": 1,
+    "precioWeb": 50,
     "precioVenta": 70,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -28,7 +46,13 @@
     "area": "Patio",
     "nombre": "Bici",
     "unidades": 1,
+    "precioWeb": 65,
     "precioVenta": 80,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -36,7 +60,13 @@
     "area": "Habitación",
     "nombre": "Espejo",
     "unidades": 1,
+    "precioWeb": 60,
     "precioVenta": 80,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -44,7 +74,13 @@
     "area": "Habitación",
     "nombre": "Armario",
     "unidades": 1,
+    "precioWeb": 200,
     "precioVenta": 250,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -52,7 +88,13 @@
     "area": "Salon",
     "nombre": "Asientos Cajonera - Kallax",
     "unidades": 2,
+    "precioWeb": 40,
     "precioVenta": 50,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -60,7 +102,13 @@
     "area": "Comedor",
     "nombre": "Mesa Comedor",
     "unidades": 1,
+    "precioWeb": 80,
     "precioVenta": 100,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -68,15 +116,27 @@
     "area": "Salon",
     "nombre": "Sillas mesa (+cojin 18eur)",
     "unidades": 4,
+    "precioWeb": 18,
     "precioVenta": 25,
-    "wallapop": ""
+    "medidas": {
+      "alto": 90,
+      "ancho": 40,
+      "largo": 42
+    },
+    "wallapop": "Botas Caterpillar marrón de segunda mano por 40 EUR en Santa Coloma de Gramenet en WALLAPOP"
   },
   {
     "id": 11,
     "area": "Salon",
     "nombre": "Mesita salón",
     "unidades": 1,
+    "precioWeb": 50,
     "precioVenta": 60,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -84,7 +144,13 @@
     "area": "Salon",
     "nombre": "Mesita TV",
     "unidades": 1,
+    "precioWeb": 60,
     "precioVenta": 80,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -92,7 +158,13 @@
     "area": "Salon",
     "nombre": "TV",
     "unidades": 1,
+    "precioWeb": 60,
     "precioVenta": 80,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -100,7 +172,13 @@
     "area": "Salon",
     "nombre": "Sofá",
     "unidades": 1,
+    "precioWeb": 500,
     "precioVenta": 650,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -108,7 +186,13 @@
     "area": "Salon",
     "nombre": "Puf",
     "unidades": 1,
+    "precioWeb": 50,
     "precioVenta": 70,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -116,7 +200,13 @@
     "area": "Salon",
     "nombre": "Asiento salón",
     "unidades": 1,
+    "precioWeb": 140,
     "precioVenta": 170,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -124,7 +214,13 @@
     "area": "Oficina",
     "nombre": "Asiento oficina",
     "unidades": 1,
+    "precioWeb": 50,
     "precioVenta": 60,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -132,7 +228,13 @@
     "area": "Habitacion",
     "nombre": "Cómoda Habitacion",
     "unidades": 1,
+    "precioWeb": 120,
     "precioVenta": 150,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -140,7 +242,13 @@
     "area": "Habitacion",
     "nombre": "Mesita noche blanca",
     "unidades": 2,
+    "precioWeb": 50,
     "precioVenta": 60,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -148,7 +256,13 @@
     "area": "Habitacion",
     "nombre": "Mesita noche marrón",
     "unidades": 1,
-    "precioVenta": 40,
+    "precioWeb": 50,
+    "precioVenta": 50,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -156,7 +270,13 @@
     "area": "Habitacion",
     "nombre": "Cama",
     "unidades": 1,
+    "precioWeb": 120,
     "precioVenta": 140,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -164,7 +284,13 @@
     "area": "Habitacion",
     "nombre": "Colchón",
     "unidades": 1,
+    "precioWeb": 300,
     "precioVenta": 400,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -172,7 +298,13 @@
     "area": "Patio",
     "nombre": "Caja herramientas (falta algo)",
     "unidades": 1,
+    "precioWeb": 40,
     "precioVenta": 50,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -180,7 +312,13 @@
     "area": "Lavanderia",
     "nombre": "Plancha",
     "unidades": 1,
+    "precioWeb": 15,
     "precioVenta": 20,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -188,7 +326,13 @@
     "area": "Cocina",
     "nombre": "Nevera",
     "unidades": 1,
+    "precioWeb": 250,
     "precioVenta": 300,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -196,7 +340,13 @@
     "area": "Cocina",
     "nombre": "Airfryer",
     "unidades": 1,
+    "precioWeb": 80,
     "precioVenta": 100,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -204,7 +354,13 @@
     "area": "Baño",
     "nombre": "Mesita baño",
     "unidades": 1,
+    "precioWeb": 30,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -212,7 +368,13 @@
     "area": "Baño",
     "nombre": "Estantería baño",
     "unidades": 1,
+    "precioWeb": 20,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -220,7 +382,13 @@
     "area": "Baño",
     "nombre": "Cajas baño",
     "unidades": 5,
+    "precioWeb": 10,
     "precioVenta": 15,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -228,7 +396,13 @@
     "area": "Baño",
     "nombre": "Cómoda baño",
     "unidades": 1,
+    "precioWeb": 10,
     "precioVenta": 10,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -236,7 +410,13 @@
     "area": "Recibidor",
     "nombre": "Colgador",
     "unidades": 2,
+    "precioWeb": 50,
     "precioVenta": 70,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -244,7 +424,13 @@
     "area": "Recibidor",
     "nombre": "Banco entrada",
     "unidades": 1,
+    "precioWeb": 30,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -252,7 +438,13 @@
     "area": "Oficina",
     "nombre": "Estantería Oficina - Kallax",
     "unidades": 1,
+    "precioWeb": 40,
     "precioVenta": 50,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -260,7 +452,13 @@
     "area": "Oficina",
     "nombre": "Estantería libros Kallax",
     "unidades": 1,
+    "precioWeb": 20,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -268,7 +466,13 @@
     "area": "Oficina",
     "nombre": "Asiento con bici",
     "unidades": 1,
+    "precioWeb": 60,
     "precioVenta": 70,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -276,7 +480,13 @@
     "area": "Oficina",
     "nombre": "Mesa blanca plegable",
     "unidades": 1,
+    "precioWeb": 80,
     "precioVenta": 100,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -284,7 +494,13 @@
     "area": "Oficina",
     "nombre": "Camilla masajes",
     "unidades": 1,
+    "precioWeb": 80,
     "precioVenta": 100,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -292,7 +508,13 @@
     "area": "Oficina",
     "nombre": "Escritorio sube y baja",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 140,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -300,7 +522,13 @@
     "area": "Oficina",
     "nombre": "Pantalla Asus",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 15,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -308,7 +536,13 @@
     "area": "Oficina",
     "nombre": "Cestas oficina",
     "unidades": 2,
+    "precioWeb": null,
     "precioVenta": 12,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -316,7 +550,13 @@
     "area": "Salon",
     "nombre": "Estantería esquina bambú",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -324,7 +564,13 @@
     "area": "Salon",
     "nombre": "Estantería escalera bambú",
     "unidades": 2,
+    "precioWeb": null,
     "precioVenta": 50,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -332,7 +578,13 @@
     "area": "Salon",
     "nombre": "Alfombra gruesa",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -340,7 +592,13 @@
     "area": "Salon",
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -348,7 +606,13 @@
     "area": "Habitacion",
     "nombre": "Lámpara rosa",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -356,7 +620,13 @@
     "area": "Habitacion",
     "nombre": "Cojín meditación",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -364,7 +634,13 @@
     "area": "Habitacion",
     "nombre": "Difusor aromas",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -372,7 +648,13 @@
     "area": "Habitacion",
     "nombre": "Lámpara negra",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 15,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -380,7 +662,13 @@
     "area": "Salon",
     "nombre": "Cuadro marco",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -388,7 +676,13 @@
     "area": "Salon",
     "nombre": "Cestas círculo",
     "unidades": 2,
+    "precioWeb": null,
     "precioVenta": 8,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -396,7 +690,13 @@
     "area": "Lavanderia",
     "nombre": "Aspiradora",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 60,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -404,7 +704,13 @@
     "area": "Recibidor",
     "nombre": "Cestas entrada",
     "unidades": 2,
+    "precioWeb": null,
     "precioVenta": 8,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -412,7 +718,13 @@
     "area": "Comedor",
     "nombre": "Lámpara comedor",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -420,7 +732,13 @@
     "area": "Habitacion",
     "nombre": "Pistola masajes",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -428,7 +746,13 @@
     "area": "Habitacion",
     "nombre": "Masajeador espalda",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -436,7 +760,13 @@
     "area": "Cocina",
     "nombre": "Raclette 10",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 40,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   },
   {
@@ -444,7 +774,13 @@
     "area": "Cocina",
     "nombre": "Reclette 2",
     "unidades": 1,
+    "precioWeb": null,
     "precioVenta": 30,
+    "medidas": {
+      "alto": null,
+      "ancho": null,
+      "largo": null
+    },
     "wallapop": ""
   }
 ]
