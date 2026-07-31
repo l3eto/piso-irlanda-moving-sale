@@ -229,6 +229,31 @@ function updateFavoritesBadge() {
   }
 }
 
+function updateFavoriteBtnStyle(btn, isFavorited) {
+  if (isFavorited) {
+    btn.classList.add("text-red-500");
+    btn.classList.remove("text-slate-600");
+    btn.title = "Quitar de favoritos";
+  } else {
+    btn.classList.remove("text-red-500");
+    btn.classList.add("text-slate-600");
+    btn.title = "Agregar a favoritos";
+  }
+}
+
+function updateCardFavoriteBtns() {
+  document.querySelectorAll(".item-favorite-btn").forEach(btn => {
+    const card = btn.closest(".item-card");
+    if (!card) return;
+    
+    const itemId = Number.parseInt(card.dataset.itemId, 10);
+    const isFav = state.favorites.some(f => f.id === itemId);
+    updateFavoriteBtnStyle(btn, isFav);
+  });
+}
+
+
+
 function canAddToFavorites(item) {
   return normalizeEstado(item.estado) === "disponible";
 }
@@ -252,6 +277,7 @@ function addToFavorites(itemId, quantity = 1) {
   
   saveFavorites();
   updateFavoritesBadge();
+  updateCardFavoriteBtns();
   renderFavorites();
   updateModalFavoriteButton();
   return true;
@@ -261,6 +287,7 @@ function removeFromFavorites(itemId) {
   state.favorites = state.favorites.filter(fav => fav.id !== itemId);
   saveFavorites();
   updateFavoritesBadge();
+  updateCardFavoriteBtns();
   renderFavorites();
   updateModalFavoriteButton();
 }
@@ -332,9 +359,32 @@ function renderFavorites() {
   elements.favoritesList.innerHTML = "";
   
   if (state.favorites.length === 0) {
-    elements.favoritesList.innerHTML = `<p class="text-center text-slate-500">No tienes favoritos aún</p>`;
+    elements.favoritesList.innerHTML = `
+      <div class="col-span-full flex flex-col items-center justify-center gap-3 rounded-lg border-2 border-dashed border-slate-300 bg-slate-50 p-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <p class="text-center text-slate-600">
+          <span class="block font-semibold">Aún no tienes favoritos</span>
+          <span class="block text-sm">Haz clic en el corazón para agregar productos</span>
+        </p>
+      </div>
+    `;
     elements.favoritesTotal.textContent = "0€";
+    document.getElementById("favoritesCount").textContent = "0 productos";
+    
+    // Ocultar botón de compartir
+    const shareContainer = document.getElementById("shareButtonContainer");
+    if (shareContainer) {
+      shareContainer.style.display = "none";
+    }
     return;
+  }
+  
+  // Mostrar botón de compartir
+  const shareContainer = document.getElementById("shareButtonContainer");
+  if (shareContainer) {
+    shareContainer.style.display = "block";
   }
   
   let total = 0;
@@ -350,39 +400,54 @@ function renderFavorites() {
     
     const status = normalizeEstado(item.estado);
     let statusBadge = "";
+    let statusClass = "";
+    
     if (status === "reservado") {
-      statusBadge = `<span class="ml-2 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">Reservado</span>`;
+      statusBadge = `<span class="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-700">⏳ Reservado</span>`;
+      statusClass = "opacity-60";
     } else if (status === "vendido") {
-      statusBadge = `<span class="ml-2 inline-block rounded-full bg-rose-100 px-2 py-0.5 text-xs font-medium text-rose-700">Vendido</span>`;
+      statusBadge = `<span class="rounded-full bg-rose-100 px-2 py-0.5 text-xs font-semibold text-rose-700">✓ Vendido</span>`;
+      statusClass = "opacity-60";
     }
     
     const itemDiv = document.createElement("div");
-    itemDiv.className = `rounded-lg border border-slate-200 bg-slate-50 p-3 ${status !== "disponible" ? "opacity-60" : ""}`;
+    itemDiv.className = `rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden transition hover:shadow-md ${statusClass}`;
     itemDiv.innerHTML = `
-      <div class="mb-2 flex items-start justify-between">
-        <div class="flex-1">
-          <p class="font-semibold text-slate-900">${item.nombre}${statusBadge}</p>
-          <p class="text-xs text-slate-500">Ref #${item.id}</p>
+      <div class="bg-gradient-to-r from-slate-50 to-white p-4 border-b border-slate-100">
+        <div class="flex items-start justify-between gap-3 mb-2">
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-slate-900 text-base truncate">${item.nombre}</p>
+            <p class="text-xs text-slate-500 mt-1">Ref: <span class="font-mono font-semibold">#${item.id}</span></p>
+          </div>
+          ${statusBadge}
         </div>
       </div>
-      <div class="space-y-2">
-        <div class="flex items-center justify-between">
-          <span class="text-sm text-slate-600">Precio:</span>
-          <span class="font-semibold text-green-600">${formatPrice(price)}</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-sm text-slate-600">Cantidad:</span>
-          <div class="flex items-center gap-2">
-            <button class="favorite-qty-btn decrease rounded border border-slate-300 px-2 py-1 text-xs font-medium hover:bg-slate-200" data-item-id="${item.id}">−</button>
-            <span class="w-8 text-center">${fav.cantidad}</span>
-            <button class="favorite-qty-btn increase rounded border border-slate-300 px-2 py-1 text-xs font-medium hover:bg-slate-200" data-item-id="${item.id}">+</button>
+      <div class="p-4 space-y-3">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="rounded-lg bg-slate-50 p-2.5">
+            <p class="text-xs text-slate-600 font-medium uppercase">Unitario</p>
+            <p class="text-lg font-bold text-green-600 mt-0.5">${formatPrice(price)}</p>
+          </div>
+          <div class="rounded-lg bg-slate-50 p-2.5">
+            <p class="text-xs text-slate-600 font-medium uppercase">Subtotal</p>
+            <p class="text-lg font-bold text-sky-600 mt-0.5">${formatPrice(itemTotal)}</p>
           </div>
         </div>
-        <div class="flex items-center justify-between border-t border-slate-200 pt-2">
-          <span class="font-semibold text-slate-900">Total:</span>
-          <span class="font-bold text-green-600">${formatPrice(itemTotal)}</span>
+        
+        <div class="rounded-lg bg-blue-50 p-3 border border-blue-200">
+          <p class="text-xs text-slate-600 mb-2.5">Cantidad</p>
+          <div class="flex items-center justify-between gap-2">
+            <button class="favorite-qty-btn decrease rounded-lg bg-white border border-slate-300 px-3 py-2 text-sm font-bold hover:bg-slate-100 active:scale-95 transition" data-item-id="${item.id}">−</button>
+            <div class="text-center">
+              <p class="text-2xl font-bold text-blue-600">${fav.cantidad}</p>
+            </div>
+            <button class="favorite-qty-btn increase rounded-lg bg-white border border-slate-300 px-3 py-2 text-sm font-bold hover:bg-slate-100 active:scale-95 transition" data-item-id="${item.id}">+</button>
+          </div>
         </div>
-        <button class="favorite-remove w-full rounded bg-rose-100 px-2 py-1 text-xs font-medium text-rose-700 transition hover:bg-rose-200" data-item-id="${item.id}">Eliminar</button>
+        
+        <button class="favorite-remove w-full rounded-lg bg-rose-50 border border-rose-300 px-3 py-2 text-sm font-semibold text-rose-700 transition hover:bg-rose-100 active:scale-95" data-item-id="${item.id}">
+          🗑️ Eliminar
+        </button>
       </div>
     `;
     
@@ -391,6 +456,7 @@ function renderFavorites() {
   
   elements.favoritesList.appendChild(fragment);
   elements.favoritesTotal.textContent = formatPrice(total);
+  document.getElementById("favoritesCount").textContent = `${state.favorites.length} ${state.favorites.length === 1 ? "producto" : "productos"}`;
   
   // Agregar event listeners
   elements.favoritesList.querySelectorAll(".favorite-qty-btn").forEach(btn => {
@@ -478,6 +544,7 @@ function renderCards(items) {
     const sizeRow = node.querySelector(".item-size-row");
     const size = node.querySelector(".item-size");
     const link = node.querySelector(".item-link");
+    const favoriteBtn = node.querySelector(".item-favorite-btn");
 
     const itemImages = getImagesForItem(item.id);
     
@@ -538,6 +605,36 @@ function renderCards(items) {
     } else {
       link.removeAttribute("href");
       link.classList.add("hidden");
+    }
+
+    // Configurar botón de favoritos
+    const canFavorite = canAddToFavorites(item);
+    
+    if (canFavorite) {
+      favoriteBtn.disabled = false;
+      favoriteBtn.classList.remove("opacity-40", "cursor-not-allowed");
+      favoriteBtn.classList.add("cursor-pointer");
+      
+      // Actualizar estilo inicial
+      const isFavorited = state.favorites.some(f => f.id === item.id);
+      updateFavoriteBtnStyle(favoriteBtn, isFavorited);
+      
+      // Toggle dinámico: verifica el estado actual en tiempo real
+      favoriteBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const currentlyFavorited = state.favorites.some(f => f.id === item.id);
+        if (currentlyFavorited) {
+          removeFromFavorites(item.id);
+        } else {
+          addToFavorites(item.id);
+        }
+      });
+    } else {
+      favoriteBtn.disabled = true;
+      favoriteBtn.classList.add("opacity-40", "cursor-not-allowed");
+      favoriteBtn.classList.remove("cursor-pointer");
     }
 
     fragment.appendChild(node);
