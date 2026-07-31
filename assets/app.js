@@ -15,7 +15,8 @@ const state = {
     index: 0,
     visibleItems: [],
     currentItemIndex: 0
-  }
+  },
+  favorites: []
 };
 
 const elements = {
@@ -44,7 +45,15 @@ const elements = {
   modalThumbs: document.getElementById("modalThumbs"),
   modalCounter: document.getElementById("modalCounter"),
   modalPrev: document.getElementById("modalPrev"),
-  modalNext: document.getElementById("modalNext")
+  modalNext: document.getElementById("modalNext"),
+  modalFavoriteBtn: document.getElementById("modalFavoriteBtn"),
+  favoritesToggle: document.getElementById("favoritesToggle"),
+  favoritesBadge: document.getElementById("favoritesBadge"),
+  favoritesModal: document.getElementById("favoritesModal"),
+  favoritesModalClose: document.getElementById("favoritesModalClose"),
+  favoritesList: document.getElementById("favoritesList"),
+  favoritesTotal: document.getElementById("favoritesTotal"),
+  shareButton: document.getElementById("shareButton")
 };
 
 function formatPrice(value) {
@@ -200,6 +209,210 @@ function checkUrlHash() {
       openModalForItemId(productId);
     }
   }
+}
+
+function loadFavorites() {
+  const saved = localStorage.getItem("favorites");
+  state.favorites = saved ? JSON.parse(saved) : [];
+}
+
+function saveFavorites() {
+  localStorage.setItem("favorites", JSON.stringify(state.favorites));
+}
+
+function updateFavoritesBadge() {
+  if (state.favorites.length === 0) {
+    elements.favoritesBadge.classList.add("hidden");
+  } else {
+    elements.favoritesBadge.classList.remove("hidden");
+    elements.favoritesBadge.textContent = state.favorites.length;
+  }
+}
+
+function canAddToFavorites(item) {
+  return normalizeEstado(item.estado) === "disponible";
+}
+
+function isFavorited(itemId) {
+  return state.favorites.some(fav => fav.id === itemId);
+}
+
+function addToFavorites(itemId, quantity = 1) {
+  const item = getItemById(itemId);
+  if (!item || !canAddToFavorites(item)) {
+    return false;
+  }
+  
+  const existing = state.favorites.find(fav => fav.id === itemId);
+  if (existing) {
+    existing.cantidad += quantity;
+  } else {
+    state.favorites.push({ id: itemId, cantidad: quantity });
+  }
+  
+  saveFavorites();
+  updateFavoritesBadge();
+  renderFavorites();
+  updateModalFavoriteButton();
+  return true;
+}
+
+function removeFromFavorites(itemId) {
+  state.favorites = state.favorites.filter(fav => fav.id !== itemId);
+  saveFavorites();
+  updateFavoritesBadge();
+  renderFavorites();
+  updateModalFavoriteButton();
+}
+
+function updateFavoriteQuantity(itemId, quantity) {
+  const favorite = state.favorites.find(fav => fav.id === itemId);
+  if (favorite) {
+    favorite.cantidad = Math.max(1, quantity);
+    saveFavorites();
+    renderFavorites();
+  }
+}
+
+function updateModalFavoriteButton() {
+  if (!state.modal.item) return;
+  
+  const isFav = isFavorited(state.modal.item.id);
+  const canAdd = canAddToFavorites(state.modal.item);
+  
+  elements.modalFavoriteBtn.disabled = !canAdd;
+  
+  if (!canAdd) {
+    elements.modalFavoriteBtn.classList.add("cursor-not-allowed", "opacity-50");
+    elements.modalFavoriteBtn.classList.remove("hover:bg-red-50");
+    const status = normalizeEstado(state.modal.item.estado);
+    const statusLabel = status === "reservado" ? "Reservado" : "Vendido";
+    elements.modalFavoriteBtn.textContent = `❌ ${statusLabel}`;
+  } else if (isFav) {
+    elements.modalFavoriteBtn.classList.remove("cursor-not-allowed", "opacity-50");
+    elements.modalFavoriteBtn.classList.add("hover:bg-red-50");
+    elements.modalFavoriteBtn.textContent = `♥ Quitar de favoritos`;
+    elements.modalFavoriteBtn.classList.add("bg-red-50");
+  } else {
+    elements.modalFavoriteBtn.classList.remove("cursor-not-allowed", "opacity-50", "bg-red-50");
+    elements.modalFavoriteBtn.classList.add("hover:bg-red-50");
+    elements.modalFavoriteBtn.textContent = `♥ Agregar a favoritos`;
+  }
+}
+
+function generateShareMessage() {
+  if (state.favorites.length === 0) {
+    return "Hola, me gustaría compartir estos productos contigo!";
+  }
+  
+  let message = "Hola, estoy interesado en estos productos:\n";
+  let total = 0;
+  
+  for (const fav of state.favorites) {
+    const item = getItemById(fav.id);
+    if (!item) continue;
+    
+    const price = getHerePrice(item);
+    const itemTotal = price * fav.cantidad;
+    total += itemTotal;
+    
+    const status = normalizeEstado(item.estado);
+    let statusLabel = "";
+    if (status === "reservado") statusLabel = " (reservado)";
+    else if (status === "vendido") statusLabel = " (vendido)";
+    
+    message += `- Ref #${item.id}, ${item.nombre}, ${formatPrice(price)}, Cantidad: ${fav.cantidad}, Total: ${formatPrice(itemTotal)}${statusLabel}\n`;
+  }
+  
+  message += `\nTotal general: ${formatPrice(total)}\n\n¡Gracias!`;
+  return message;
+}
+
+function renderFavorites() {
+  elements.favoritesList.innerHTML = "";
+  
+  if (state.favorites.length === 0) {
+    elements.favoritesList.innerHTML = `<p class="text-center text-slate-500">No tienes favoritos aún</p>`;
+    elements.favoritesTotal.textContent = "0€";
+    return;
+  }
+  
+  let total = 0;
+  const fragment = document.createDocumentFragment();
+  
+  for (const fav of state.favorites) {
+    const item = getItemById(fav.id);
+    if (!item) continue;
+    
+    const price = getHerePrice(item);
+    const itemTotal = price * fav.cantidad;
+    total += itemTotal;
+    
+    const status = normalizeEstado(item.estado);
+    let statusBadge = "";
+    if (status === "reservado") {
+      statusBadge = `<span class="ml-2 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">Reservado</span>`;
+    } else if (status === "vendido") {
+      statusBadge = `<span class="ml-2 inline-block rounded-full bg-rose-100 px-2 py-0.5 text-xs font-medium text-rose-700">Vendido</span>`;
+    }
+    
+    const itemDiv = document.createElement("div");
+    itemDiv.className = `rounded-lg border border-slate-200 bg-slate-50 p-3 ${status !== "disponible" ? "opacity-60" : ""}`;
+    itemDiv.innerHTML = `
+      <div class="mb-2 flex items-start justify-between">
+        <div class="flex-1">
+          <p class="font-semibold text-slate-900">${item.nombre}${statusBadge}</p>
+          <p class="text-xs text-slate-500">Ref #${item.id}</p>
+        </div>
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-600">Precio:</span>
+          <span class="font-semibold text-green-600">${formatPrice(price)}</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-600">Cantidad:</span>
+          <div class="flex items-center gap-2">
+            <button class="favorite-qty-btn decrease rounded border border-slate-300 px-2 py-1 text-xs font-medium hover:bg-slate-200" data-item-id="${item.id}">−</button>
+            <span class="w-8 text-center">${fav.cantidad}</span>
+            <button class="favorite-qty-btn increase rounded border border-slate-300 px-2 py-1 text-xs font-medium hover:bg-slate-200" data-item-id="${item.id}">+</button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-t border-slate-200 pt-2">
+          <span class="font-semibold text-slate-900">Total:</span>
+          <span class="font-bold text-green-600">${formatPrice(itemTotal)}</span>
+        </div>
+        <button class="favorite-remove w-full rounded bg-rose-100 px-2 py-1 text-xs font-medium text-rose-700 transition hover:bg-rose-200" data-item-id="${item.id}">Eliminar</button>
+      </div>
+    `;
+    
+    fragment.appendChild(itemDiv);
+  }
+  
+  elements.favoritesList.appendChild(fragment);
+  elements.favoritesTotal.textContent = formatPrice(total);
+  
+  // Agregar event listeners
+  elements.favoritesList.querySelectorAll(".favorite-qty-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      const itemId = Number.parseInt(e.target.dataset.itemId, 10);
+      const fav = state.favorites.find(f => f.id === itemId);
+      if (!fav) return;
+      
+      if (e.target.classList.contains("increase")) {
+        updateFavoriteQuantity(itemId, fav.cantidad + 1);
+      } else {
+        updateFavoriteQuantity(itemId, fav.cantidad - 1);
+      }
+    });
+  });
+  
+  elements.favoritesList.querySelectorAll(".favorite-remove").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      const itemId = Number.parseInt(e.target.dataset.itemId, 10);
+      removeFromFavorites(itemId);
+    });
+  });
 }
 
 function itemMatchesFilters(item) {
@@ -434,6 +647,8 @@ function renderModal() {
     elements.modalWallapop.removeAttribute("href");
     elements.modalWallapop.classList.add("hidden");
   }
+  
+  updateModalFavoriteButton();
 }
 
 function closeModal() {
@@ -644,6 +859,65 @@ function setupModalInteraction() {
   });
 }
 
+function setupFavoritesUI() {
+  elements.favoritesToggle.addEventListener("click", () => {
+    elements.favoritesModal.classList.remove("hidden");
+    elements.favoritesModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("overflow-hidden");
+    renderFavorites();
+  });
+
+  elements.favoritesModalClose.addEventListener("click", () => {
+    elements.favoritesModal.classList.add("hidden");
+    elements.favoritesModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("overflow-hidden");
+  });
+
+  elements.favoritesModal.addEventListener("click", (event) => {
+    if (event.target.closest("[data-modal-close='true']")) {
+      elements.favoritesModal.classList.add("hidden");
+      elements.favoritesModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("overflow-hidden");
+      return;
+    }
+  });
+
+  elements.shareButton.addEventListener("click", () => {
+    const message = generateShareMessage();
+    navigator.clipboard.writeText(message).then(() => {
+      elements.shareButton.textContent = "✅ Copiado al portapapeles";
+      setTimeout(() => {
+        elements.shareButton.textContent = "📋 Copiar lista para compartir";
+      }, 2000);
+    }).catch(() => {
+      // Fallback si no funciona clipboard
+      const textarea = document.createElement("textarea");
+      textarea.value = message;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      elements.shareButton.textContent = "✅ Copiado al portapapeles";
+      setTimeout(() => {
+        elements.shareButton.textContent = "📋 Copiar lista para compartir";
+      }, 2000);
+    });
+  });
+
+  elements.modalFavoriteBtn.addEventListener("click", () => {
+    if (!state.modal.item) return;
+    
+    const itemId = state.modal.item.id;
+    const isFav = isFavorited(itemId);
+    
+    if (isFav) {
+      removeFromFavorites(itemId);
+    } else {
+      addToFavorites(itemId, 1);
+    }
+  });
+}
+
 async function loadData() {
   const [itemsResponse, imagesResponse] = await Promise.all([
     fetch("./data/items.json"),
@@ -661,10 +935,13 @@ async function loadData() {
 async function init() {
   try {
     await loadData();
+    loadFavorites();
+    updateFavoritesBadge();
     setupFilters();
     loadFiltersFromUrl();
     setupCardInteraction();
     setupModalInteraction();
+    setupFavoritesUI();
     render();
     checkUrlHash();
   } catch (error) {

@@ -22,6 +22,17 @@
             class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100 md:w-auto"
           />
           <button
+            id="favoritesToggle"
+            type="button"
+            class="relative rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            aria-label="Ver favoritos"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span id="favoritesBadge" class="absolute -right-2 -top-2 hidden rounded-full bg-red-500 px-1.5 py-0.5 text-xs font-bold text-white"></span>
+          </button>
+          <button
             id="filterToggle"
             type="button"
             class="md:hidden rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
@@ -225,6 +236,13 @@
               >
                 Ver en Wallapop
               </a>
+              <button
+                id="modalFavoriteBtn"
+                type="button"
+                class="w-full rounded-xl border-2 border-red-300 bg-white px-3 py-2 text-sm font-medium text-red-600 transition hover:bg-red-50"
+              >
+                ♥ Agregar a favoritos
+              </button>
               <div id="modalThumbs" class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-3"></div>
             </aside>
           </div>
@@ -243,6 +261,42 @@
               class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
             >
               Siguiente →
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+
+    <div id="favoritesModal" class="fixed inset-0 z-50 hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="favoritesModalTitle">
+      <div class="absolute inset-0 bg-slate-900/70" data-modal-close="true"></div>
+      <div class="relative mx-auto flex h-full w-full max-w-2xl items-center justify-center p-3 md:p-6">
+        <section class="relative w-full overflow-hidden rounded-2xl bg-white shadow-2xl max-h-[90vh] flex flex-col">
+          <header class="flex items-center justify-between border-b border-slate-200 px-4 py-3 md:px-5">
+            <h2 id="favoritesModalTitle" class="text-lg font-semibold text-slate-900">Mis favoritos</h2>
+            <button
+              id="favoritesModalClose"
+              type="button"
+              class="rounded-lg border border-slate-300 px-2 py-1 text-sm font-medium text-slate-700 hover:bg-slate-50"
+              data-modal-close="true"
+            >
+              Cerrar
+            </button>
+          </header>
+
+          <div id="favoritesListContainer" class="overflow-y-auto flex-1 p-4 md:p-5">
+            <div id="favoritesList" class="space-y-3"></div>
+          </div>
+
+          <footer class="border-t border-slate-200 px-4 py-3 md:px-5 space-y-2">
+            <div class="rounded-lg bg-slate-50 p-3">
+              <p class="text-sm text-slate-600">Total: <span id="favoritesTotal" class="text-lg font-bold text-green-600">0€</span></p>
+            </div>
+            <button
+              id="shareButton"
+              type="button"
+              class="w-full rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white transition hover:bg-blue-700"
+            >
+              📋 Copiar lista para compartir
             </button>
           </footer>
         </section>
