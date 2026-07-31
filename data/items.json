@@ -1038,5 +1038,197 @@
     "descripcion": "buen estado, esta sucio",
     "estado": "disponible",
     "wallapop": ""
+  },
+  {
+    "id": 67,
+    "area": "Habitacion",
+    "nombre": "Estor enrollable de bambú natural",
+    "unidades": 1,
+    "precioWeb": 40,
+    "precioVenta": 45,
+    "medidas": {
+      "alto": 1,
+      "ancho": 175,
+      "largo": 160
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 68,
+    "area": "Decoracion",
+    "nombre": "Cuadros madera",
+    "unidades": 4,
+    "precioWeb": 3,
+    "precioVenta": 4,
+    "medidas": {
+      "alto": 2,
+      "ancho": 32,
+      "largo": 42
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 69,
+    "area": "Decoracion",
+    "nombre": "Baldas de pared de madera",
+    "unidades": 2,
+    "precioWeb": 7,
+    "precioVenta": 9,
+    "medidas": {
+      "alto": 35,
+      "ancho": 22,
+      "largo": 10
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 70,
+    "area": "Decoracion",
+    "nombre": "Láminas decorativas estilo boho",
+    "unidades": 3,
+    "precioWeb": 4,
+    "precioVenta": 5,
+    "medidas": {
+      "alto": 2,
+      "ancho": 40,
+      "largo": 60
+    },
+    "descripcion": "buen stado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 71,
+    "area": "Decoracion",
+    "nombre": "Adornos de pared tipo pluma",
+    "unidades": 2,
+    "precioWeb": 5,
+    "precioVenta": 6,
+    "medidas": {
+      "alto": 2,
+      "ancho": 35,
+      "largo": 35
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 72,
+    "area": "Decoracion",
+    "nombre": "Colgante decorativo de macramé con hojas",
+    "unidades": 1,
+    "precioWeb": 12,
+    "precioVenta": 18,
+    "medidas": {
+      "alto": 2,
+      "ancho": 40,
+      "largo": 56
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 73,
+    "area": "Decoracion",
+    "nombre": "Atrapasueños (dreamcatcher) decorativo de estilo boho",
+    "unidades": 1,
+    "precioWeb": 10,
+    "precioVenta": 12,
+    "medidas": {
+      "alto": 2,
+      "ancho": 34,
+      "largo": 80
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 74,
+    "area": "Decoracion",
+    "nombre": "Lámpara de suelo de ratán/mimbre sintético trenzado",
+    "unidades": 1,
+    "precioWeb": 12,
+    "precioVenta": 16,
+    "medidas": {
+      "alto": 27,
+      "ancho": 13,
+      "largo": 13
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 75,
+    "area": "Habitacion",
+    "nombre": "Perchero colgante puerta",
+    "unidades": 1,
+    "precioWeb": 9,
+    "precioVenta": 12,
+    "medidas": {
+      "alto": 20,
+      "ancho": 40,
+      "largo": 5
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 76,
+    "area": "Decoracion",
+    "nombre": "Colgante decorativo de madera",
+    "unidades": 1,
+    "precioWeb": 8,
+    "precioVenta": 10,
+    "medidas": {
+      "alto": 1,
+      "ancho": 16,
+      "largo": 46
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 77,
+    "area": "Decoracion",
+    "nombre": "Cuadro limpieza",
+    "unidades": 1,
+    "precioWeb": 6,
+    "precioVenta": 8,
+    "medidas": {
+      "alto": 3,
+      "ancho": 40,
+      "largo": 30
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 78,
+    "area": "Decoracion",
+    "nombre": "Cuadros madera blanco",
+    "unidades": 2,
+    "precioWeb": 8,
+    "precioVenta": 10,
+    "medidas": {
+      "alto": 53,
+      "ancho": 42,
+      "largo": 4
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
   }
 ]

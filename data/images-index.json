@@ -276,5 +276,64 @@
     "data/images/66/arriba.jpeg",
     "data/images/66/base.jpeg",
     "data/images/66/frente.jpeg"
+  ],
+  "67": [
+    "data/images/67/arriba.jpeg",
+    "data/images/67/cable.jpeg",
+    "data/images/67/frente.jpeg"
+  ],
+  "68": [
+    "data/images/68/dos.jpeg",
+    "data/images/68/otro.jpeg",
+    "data/images/68/todos.jpeg",
+    "data/images/68/tres.jpeg",
+    "data/images/68/uno.jpeg"
+  ],
+  "69": [
+    "data/images/69/cerca.jpeg",
+    "data/images/69/cerca2.jpeg",
+    "data/images/69/cerca3.jpeg",
+    "data/images/69/cerca4.jpeg",
+    "data/images/69/dod.jpeg"
+  ],
+  "70": [
+    "data/images/70/dos.jpeg",
+    "data/images/70/todos.jpeg",
+    "data/images/70/tres.jpeg",
+    "data/images/70/uno.jpeg"
+  ],
+  "71": [
+    "data/images/71/frente.jpeg",
+    "data/images/71/todo.jpeg"
+  ],
+  "72": [
+    "data/images/72/cerca.jpeg",
+    "data/images/72/lejois.jpeg"
+  ],
+  "74": [
+    "data/images/74/abahj.jpeg",
+    "data/images/74/arriba.jpeg",
+    "data/images/74/enece.jpeg",
+    "data/images/74/frente.jpeg",
+    "data/images/74/tod.jpeg"
+  ],
+  "75": [
+    "data/images/75/arr.jpeg",
+    "data/images/75/cen.jpeg",
+    "data/images/75/frenet.jpeg",
+    "data/images/75/lat.jpeg"
+  ],
+  "76": [
+    "data/images/76/fre.jpeg",
+    "data/images/76/lat.jpeg"
+  ],
+  "77": [
+    "data/images/77/friony.jpeg",
+    "data/images/77/lat.jpeg"
+  ],
+  "78": [
+    "data/images/78/a.jpeg",
+    "data/images/78/qwe.jpeg",
+    "data/images/78/sd.jpeg"
   ]
 }

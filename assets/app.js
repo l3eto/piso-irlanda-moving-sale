@@ -39,6 +39,8 @@ const elements = {
   modalImagePlaceholder: document.getElementById("modalImagePlaceholder"),
   modalHerePrice: document.getElementById("modalHerePrice"),
   modalWallapopPrice: document.getElementById("modalWallapopPrice"),
+  modalSizeRow: document.getElementById("modalSizeRow"),
+  modalSize: document.getElementById("modalSize"),
   modalDescriptionRow: document.getElementById("modalDescriptionRow"),
   modalDescription: document.getElementById("modalDescription"),
   modalWallapop: document.getElementById("modalWallapop"),
@@ -684,6 +686,16 @@ function renderModal() {
 
   elements.modalHerePrice.textContent = formatPrice(getHerePrice(item));
   elements.modalWallapopPrice.textContent = formatPrice(item.precioVenta);
+  
+  const sizeText = formatSize(item.medidas);
+  if (sizeText !== "-") {
+    elements.modalSize.textContent = sizeText;
+    elements.modalSizeRow.classList.remove("hidden");
+  } else {
+    elements.modalSize.textContent = "";
+    elements.modalSizeRow.classList.add("hidden");
+  }
+  
   const description = String(item.descripcion || "").trim();
   if (description) {
     elements.modalDescription.textContent = description;
