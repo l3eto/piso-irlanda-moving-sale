@@ -336,7 +336,7 @@ function generateShareMessage() {
     return "Hola, me gustaría compartir estos productos contigo!";
   }
   
-  let message = "Hola, estoy interesado en estos productos:\n";
+  let message = "Hola Beto! 👋\n\nMe interesan estos productos:\n\n";
   let total = 0;
   
   for (const fav of state.favorites) {
@@ -349,13 +349,14 @@ function generateShareMessage() {
     
     const status = normalizeEstado(item.estado);
     let statusLabel = "";
-    if (status === "reservado") statusLabel = " (reservado)";
-    else if (status === "vendido") statusLabel = " (vendido)";
+    if (status === "reservado") statusLabel = " ⏳ (reservado)";
+    else if (status === "vendido") statusLabel = " ✓ (vendido)";
     
-    message += `- Ref #${item.id}, ${item.nombre}, ${formatPrice(price)}, Cantidad: ${fav.cantidad}, Total: ${formatPrice(itemTotal)}${statusLabel}\n`;
+    message += `📌 Ref #${item.id} - ${item.nombre}\n`;
+    message += `   Precio: ${formatPrice(price)} x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
   }
   
-  message += `\nTotal general: ${formatPrice(total)}\n\n¡Gracias!`;
+  message += `💰 Total: ${formatPrice(total)}\n\n¡Gracias!`;
   return message;
 }
 
@@ -1017,24 +1018,25 @@ function setupFavoritesUI() {
 
   elements.shareButton.addEventListener("click", () => {
     const message = generateShareMessage();
-    navigator.clipboard.writeText(message).then(() => {
-      elements.shareButton.textContent = "✅ Copiado al portapapeles";
-      setTimeout(() => {
-        elements.shareButton.textContent = "📋 Copiar lista para compartir";
-      }, 2000);
-    }).catch(() => {
-      // Fallback si no funciona clipboard
-      const textarea = document.createElement("textarea");
-      textarea.value = message;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      elements.shareButton.textContent = "✅ Copiado al portapapeles";
-      setTimeout(() => {
-        elements.shareButton.textContent = "📋 Copiar lista para compartir";
-      }, 2000);
-    });
+    
+    // Intentar usar Web Share API (la mejor opción)
+    if (navigator.share) {
+      navigator.share({
+        title: "Mi lista de productos",
+        text: message
+      }).catch(() => {
+        // Si el usuario cancela, no hacer nada
+      });
+    } else {
+      // Fallback: crear link de WhatsApp Web
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+      
+      // Intentar abrir en pestaña nueva
+      if (typeof window !== "undefined") {
+        window.open(whatsappUrl, "_blank");
+      }
+    }
   });
 
   elements.modalFavoriteBtn.addEventListener("click", () => {
