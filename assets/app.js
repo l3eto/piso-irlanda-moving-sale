@@ -297,7 +297,9 @@ function removeFromFavorites(itemId) {
 function updateFavoriteQuantity(itemId, quantity) {
   const favorite = state.favorites.find(fav => fav.id === itemId);
   if (favorite) {
-    favorite.cantidad = Math.max(1, quantity);
+    const item = getItemById(itemId);
+    const maxQuantity = item ? item.unidades : 999;
+    favorite.cantidad = Math.max(1, Math.min(quantity, maxQuantity));
     saveFavorites();
     renderFavorites();
   }
@@ -414,42 +416,64 @@ function renderFavorites() {
     
     const itemDiv = document.createElement("div");
     itemDiv.className = `rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden transition hover:shadow-md ${statusClass}`;
-    itemDiv.innerHTML = `
-      <div class="bg-gradient-to-r from-slate-50 to-white p-4 border-b border-slate-100">
-        <div class="flex items-start justify-between gap-3 mb-2">
-          <div class="flex-1 min-w-0">
-            <p class="font-bold text-slate-900 text-base truncate">${item.nombre}</p>
-            <p class="text-xs text-slate-500 mt-1">Ref: <span class="font-mono font-semibold">#${item.id}</span></p>
+    
+    const itemImages = getImagesForItem(item.id);
+    const imageUrl = itemImages.length > 0 ? toAssetUrl(itemImages[0]) : null;
+    
+    let imageHTML = `
+      <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+        ${imageUrl ? `<img src="${imageUrl}" alt="${item.nombre}" class="w-full h-full object-cover" onerror="this.style.display='none'" />` : `
+          <div class="flex flex-col items-center justify-center text-slate-400 text-xs text-center p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <path d="M21 15l-4.5-4.5L8 19"></path>
+            </svg>
+            No hay imagen
           </div>
-          ${statusBadge}
-        </div>
+        `}
       </div>
-      <div class="p-4 space-y-3">
-        <div class="grid grid-cols-2 gap-3">
-          <div class="rounded-lg bg-slate-50 p-2.5">
-            <p class="text-xs text-slate-600 font-medium uppercase">Unitario</p>
-            <p class="text-lg font-bold text-green-600 mt-0.5">${formatPrice(price)}</p>
-          </div>
-          <div class="rounded-lg bg-slate-50 p-2.5">
-            <p class="text-xs text-slate-600 font-medium uppercase">Subtotal</p>
-            <p class="text-lg font-bold text-sky-600 mt-0.5">${formatPrice(itemTotal)}</p>
-          </div>
-        </div>
-        
-        <div class="rounded-lg bg-blue-50 p-3 border border-blue-200">
-          <p class="text-xs text-slate-600 mb-2.5">Cantidad</p>
-          <div class="flex items-center justify-between gap-2">
-            <button class="favorite-qty-btn decrease rounded-lg bg-white border border-slate-300 px-3 py-2 text-sm font-bold hover:bg-slate-100 active:scale-95 transition" data-item-id="${item.id}">−</button>
-            <div class="text-center">
-              <p class="text-2xl font-bold text-blue-600">${fav.cantidad}</p>
+    `;
+    
+    const description = String(item.descripcion || "").trim();
+    
+    const isAtMin = fav.cantidad <= 1;
+    const isAtMax = fav.cantidad >= item.unidades;
+    
+    itemDiv.innerHTML = `
+      <div class="flex gap-3 p-3">
+        ${imageHTML}
+        <div class="flex-1 flex flex-col gap-2 min-w-0">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-1">
+              <p class="font-bold text-slate-900 text-sm truncate">${item.nombre}</p>
+              ${statusBadge}
             </div>
-            <button class="favorite-qty-btn increase rounded-lg bg-white border border-slate-300 px-3 py-2 text-sm font-bold hover:bg-slate-100 active:scale-95 transition" data-item-id="${item.id}">+</button>
+            <p class="text-xs text-slate-500">Ref: <span class="font-mono font-semibold">#${item.id}</span></p>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="rounded bg-slate-50 p-1.5">
+              <p class="text-slate-600 font-medium">Unit.</p>
+              <p class="font-bold text-green-600">${formatPrice(price)}</p>
+            </div>
+            <div class="rounded bg-slate-50 p-1.5">
+              <p class="text-slate-600 font-medium">Subtotal</p>
+              <p class="font-bold text-sky-600">${formatPrice(itemTotal)}</p>
+            </div>
+          </div>
+          
+          ${description ? `<p class="text-xs text-slate-600 line-clamp-2">${description}</p>` : ''}
+          
+          <div class="flex items-center gap-1 mt-auto">
+            <button class="favorite-qty-btn decrease rounded border border-slate-300 px-1.5 py-0.5 text-xs font-bold hover:bg-slate-100 ${isAtMin ? 'opacity-40 cursor-not-allowed' : ''}" data-item-id="${item.id}" ${isAtMin ? 'disabled' : ''}>−</button>
+            <span class="text-xs font-bold text-blue-600 w-6 text-center">${fav.cantidad}</span>
+            <button class="favorite-qty-btn increase rounded border border-slate-300 px-1.5 py-0.5 text-xs font-bold hover:bg-slate-100 ${isAtMax ? 'opacity-40 cursor-not-allowed' : ''}" data-item-id="${item.id}" ${isAtMax ? 'disabled' : ''}>+</button>
+            <button class="favorite-remove ml-auto rounded bg-rose-50 border border-rose-300 px-2 py-0.5 text-xs font-semibold text-rose-700 hover:bg-rose-100" data-item-id="${item.id}">
+              🗑️
+            </button>
           </div>
         </div>
-        
-        <button class="favorite-remove w-full rounded-lg bg-rose-50 border border-rose-300 px-3 py-2 text-sm font-semibold text-rose-700 transition hover:bg-rose-100 active:scale-95" data-item-id="${item.id}">
-          🗑️ Eliminar
-        </button>
       </div>
     `;
     
