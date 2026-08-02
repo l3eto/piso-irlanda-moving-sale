@@ -60,6 +60,16 @@
     "data/images/13/atras3.jpeg",
     "data/images/13/frente.jpeg"
   ],
+  "14": [
+    "data/images/14/aber.jpeg",
+    "data/images/14/atras.jpeg",
+    "data/images/14/cama.jpeg",
+    "data/images/14/frecama.jpeg",
+    "data/images/14/frent.jpeg",
+    "data/images/14/lat.jpeg",
+    "data/images/14/rejas.jpeg",
+    "data/images/14/side.jpeg"
+  ],
   "15": [
     "data/images/15/angulo.jpeg",
     "data/images/15/arriba.jpeg",
@@ -81,6 +91,13 @@
     "data/images/18/abierto.jpeg",
     "data/images/18/ang.jpeg",
     "data/images/18/frente.jpeg"
+  ],
+  "19": [
+    "data/images/19/aba.jpeg",
+    "data/images/19/ang.jpeg",
+    "data/images/19/arr.jpeg",
+    "data/images/19/atras.jpeg",
+    "data/images/19/frent.jpeg"
   ],
   "23": [
     "data/images/23/abierto.jpeg",
@@ -387,5 +404,12 @@
     "data/images/79/deb.jpeg",
     "data/images/79/fr.jpeg",
     "data/images/79/lat.jpeg"
+  ],
+  "80": [
+    "data/images/80/aba.jpeg",
+    "data/images/80/arr.jpeg",
+    "data/images/80/atras.jpeg",
+    "data/images/80/freb.jpeg",
+    "data/images/80/side.jpeg"
   ]
 }

@@ -194,16 +194,16 @@
   {
     "id": 14,
     "area": "Salon",
-    "nombre": "Sofá",
+    "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
-    "precioWeb": 500,
-    "precioVenta": 650,
+    "precioWeb": 400,
+    "precioVenta": 550,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 100,
+      "ancho": 200,
+      "largo": 100
     },
-    "descripcion": "",
+    "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -279,11 +279,11 @@
     "precioWeb": 50,
     "precioVenta": 60,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 66,
+      "ancho": 54,
+      "largo": 38
     },
-    "descripcion": "",
+    "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -293,13 +293,13 @@
     "nombre": "Mesita noche marrón",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 50,
+    "precioVenta": 60,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 70,
+      "ancho": 62,
+      "largo": 30
     },
-    "descripcion": "",
+    "descripcion": "buen estado, 3 cajones",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -322,10 +322,10 @@
   {
     "id": 22,
     "area": "Habitacion",
-    "nombre": "Colchón",
+    "nombre": "Colchón ortopedico",
     "unidades": 1,
-    "precioWeb": 300,
-    "precioVenta": 400,
+    "precioWeb": 250,
+    "precioVenta": 300,
     "medidas": {
       "alto": null,
       "ancho": null,
@@ -411,7 +411,7 @@
       "ancho": 60,
       "largo": 40
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -795,7 +795,7 @@
       "ancho": 24,
       "largo": 125
     },
-    "descripcion": "",
+    "descripcion": "algo antigua, pero funciona bien, se abre para limpiar el polvo acomulado, viene con cargador",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -1244,6 +1244,22 @@
       "largo": 25
     },
     "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 80,
+    "area": "Habitacion",
+    "nombre": "Mesita noche negra",
+    "unidades": 2,
+    "precioWeb": 50,
+    "precioVenta": 60,
+    "medidas": {
+      "alto": 66,
+      "ancho": 54,
+      "largo": 38
+    },
+    "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": ""
   }
