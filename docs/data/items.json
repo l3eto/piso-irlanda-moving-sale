@@ -402,14 +402,14 @@
   {
     "id": 27,
     "area": "Baño",
-    "nombre": "Mesita baño",
+    "nombre": "Mueble bajo para lavabo",
     "unidades": 1,
     "precioWeb": 30,
     "precioVenta": 40,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 60,
+      "ancho": 60,
+      "largo": 40
     },
     "descripcion": "",
     "estado": "disponible",
@@ -455,9 +455,9 @@
     "precioWeb": 10,
     "precioVenta": 10,
     "medidas": {
-      "alto": 60,
-      "ancho": 60,
-      "largo": 40
+      "alto": 74,
+      "ancho": 28,
+      "largo": 20
     },
     "descripcion": "buen estado",
     "estado": "disponible",
