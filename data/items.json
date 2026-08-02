@@ -455,11 +455,11 @@
     "precioWeb": 10,
     "precioVenta": 10,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 60,
+      "ancho": 60,
+      "largo": 40
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
