@@ -105,6 +105,18 @@
     "data/images/26/ang.jpeg",
     "data/images/26/frente.jpeg"
   ],
+  "28": [
+    "data/images/28/ang.jpeg",
+    "data/images/28/arr.jpeg",
+    "data/images/28/lat.jpeg"
+  ],
+  "29": [
+    "data/images/29/ab.jpeg",
+    "data/images/29/arr.jpeg",
+    "data/images/29/fr.jpeg",
+    "data/images/29/lat.jpeg",
+    "data/images/29/open.jpeg"
+  ],
   "31": [
     "data/images/31/abajo.jpeg",
     "data/images/31/arriba.jpeg",
@@ -161,6 +173,12 @@
     "data/images/41/atras.jpeg",
     "data/images/41/frente.jpeg"
   ],
+  "42": [
+    "data/images/42/ang.jpeg",
+    "data/images/42/arri.jpeg",
+    "data/images/42/front.jpeg",
+    "data/images/42/lat.jpeg"
+  ],
   "43": [
     "data/images/43/cerca.jpeg",
     "data/images/43/lejos.jpeg"
@@ -195,6 +213,18 @@
     "data/images/49/atras.jpeg",
     "data/images/49/frente.jpeg",
     "data/images/49/lateral.jpeg"
+  ],
+  "50": [
+    "data/images/50/ang.jpeg",
+    "data/images/50/arr.jpeg",
+    "data/images/50/cerca.jpeg",
+    "data/images/50/lat.jpeg"
+  ],
+  "51": [
+    "data/images/51/base.jpeg",
+    "data/images/51/cerc.jpeg",
+    "data/images/51/lejos.jpeg",
+    "data/images/51/mascerca.jpeg"
   ],
   "52": [
     "data/images/52/abaio.jpeg",
@@ -339,5 +369,12 @@
     "data/images/78/a.jpeg",
     "data/images/78/qwe.jpeg",
     "data/images/78/sd.jpeg"
+  ],
+  "79": [
+    "data/images/79/ang.jpeg",
+    "data/images/79/arr.jpeg",
+    "data/images/79/deb.jpeg",
+    "data/images/79/fr.jpeg",
+    "data/images/79/lat.jpeg"
   ]
 }

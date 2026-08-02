@@ -418,32 +418,32 @@
   {
     "id": 28,
     "area": "Baño",
-    "nombre": "Estantería baño",
+    "nombre": "Estantería de baño de bambú de 5 baldas",
     "unidades": 1,
     "precioWeb": 20,
     "precioVenta": 30,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 146,
+      "ancho": 33,
+      "largo": 33
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
   {
     "id": 29,
     "area": "Baño",
-    "nombre": "Cajas baño",
-    "unidades": 5,
+    "nombre": "Cesto organizador con tapa de bambú 4 compartimientos",
+    "unidades": 2,
     "precioWeb": 10,
-    "precioVenta": 15,
+    "precioVenta": 12,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 10,
+      "ancho": 35,
+      "largo": 25
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -642,16 +642,16 @@
   {
     "id": 42,
     "area": "Salon",
-    "nombre": "Estantería escalera bambú",
+    "nombre": "Estantería alta escalera bambú",
     "unidades": 2,
     "precioWeb": 40,
     "precioVenta": 50,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 163,
+      "ancho": 33,
+      "largo": 28
     },
-    "descripcion": "",
+    "descripcion": "como nuevo",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -770,16 +770,16 @@
   {
     "id": 50,
     "area": "Salon",
-    "nombre": "Cestas círculo",
+    "nombre": "Cesto de fibra natural trenzada",
     "unidades": 2,
-    "precioWeb": 5,
-    "precioVenta": 8,
+    "precioWeb": 8,
+    "precioVenta": 10,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 25,
+      "ancho": 29,
+      "largo": 29
     },
-    "descripcion": "",
+    "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -791,9 +791,9 @@
     "precioWeb": 50,
     "precioVenta": 60,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 23,
+      "ancho": 24,
+      "largo": 125
     },
     "descripcion": "",
     "estado": "disponible",
@@ -1226,6 +1226,22 @@
       "alto": 53,
       "ancho": 42,
       "largo": 4
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": ""
+  },
+  {
+    "id": 79,
+    "area": "Baño",
+    "nombre": "Cesto organizador con tapa de bambú",
+    "unidades": 3,
+    "precioWeb": 6,
+    "precioVenta": 8,
+    "medidas": {
+      "alto": 20,
+      "ancho": 35,
+      "largo": 25
     },
     "descripcion": "buen estado",
     "estado": "disponible",
