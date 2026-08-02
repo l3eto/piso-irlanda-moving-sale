@@ -105,6 +105,11 @@
     "data/images/26/ang.jpeg",
     "data/images/26/frente.jpeg"
   ],
+  "27": [
+    "data/images/27/ang.jpeg",
+    "data/images/27/front.jpeg",
+    "data/images/27/lat.jpeg"
+  ],
   "28": [
     "data/images/28/ang.jpeg",
     "data/images/28/arr.jpeg",
@@ -118,9 +123,9 @@
     "data/images/29/open.jpeg"
   ],
   "30": [
-    "data/images/30/ang.jpeg",
-    "data/images/30/front.jpeg",
-    "data/images/30/lat.jpeg"
+    "data/images/30/dev.jpeg",
+    "data/images/30/frnt.jpeg",
+    "data/images/30/late.jpeg"
   ],
   "31": [
     "data/images/31/abajo.jpeg",
@@ -313,6 +318,7 @@
     "data/images/66/frente.jpeg"
   ],
   "67": [
+    "data/images/67/a.jpeg",
     "data/images/67/arriba.jpeg",
     "data/images/67/cable.jpeg",
     "data/images/67/frente.jpeg"
