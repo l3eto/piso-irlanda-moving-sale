@@ -105,6 +105,22 @@
     "data/images/20/fre.jpeg",
     "data/images/20/oen.jpeg"
   ],
+  "21": [
+    "data/images/21/ang2.jpeg",
+    "data/images/21/arr.jpeg",
+    "data/images/21/arr2.jpeg",
+    "data/images/21/cerc.jpeg",
+    "data/images/21/cerca2.jpeg",
+    "data/images/21/lat.jpeg"
+  ],
+  "22": [
+    "data/images/22/ang.jpeg",
+    "data/images/22/arr.jpeg",
+    "data/images/22/arr2.jpeg",
+    "data/images/22/arr3.jpeg",
+    "data/images/22/cerc.jpeg",
+    "data/images/22/lej.jpeg"
+  ],
   "23": [
     "data/images/23/abierto.jpeg",
     "data/images/23/cerrado.jpeg"
@@ -181,6 +197,14 @@
     "data/images/36/cajon.jpeg",
     "data/images/36/lat.jpeg",
     "data/images/36/plegado.jpeg"
+  ],
+  "37": [
+    "data/images/37/arr.jpeg",
+    "data/images/37/atras.jpeg",
+    "data/images/37/cosas.jpeg",
+    "data/images/37/guardad.jpeg",
+    "data/images/37/pack.jpeg",
+    "data/images/37/zom.jpeg"
   ],
   "38": [
     "data/images/38/ac1.jpeg",
