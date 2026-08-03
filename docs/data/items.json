@@ -29,7 +29,7 @@
     },
     "descripcion": "se tiene que limpiar algo antes de calentar",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/parrilla-metalica-1287506692"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/tumbona-plegable-metal-y-tela-1287507255"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "nombre": "Bici",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 80,
+    "precioVenta": 70,
     "medidas": {
       "alto": 90,
       "ancho": 45,
@@ -61,15 +61,15 @@
     },
     "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/bicicleta-de-montana-blanca-1287507786"
   },
   {
     "id": 5,
     "area": "Habitacion",
-    "nombre": "Espejo",
+    "nombre": "Armario joyero con espejo de pie",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 80,
+    "precioVenta": 70,
     "medidas": {
       "alto": 157,
       "ancho": 41,
@@ -77,7 +77,7 @@
     },
     "descripcion": "muy buen estado, la parte abierta se uson ia para quitar las cosas, pero el mismo diseño",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/armario-joyero-de-pie-con-espejo-1287544981"
   },
   {
     "id": 6,
