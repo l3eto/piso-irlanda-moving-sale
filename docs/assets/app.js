@@ -39,6 +39,8 @@ const elements = {
   modalImagePlaceholder: document.getElementById("modalImagePlaceholder"),
   modalHerePrice: document.getElementById("modalHerePrice"),
   modalWallapopPrice: document.getElementById("modalWallapopPrice"),
+  modalUnitsRow: document.getElementById("modalUnitsRow"),
+  modalUnitsInfo: document.getElementById("modalUnitsInfo"),
   modalSizeRow: document.getElementById("modalSizeRow"),
   modalSize: document.getElementById("modalSize"),
   modalDescriptionRow: document.getElementById("modalDescriptionRow"),
@@ -132,6 +134,17 @@ function getHerePrice(item) {
     return Number(item.precioWeb);
   }
   return Number(item.precioVenta);
+}
+
+function getOfferPrice(item) {
+  if (item.oferta && Number.isFinite(Number(item.oferta))) {
+    return Number(item.oferta);
+  }
+  return null;
+}
+
+function hasOffer(item) {
+  return getOfferPrice(item) !== null;
 }
 
 function toAssetUrl(assetPath) {
@@ -574,8 +587,8 @@ function renderCards(items) {
     const name = node.querySelector(".item-name");
     const area = node.querySelector(".item-area");
     const status = node.querySelector(".item-status");
-    const units = node.querySelector(".item-units");
     const herePrice = node.querySelector(".item-here-price");
+    const offerPrice = node.querySelector(".item-offer-price");
     const sizeRow = node.querySelector(".item-size-row");
     const size = node.querySelector(".item-size");
     const link = node.querySelector(".item-link");
@@ -619,8 +632,39 @@ function renderCards(items) {
     status.textContent = statusMeta.label;
     status.classList.remove("bg-amber-100", "text-amber-700", "bg-rose-100", "text-rose-700", "bg-emerald-100", "text-emerald-700");
     status.classList.add(...statusMeta.classes);
-    units.textContent = String(item.unidades);
-    herePrice.textContent = formatPrice(getHerePrice(item));
+    
+    // Manejo de precios y ofertas
+    const regularPrice = getHerePrice(item);
+    const offer = getOfferPrice(item);
+    const hasOff = hasOffer(item);
+    const unitsRow = node.querySelector(".item-units-row");
+    const unitsInfo = node.querySelector(".item-units-info");
+    
+    if (hasOff) {
+      // CON OFERTA: mostrar "Y€ (X€ tachado)" - Y en rojo
+      offerPrice.textContent = formatPrice(offer);
+      offerPrice.classList.add("text-red-600");
+      offerPrice.classList.remove("text-slate-700");
+      herePrice.textContent = formatPrice(regularPrice);
+      herePrice.classList.remove("hidden");
+    } else {
+      // SIN OFERTA: mostrar solo el precio web (normal, no rojo)
+      offerPrice.textContent = formatPrice(regularPrice);
+      offerPrice.classList.remove("text-red-600");
+      offerPrice.classList.add("text-slate-700");
+      herePrice.classList.add("hidden");
+    }
+    
+    // Mostrar unidades + total si hay más de 1
+    if (item.unidades > 1) {
+      const finalPrice = hasOff ? offer : regularPrice;
+      const totalAmount = finalPrice * item.unidades;
+      unitsInfo.textContent = `${item.unidades} unidades × ${formatPrice(finalPrice)} = ${formatPrice(totalAmount)}`;
+      unitsRow.classList.remove("hidden");
+    } else {
+      unitsRow.classList.add("hidden");
+    }
+    
     const sizeText = formatSize(item.medidas);
     if (sizeText === "-") {
       sizeRow.classList.add("hidden");
@@ -718,7 +762,36 @@ function renderModal() {
   }
 
   elements.modalHerePrice.textContent = formatPrice(getHerePrice(item));
-  elements.modalWallapopPrice.textContent = formatPrice(item.precioVenta);
+  
+  // Manejo de oferta en la modal
+  const offerPrice = getOfferPrice(item);
+  const hasOff = hasOffer(item);
+  const regularPrice = getHerePrice(item);
+  
+  if (hasOff) {
+    // CON OFERTA: mostrar "Y€ (X€ tachado)"
+    elements.modalHerePrice.textContent = formatPrice(offerPrice);
+    elements.modalHerePrice.classList.remove("text-green-600");
+    elements.modalHerePrice.classList.add("text-red-600");
+    elements.modalWallapopPrice.textContent = formatPrice(regularPrice);
+    elements.modalWallapopPrice.classList.remove("hidden");
+  } else {
+    // SIN OFERTA: solo mostrar precio web
+    elements.modalHerePrice.textContent = formatPrice(regularPrice);
+    elements.modalHerePrice.classList.remove("text-red-600");
+    elements.modalHerePrice.classList.add("text-green-600");
+    elements.modalWallapopPrice.classList.add("hidden");
+  }
+  
+  // Mostrar cantidad y total si hay más de 1 unidad
+  if (item.unidades > 1) {
+    const finalPrice = hasOff ? offerPrice : regularPrice;
+    const totalAmount = finalPrice * item.unidades;
+    elements.modalUnitsInfo.textContent = `${item.unidades} unidades × ${formatPrice(finalPrice)} = ${formatPrice(totalAmount)}`;
+    elements.modalUnitsRow.classList.remove("hidden");
+  } else {
+    elements.modalUnitsRow.classList.add("hidden");
+  }
   
   const sizeText = formatSize(item.medidas);
   if (sizeText !== "-") {

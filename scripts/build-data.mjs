@@ -142,6 +142,7 @@ function parseCsv(csvText) {
     const units = Number.parseInt(row.unidades || "0", 10);
     const salePrice = parseNumber(row.maximo);
     const webPrice = parseNumber(getRowValue(row, ["web", "precio web"]));
+    const offerPrice = parseNumber(getRowValue(row, ["oferta", "oferta"]));
     const alto = parseMeasure(getRowValue(row, ["alto (z)", "alto"]));
     const ancho = parseMeasure(getRowValue(row, ["ancho (x)", "ancho"]));
     const largo = parseMeasure(getRowValue(row, ["largo (y)", "largo"]));
@@ -151,22 +152,29 @@ function parseCsv(csvText) {
     const id = Number.isFinite(explicitId) && explicitId > 0 ? explicitId : fallbackId;
     fallbackId += 1;
 
-    items.push({
-      id,
-      area,
-      nombre,
-      unidades: Number.isFinite(units) ? units : 0,
-      precioWeb: Number.isFinite(webPrice) ? webPrice : null,
-      precioVenta: Number.isFinite(salePrice) ? salePrice : 0,
-      medidas: {
-        alto,
-        ancho,
-        largo
-      },
-      descripcion,
-      estado,
-      wallapop: String(row.wallapop || "").trim()
-    });
+    const itemObj = {
+     id,
+     area,
+     nombre,
+     unidades: Number.isFinite(units) ? units : 0,
+     precioWeb: Number.isFinite(webPrice) ? webPrice : null,
+     precioVenta: Number.isFinite(salePrice) ? salePrice : 0,
+     medidas: {
+       alto,
+       ancho,
+       largo
+     },
+     descripcion,
+     estado,
+     wallapop: String(row.wallapop || "").trim()
+    };
+
+    // Agregar oferta solo si existe
+    if (Number.isFinite(offerPrice)) {
+     itemObj.oferta = offerPrice;
+    }
+
+    items.push(itemObj);
   }
 
   return items;

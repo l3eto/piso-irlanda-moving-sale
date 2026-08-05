@@ -163,16 +163,20 @@
               <span class="item-status inline-flex rounded-full px-2 py-0.5 text-xs font-medium"></span>
             </div>
           </div>
-          <div class="space-y-1 text-sm">
-            <p class="rounded-lg bg-emerald-50 px-2 py-1 text-emerald-700">
-              <span>Precio aqui (ud):</span>
-              <span class="item-here-price ml-1 text-base font-bold"></span>
+          <div class="space-y-2 text-sm">
+            <!-- Precio -->
+            <div class="item-price-section">
+              <p class="text-lg font-bold">
+                <span class="item-offer-price"></span>
+                <span class="item-here-price text-slate-500 line-through text-sm ml-1"></span>
+              </p>
+            </div>
+            <!-- Unidades y total si aplica -->
+            <p class="item-units-row hidden text-xs text-slate-600">
+              <span class="item-units-info"></span>
             </p>
-            <p class="rounded-lg bg-slate-50 px-2 py-1">
-              <span class="text-slate-500">Unidades:</span>
-              <span class="item-units font-medium"></span>
-            </p>
-            <p class="item-size-row rounded-lg bg-slate-50 px-2 py-1">
+            <!-- Medidas -->
+            <p class="item-size-row rounded-lg bg-slate-50 px-2 py-1 text-xs">
               <span class="text-slate-500">Medidas:</span>
               <span class="item-size font-medium"></span>
             </p>
@@ -238,13 +242,18 @@
             </div>
 
             <aside class="space-y-3">
+              <!-- Precio con oferta (si aplica) -->
               <div class="rounded-xl bg-slate-50 p-3">
-                <p class="text-xs uppercase tracking-wide text-slate-500">Precio aqui (por unidad)</p>
-                <p id="modalHerePrice" class="text-xl font-bold text-green-600"></p>
+                <p class="text-xs uppercase tracking-wide text-slate-500">Precio por unidad</p>
+                <p class="text-xl font-bold">
+                  <span id="modalHerePrice" class="text-green-600"></span>
+                  <span id="modalWallapopPrice" class="text-slate-500 line-through text-sm ml-1"></span>
+                </p>
               </div>
-              <div class="rounded-xl bg-slate-50 p-3">
-                <p class="text-xs uppercase tracking-wide text-slate-500">Precio Wallapop (por unidad)</p>
-                <p id="modalWallapopPrice" class="text-xl font-bold text-sky-700"></p>
+              <!-- Cantidad y total si hay más de 1 -->
+              <div id="modalUnitsRow" class="hidden rounded-xl bg-slate-50 p-3">
+                <p class="text-xs uppercase tracking-wide text-slate-500">Cantidad total</p>
+                <p id="modalUnitsInfo" class="text-sm font-medium text-slate-700"></p>
               </div>
               <div id="modalSizeRow" class="hidden rounded-xl bg-slate-50 p-3">
                 <p class="text-xs uppercase tracking-wide text-slate-500">Medidas</p>
