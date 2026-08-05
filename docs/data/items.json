@@ -668,7 +668,7 @@
     },
     "descripcion": "como nuevo",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-escalera-bambu-1288425189"
   },
   {
     "id": 43,
@@ -684,7 +684,7 @@
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732"
   },
   {
     "id": 44,
@@ -700,7 +700,7 @@
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/alfombra-fina-de-algodon-beige-1288426112"
   },
   {
     "id": 45,
@@ -796,15 +796,15 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/cesto-de-fibra-natural-trenzada-con-asas-1288426567"
   },
   {
     "id": 51,
     "area": "Lavanderia",
-    "nombre": "Aspiradora",
+    "nombre": "Aspiradora Rowentta X-pert",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 60,
+    "precioVenta": 55,
     "medidas": {
       "alto": 23,
       "ancho": 24,
@@ -812,7 +812,7 @@
     },
     "descripcion": "algo antigua, pero funciona bien, se abre para limpiar el polvo acomulado, viene con cargador",
     "estado": "disponible",
-    "wallapop": "",
+    "wallapop": "https://es.wallapop.com/item/aspiradora-rowentta-x-pert-1288428057",
     "oferta": 45
   },
   {
