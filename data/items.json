@@ -365,15 +365,15 @@
     },
     "descripcion": "muy buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/plancha-klindo-2800w-280ml-1288244405"
   },
   {
     "id": 25,
     "area": "Cocina",
-    "nombre": "Nevera",
+    "nombre": "Nevera Candy no frost",
     "unidades": 1,
     "precioWeb": 250,
-    "precioVenta": 300,
+    "precioVenta": 280,
     "medidas": {
       "alto": 182,
       "ancho": 55,
@@ -381,7 +381,7 @@
     },
     "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787"
   },
   {
     "id": 26,
@@ -389,7 +389,7 @@
     "nombre": "Airfryer",
     "unidades": 1,
     "precioWeb": 80,
-    "precioVenta": 100,
+    "precioVenta": 90,
     "medidas": {
       "alto": 32,
       "ancho": 29,
@@ -397,7 +397,7 @@
     },
     "descripcion": "buen estado, algo de grasa",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/freidora-de-aire-negra-1288341155"
   },
   {
     "id": 27,
@@ -413,7 +413,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598"
   },
   {
     "id": 28,
@@ -429,7 +429,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-bambu-5-baldas-1288343436"
   },
   {
     "id": 29,
@@ -445,7 +445,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/cesto-organizador-bambu-4-compartimentos-1288344282"
   },
   {
     "id": 30,
@@ -461,7 +461,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/comoda-bano-madera-y-plastico-1288347918"
   },
   {
     "id": 31,
@@ -477,7 +477,7 @@
     },
     "descripcion": "buen estado, con ganchos",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-zapatero-y-perchero-1288355723"
   },
   {
     "id": 32,
@@ -493,7 +493,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/banco-de-madera-para-entrada-1288357292"
   },
   {
     "id": 33,
@@ -549,7 +549,7 @@
     "nombre": "Mesa plegable extensible con cajonera",
     "unidades": 1,
     "precioWeb": 80,
-    "precioVenta": 100,
+    "precioVenta": 90,
     "medidas": {
       "alto": 75,
       "ancho": 153,
@@ -557,7 +557,7 @@
     },
     "descripcion": "buen estado, alguna mancha, blanco, plegado 33cm de ancho, se levantan ambas alas, con 6 cajones",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/mesa-plegable-extensible-con-cajon-1288359131"
   },
   {
     "id": 37,
@@ -589,7 +589,7 @@
     },
     "descripcion": "baja hasta 79cm altura, sube hasta 112cm altura, entradas cables, enganches, colgador cascos",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/escritorio-elevable-electrico-1288364077"
   },
   {
     "id": 39,
@@ -843,9 +843,9 @@
       "ancho": 27,
       "largo": 25
     },
-    "descripcion": "buen estado",
+    "descripcion": "buen estado, diferentes formas y 9 velocidades",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/pistola-de-masaje-profesional-1288365765"
   },
   {
     "id": 55,
@@ -861,7 +861,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/masajeador-de-espalda-1288366532"
   },
   {
     "id": 56,
