@@ -508,15 +508,23 @@ function renderFavorites() {
   });
 }
 
+function normalizeText(text) {
+  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 function itemMatchesFilters(item) {
-  const bySearch = !state.filters.search || item.nombre.toLowerCase().includes(state.filters.search);
+  const itemNameNormalized = normalizeText(item.nombre);
+  const searchNormalized = normalizeText(state.filters.search);
+  const bySearch = !state.filters.search || itemNameNormalized.includes(searchNormalized);
   const byArea = !state.filters.area || item.area === state.filters.area;
   const byStatus = !state.filters.status || normalizeEstado(item.estado) === state.filters.status;
   return bySearch && byArea && byStatus;
 }
 
 function itemMatchesSearchAndStatus(item) {
-  const bySearch = !state.filters.search || item.nombre.toLowerCase().includes(state.filters.search);
+  const itemNameNormalized = normalizeText(item.nombre);
+  const searchNormalized = normalizeText(state.filters.search);
+  const bySearch = !state.filters.search || itemNameNormalized.includes(searchNormalized);
   const byStatus = !state.filters.status || normalizeEstado(item.estado) === state.filters.status;
   return bySearch && byStatus;
 }
