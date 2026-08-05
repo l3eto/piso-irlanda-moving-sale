@@ -351,14 +351,19 @@ function generateShareMessage() {
   
   let message = "Hola Beto! 👋\n\nMe interesan estos productos:\n\n";
   let total = 0;
+  let totalWithoutOffer = 0;
   
   for (const fav of state.favorites) {
     const item = getItemById(fav.id);
     if (!item) continue;
     
-    const price = getHerePrice(item);
+    // Usar precio de oferta si existe, sino usar precio web
+    const regularPrice = getHerePrice(item);
+    const price = hasOffer(item) ? getOfferPrice(item) : regularPrice;
     const itemTotal = price * fav.cantidad;
+    const itemTotalWithoutOffer = regularPrice * fav.cantidad;
     total += itemTotal;
+    totalWithoutOffer += itemTotalWithoutOffer;
     
     const status = normalizeEstado(item.estado);
     let statusLabel = "";
@@ -366,10 +371,18 @@ function generateShareMessage() {
     else if (status === "vendido") statusLabel = " ✓ (vendido)";
     
     message += `📌 Ref #${item.id} - ${item.nombre}\n`;
-    message += `   Precio: ${formatPrice(price)} x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
+    message += `   Precio: ${formatPrice(price)}`;
+    if (hasOffer(item)) {
+      message += ` (${formatPrice(regularPrice)} tachado)`;
+    }
+    message += ` x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
   }
   
-  message += `💰 Total: ${formatPrice(total)}\n\n¡Gracias!`;
+  message += `💰 Total: ${formatPrice(total)}`;
+  if (total < totalWithoutOffer) {
+    message += ` (${formatPrice(totalWithoutOffer)} sin descuento)`;
+  }
+  message += `\n\n¡Gracias!`;
   return message;
 }
 
@@ -406,15 +419,20 @@ function renderFavorites() {
   }
   
   let total = 0;
+  let totalWithoutOffer = 0;
   const fragment = document.createDocumentFragment();
   
   for (const fav of state.favorites) {
     const item = getItemById(fav.id);
     if (!item) continue;
     
-    const price = getHerePrice(item);
+    // Usar precio de oferta si existe, sino usar precio web
+    const regularPrice = getHerePrice(item);
+    const price = hasOffer(item) ? getOfferPrice(item) : regularPrice;
     const itemTotal = price * fav.cantidad;
+    const itemTotalWithoutOffer = regularPrice * fav.cantidad;
     total += itemTotal;
+    totalWithoutOffer += itemTotalWithoutOffer;
     
     const status = normalizeEstado(item.estado);
     let statusBadge = "";
@@ -454,6 +472,19 @@ function renderFavorites() {
     const isAtMin = fav.cantidad <= 1;
     const isAtMax = fav.cantidad >= item.unidades;
     
+    // Mostrar precios con tachado si hay oferta
+    let unitPriceHTML = `<p class="font-bold text-green-600">${formatPrice(price)}`;
+    if (hasOffer(item)) {
+      unitPriceHTML += ` <span class="text-slate-400 line-through text-sm ml-1">${formatPrice(regularPrice)}</span>`;
+    }
+    unitPriceHTML += `</p>`;
+    
+    let subtotalHTML = `<p class="font-bold text-sky-600">${formatPrice(itemTotal)}`;
+    if (hasOffer(item)) {
+      subtotalHTML += ` <span class="text-slate-400 line-through text-sm ml-1">${formatPrice(itemTotalWithoutOffer)}</span>`;
+    }
+    subtotalHTML += `</p>`;
+    
     itemDiv.innerHTML = `
       <div class="flex gap-3 p-3">
         ${imageHTML}
@@ -469,11 +500,11 @@ function renderFavorites() {
           <div class="grid grid-cols-2 gap-2 text-xs">
             <div class="rounded bg-slate-50 p-1.5">
               <p class="text-slate-600 font-medium">Unit.</p>
-              <p class="font-bold text-green-600">${formatPrice(price)}</p>
+              ${unitPriceHTML}
             </div>
             <div class="rounded bg-slate-50 p-1.5">
               <p class="text-slate-600 font-medium">Subtotal</p>
-              <p class="font-bold text-sky-600">${formatPrice(itemTotal)}</p>
+              ${subtotalHTML}
             </div>
           </div>
           
@@ -495,7 +526,13 @@ function renderFavorites() {
   }
   
   elements.favoritesList.appendChild(fragment);
-  elements.favoritesTotal.textContent = formatPrice(total);
+  
+  // Mostrar total con tachado si hay ofertas
+  let totalHTML = formatPrice(total);
+  if (total < totalWithoutOffer) {
+    totalHTML += ` <span class="text-slate-400 line-through text-sm ml-1">${formatPrice(totalWithoutOffer)}</span>`;
+  }
+  elements.favoritesTotal.innerHTML = totalHTML;
   document.getElementById("favoritesCount").textContent = `${state.favorites.length} ${state.favorites.length === 1 ? "producto" : "productos"}`;
   
   // Agregar event listeners
