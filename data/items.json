@@ -2,7 +2,7 @@
   {
     "id": 1,
     "area": "Lavanderia",
-    "nombre": "Lavadora",
+    "nombre": "Lavadora Candy",
     "unidades": 1,
     "precioWeb": 210,
     "precioVenta": 250,
@@ -13,7 +13,8 @@
     },
     "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
+    "oferta": 200
   },
   {
     "id": 2,
@@ -260,8 +261,8 @@
     "area": "Habitacion",
     "nombre": "Cómoda Habitacion",
     "unidades": 1,
-    "precioWeb": 120,
-    "precioVenta": 150,
+    "precioWeb": 110,
+    "precioVenta": 120,
     "medidas": {
       "alto": 114,
       "ancho": 90,
@@ -269,7 +270,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/comoda-de-madera-1288400446"
   },
   {
     "id": 19,
@@ -285,15 +286,15 @@
     },
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883"
   },
   {
     "id": 20,
     "area": "Habitacion",
     "nombre": "Mesita noche marrón",
     "unidades": 1,
-    "precioWeb": 50,
-    "precioVenta": 60,
+    "precioWeb": 40,
+    "precioVenta": 50,
     "medidas": {
       "alto": 70,
       "ancho": 62,
@@ -301,7 +302,7 @@
     },
     "descripcion": "buen estado, 3 cajones",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-de-madera-1288401460"
   },
   {
     "id": 21,
@@ -1261,6 +1262,6 @@
     },
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845"
   }
 ]
