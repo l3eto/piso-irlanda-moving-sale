@@ -882,7 +882,7 @@
   {
     "id": 56,
     "area": "Cocina",
-    "nombre": "Raclette 10",
+    "nombre": "Raclette 10 personas",
     "unidades": 1,
     "precioWeb": 30,
     "precioVenta": 40,
@@ -893,15 +893,15 @@
     },
     "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/raclette-korona-10-personas-1288432075"
   },
   {
     "id": 57,
     "area": "Cocina",
-    "nombre": "Reclette 2",
+    "nombre": "Reclette 2 personas",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 30,
+    "precioVenta": 25,
     "medidas": {
       "alto": 12,
       "ancho": 32,
@@ -909,7 +909,7 @@
     },
     "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/raclette-bestron-black-wood-2-personas-1288432749"
   },
   {
     "id": 58,
@@ -1069,7 +1069,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326"
   },
   {
     "id": 68,
@@ -1197,7 +1197,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/perchero-colgante-para-puerta-1288433715"
   },
   {
     "id": 76,
@@ -1261,7 +1261,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/cesto-organizador-bambu-y-tela-con-tapa-1288434034"
   },
   {
     "id": 80,
