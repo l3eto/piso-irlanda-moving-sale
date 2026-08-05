@@ -263,7 +263,7 @@
     },
     "descripcion": "buen estado, cojin algo sucio",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194"
   },
   {
     "id": 18,
@@ -351,7 +351,7 @@
     "nombre": "Caja herramientas",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 50,
+    "precioVenta": 40,
     "medidas": {
       "alto": 9,
       "ancho": 33,
@@ -359,7 +359,7 @@
     },
     "descripcion": "falta alguna cosilla, pero esta casi todo",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/caja-de-herramientas-multiusos-1288417203"
   },
   {
     "id": 24,
@@ -521,15 +521,15 @@
     },
     "descripcion": "buen estado, no incluye cestas",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-kallax-blanca-1288417794"
   },
   {
     "id": 34,
     "area": "Oficina",
     "nombre": "Estantería libros Kallax",
     "unidades": 1,
-    "precioWeb": 20,
-    "precioVenta": 30,
+    "precioWeb": 25,
+    "precioVenta": 35,
     "medidas": {
       "alto": 98,
       "ancho": 66,
@@ -537,7 +537,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-kallax-ikea-blanca-1288418320",
+    "oferta": 20
   },
   {
     "id": 35,
@@ -553,7 +554,7 @@
     },
     "descripcion": "casi nuevo",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/bicicleta-estatica-con-asiento-1288419469"
   },
   {
     "id": 36,
@@ -617,13 +618,13 @@
     },
     "descripcion": "Se vende con cable VGA y adaptador HDMI",
     "estado": "disponible",
-    "wallapop": "",
+    "wallapop": "https://es.wallapop.com/item/pantalla-asus-negra-1288420677",
     "oferta": 10
   },
   {
     "id": 40,
     "area": "Oficina",
-    "nombre": "Cestas oficina",
+    "nombre": "Cesta de ratán trenzado para estantería KALLAX",
     "unidades": 2,
     "precioWeb": 10,
     "precioVenta": 12,
@@ -634,7 +635,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/cestas-oficina-1288421887"
   },
   {
     "id": 41,
@@ -642,7 +643,7 @@
     "nombre": "Estantería esquina bambú",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 40,
+    "precioVenta": 30,
     "medidas": {
       "alto": 100,
       "ancho": 35,
@@ -650,7 +651,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "https://es.wallapop.com/item/estanteria-de-esquina-de-bambu-1288422938",
+    "oferta": 20
   },
   {
     "id": 42,
