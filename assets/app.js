@@ -208,10 +208,8 @@ function openModalForItemId(itemId) {
   elements.galleryModal.setAttribute("aria-hidden", "false");
   document.body.classList.add("overflow-hidden");
   
-  // Para clicks posteriores (no es la primera carga), usar pushState normal
-  if (state.historySetup) {
-    window.history.pushState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
-  }
+  // Siempre hacer push del hash
+  window.history.pushState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
 }
 
 function closeModalAndRestoreUrl() {
