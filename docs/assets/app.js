@@ -16,7 +16,8 @@ const state = {
     visibleItems: [],
     currentItemIndex: 0
   },
-  favorites: []
+  favorites: [],
+  historySetup: false
 };
 
 const elements = {
@@ -206,7 +207,11 @@ function openModalForItemId(itemId) {
   elements.galleryModal.classList.remove("hidden");
   elements.galleryModal.setAttribute("aria-hidden", "false");
   document.body.classList.add("overflow-hidden");
-  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
+  
+  // Para clicks posteriores (no es la primera carga), usar pushState normal
+  if (state.historySetup) {
+    window.history.pushState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
+  }
 }
 
 function closeModalAndRestoreUrl() {
@@ -221,6 +226,17 @@ function checkUrlHash() {
   if (hash.startsWith("#product-")) {
     const productId = Number.parseInt(hash.substring("#product-".length), 10);
     if (Number.isFinite(productId)) {
+      // Si es la primera carga con hash directo, configurar historial PRIMERO
+      if (!state.historySetup) {
+        state.historySetup = true;
+        const separator = window.location.search ? "&" : "?";
+        const baseUrl = `${window.location.pathname}${window.location.search}${separator}_m=1`;
+        // Reemplazar con param temporal
+        window.history.replaceState(null, "", baseUrl);
+        // Pushear con el hash
+        window.history.pushState(null, "", `${baseUrl}${hash}`);
+      }
+      // Abrir modal DESPUÉS de configurar el historial
       openModalForItemId(productId);
     }
   }
@@ -1196,6 +1212,15 @@ async function init() {
     setupModalInteraction();
     setupFavoritesUI();
     render();
+    
+    // Listener para manejar el back button
+    window.addEventListener("popstate", () => {
+      // Si no hay hash de producto, cerrar la modal
+      if (!window.location.hash.startsWith("#product-")) {
+        closeModalAndRestoreUrl();
+      }
+    });
+    
     checkUrlHash();
   } catch (error) {
     elements.grid.innerHTML = `<p class="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">${error.message}</p>`;
