@@ -17,7 +17,8 @@ const state = {
     currentItemIndex: 0
   },
   favorites: [],
-  historySetup: false
+  historySetup: false,
+  isDirectEntry: false
 };
 
 const elements = {
@@ -208,8 +209,10 @@ function openModalForItemId(itemId) {
   elements.galleryModal.setAttribute("aria-hidden", "false");
   document.body.classList.add("overflow-hidden");
   
-  // Siempre hacer push del hash
-  window.history.pushState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
+  // Siempre hacer push del hash (solo si no es entrada directa, que ya se encarga checkUrlHash)
+  if (!state.isDirectEntry) {
+    window.history.pushState(null, "", `${window.location.pathname}${window.location.search}#product-${itemId}`);
+  }
 }
 
 function closeModalAndRestoreUrl() {
@@ -224,17 +227,28 @@ function checkUrlHash() {
   if (hash.startsWith("#product-")) {
     const productId = Number.parseInt(hash.substring("#product-".length), 10);
     if (Number.isFinite(productId)) {
-      // Si es la primera carga con hash directo, configurar historial PRIMERO
-      if (!state.historySetup) {
+      // Si es la primera carga con hash directo
+      if (!state.historySetup && !state.isDirectEntry) {
         state.historySetup = true;
-        const separator = window.location.search ? "&" : "?";
-        const baseUrl = `${window.location.pathname}${window.location.search}${separator}_m=1`;
-        // Reemplazar con param temporal
-        window.history.replaceState(null, "", baseUrl);
-        // Pushear con el hash
-        window.history.pushState(null, "", `${baseUrl}${hash}`);
+        state.isDirectEntry = true;
+        
+        // Esperar 500ms para que el navegador registre la entrada inicial
+        setTimeout(() => {
+          const separator = window.location.search ? "&" : "?";
+          const baseUrl = `${window.location.pathname}${window.location.search}${separator}_m=1`;
+          
+          // Cambiar URL con param temporal (sin hash)
+          window.history.replaceState(null, "", baseUrl);
+          // Pushear con hash
+          window.history.pushState(null, "", `${baseUrl}${hash}`);
+          // Ahora abrir la modal
+          openModalForItemId(productId);
+        }, 500);
+        
+        return;
       }
-      // Abrir modal DESPUÉS de configurar el historial
+      
+      // Click normal desde el listado
       openModalForItemId(productId);
     }
   }
