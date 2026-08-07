@@ -1145,6 +1145,8 @@ function setupFavoritesUI() {
     elements.favoritesModal.setAttribute("aria-hidden", "false");
     document.body.classList.add("overflow-hidden");
     renderFavorites();
+    // Agregar entrada al historial para que el back cierre la modal
+    window.history.pushState({ modal: "favorites" }, "", window.location.href);
   });
 
   elements.favoritesModalClose.addEventListener("click", () => {
@@ -1226,10 +1228,16 @@ async function init() {
     render();
     
     // Listener para manejar el back button
-    window.addEventListener("popstate", () => {
-      // Si no hay hash de producto, cerrar la modal
+    window.addEventListener("popstate", (event) => {
+      // Cerrar modal de galería si no hay hash de producto
       if (!window.location.hash.startsWith("#product-")) {
         closeModalAndRestoreUrl();
+      }
+      // Cerrar modal de favoritos si se ejecuta un popstate
+      if (!elements.favoritesModal.classList.contains("hidden")) {
+        elements.favoritesModal.classList.add("hidden");
+        elements.favoritesModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
       }
     });
     
