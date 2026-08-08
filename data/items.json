@@ -87,16 +87,16 @@
   {
     "id": 6,
     "area": "Habitacion",
-    "nombre": "Armario",
+    "nombre": "Armario 4 piesas sin puertas",
     "unidades": 1,
-    "precioWeb": 200,
-    "precioVenta": 250,
+    "precioWeb": 300,
+    "precioVenta": 340,
     "medidas": {
       "alto": null,
       "ancho": null,
       "largo": null
     },
-    "descripcion": "",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -163,7 +163,7 @@
       "largo": 50
     },
     "descripcion": "muy buen estado",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/mesa-de-centro-de-madera-maciza-1287797991",
     "oferta": 45
   },
@@ -1020,7 +1020,7 @@
       "largo": null
     },
     "descripcion": "buen estado incluye correa",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/patinete-infantil-azul-oxelo-1162630666"
   },
   {
