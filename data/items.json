@@ -88,15 +88,15 @@
     "id": 6,
     "area": "Habitacion",
     "nombre": "Armario 4 piesas sin puertas",
-    "unidades": 1,
-    "precioWeb": 300,
-    "precioVenta": 340,
+    "unidades": 0,
+    "precioWeb": null,
+    "precioVenta": 0,
     "medidas": {
       "alto": null,
       "ancho": null,
       "largo": null
     },
-    "descripcion": "muy buen estado",
+    "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36",
     "estado": "disponible",
     "wallapop": ""
   },
@@ -163,7 +163,7 @@
       "largo": 50
     },
     "descripcion": "muy buen estado",
-    "estado": "reservado",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mesa-de-centro-de-madera-maciza-1287797991",
     "oferta": 45
   },
