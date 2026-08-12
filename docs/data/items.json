@@ -347,22 +347,6 @@
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828"
   },
   {
-    "id": 23,
-    "area": "Patio",
-    "nombre": "Caja herramientas",
-    "unidades": 0,
-    "precioWeb": 0,
-    "precioVenta": 0,
-    "medidas": {
-      "alto": 9,
-      "ancho": 33,
-      "largo": 25
-    },
-    "descripcion": "falta alguna cosilla, pero esta casi todo",
-    "estado": "vendido",
-    "wallapop": "https://es.wallapop.com/item/caja-de-herramientas-multiusos-1288417203"
-  },
-  {
     "id": 24,
     "area": "Lavanderia",
     "nombre": "Plancha",
@@ -847,22 +831,6 @@
     "descripcion": "buen estado,cable 46cm + foco",
     "estado": "disponible",
     "wallapop": ""
-  },
-  {
-    "id": 54,
-    "area": "Habitacion",
-    "nombre": "Pistola masajes",
-    "unidades": 0,
-    "precioWeb": 0,
-    "precioVenta": 0,
-    "medidas": {
-      "alto": 9,
-      "ancho": 27,
-      "largo": 25
-    },
-    "descripcion": "buen estado, diferentes formas y 9 velocidades",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/pistola-de-masaje-profesional-1288365765"
   },
   {
     "id": 55,
