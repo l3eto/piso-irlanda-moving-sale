@@ -88,17 +88,18 @@
     "id": 6,
     "area": "Habitacion",
     "nombre": "Armario 4 piesas sin puertas",
-    "unidades": 0,
-    "precioWeb": null,
-    "precioVenta": 0,
+    "unidades": 1,
+    "precioWeb": 300,
+    "precioVenta": 340,
     "medidas": {
-      "alto": null,
-      "ancho": null,
-      "largo": null
+      "alto": 201,
+      "ancho": 78,
+      "largo": 58
     },
-    "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36",
+    "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36\n2 - alt 201 qnch 53 larg 36\n3 - alt 201 anch 75  lar 58\n4 - alt 201 anch 75 larg 58",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 275
   },
   {
     "id": 7,
@@ -349,9 +350,9 @@
     "id": 23,
     "area": "Patio",
     "nombre": "Caja herramientas",
-    "unidades": 1,
-    "precioWeb": 30,
-    "precioVenta": 40,
+    "unidades": 0,
+    "precioWeb": 0,
+    "precioVenta": 0,
     "medidas": {
       "alto": 9,
       "ancho": 33,
@@ -851,9 +852,9 @@
     "id": 54,
     "area": "Habitacion",
     "nombre": "Pistola masajes",
-    "unidades": 1,
-    "precioWeb": 25,
-    "precioVenta": 40,
+    "unidades": 0,
+    "precioWeb": 0,
+    "precioVenta": 0,
     "medidas": {
       "alto": 9,
       "ancho": 27,
