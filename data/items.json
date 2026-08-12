@@ -87,18 +87,18 @@
   {
     "id": 6,
     "area": "Habitacion",
-    "nombre": "Armario 4 piesas sin puertas",
+    "nombre": "Armario 4 piezas sin puertas",
     "unidades": 1,
     "precioWeb": 300,
-    "precioVenta": 340,
+    "precioVenta": 330,
     "medidas": {
       "alto": 201,
-      "ancho": 78,
+      "ancho": 278,
       "largo": 58
     },
     "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36\n2 - alt 201 qnch 53 larg 36\n3 - alt 201 anch 75  lar 58\n4 - alt 201 anch 75 larg 58",
     "estado": "disponible",
-    "wallapop": "",
+    "wallapop": "https://es.wallapop.com/item/armario-4-piezas-sin-puertas-1290577431",
     "oferta": 275
   },
   {
