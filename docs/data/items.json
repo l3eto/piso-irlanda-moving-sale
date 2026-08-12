@@ -280,7 +280,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/comoda-de-madera-1288400446"
+    "wallapop": "https://es.wallapop.com/item/comoda-de-madera-1288400446",
+    "oferta": 100
   },
   {
     "id": 19,
@@ -296,7 +297,8 @@
     },
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883"
+    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
+    "oferta": 45
   },
   {
     "id": 20,
@@ -328,7 +330,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725"
+    "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
+    "oferta": 90
   },
   {
     "id": 22,
@@ -344,7 +347,8 @@
     },
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828"
+    "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
+    "oferta": 140
   },
   {
     "id": 24,
@@ -717,23 +721,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
-  },
-  {
-    "id": 47,
-    "area": "Habitacion",
-    "nombre": "Difusor aromas",
-    "unidades": 1,
-    "precioWeb": 20,
-    "precioVenta": 30,
-    "medidas": {
-      "alto": 20,
-      "ancho": 10,
-      "largo": 10
-    },
-    "descripcion": "buen estado",
-    "estado": "vendido",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 18
   },
   {
     "id": 48,
@@ -1038,7 +1027,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326"
+    "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326",
+    "oferta": 35
   },
   {
     "id": 68,
@@ -1246,6 +1236,7 @@
     },
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845"
+    "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
+    "oferta": 45
   }
 ]
