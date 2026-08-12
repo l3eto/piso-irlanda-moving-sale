@@ -107,11 +107,50 @@ function normalizeEstado(raw) {
   return "disponible";
 }
 
+function splitCsvLines(csvText) {
+  const lines = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < csvText.length; i += 1) {
+    const char = csvText[i];
+    const next = csvText[i + 1];
+
+    if (char === '"' && inQuotes && next === '"') {
+      current += '"';
+      i += 1;
+      continue;
+    }
+
+    if (char === '"') {
+      inQuotes = !inQuotes;
+      current += char;
+      continue;
+    }
+
+    if ((char === '\n' || char === '\r') && !inQuotes) {
+      if (current.trim().length > 0) {
+        lines.push(current.trim());
+      }
+      current = "";
+      if (char === '\r' && next === '\n') {
+        i += 1;
+      }
+      continue;
+    }
+
+    current += char;
+  }
+
+  if (current.trim().length > 0) {
+    lines.push(current.trim());
+  }
+
+  return lines;
+}
+
 function parseCsv(csvText) {
-  const lines = csvText
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0);
+  const lines = splitCsvLines(csvText);
 
   if (lines.length < 2) {
     return [];
