@@ -14,7 +14,7 @@
     "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
-    "oferta": 200
+    "oferta": 180
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
     "descripcion": "se tiene que limpiar algo antes de calentar",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/parrilla-metalica-1287506692",
-    "oferta": 9
+    "oferta": 8
   },
   {
     "id": 3,
@@ -48,7 +48,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/tumbona-plegable-metal-y-tela-1287507255",
-    "oferta": 45
+    "oferta": 40
   },
   {
     "id": 4,
@@ -65,7 +65,7 @@
     "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/bicicleta-de-montana-blanca-1287507786",
-    "oferta": 45
+    "oferta": 40
   },
   {
     "id": 5,
@@ -82,7 +82,7 @@
     "descripcion": "muy buen estado, la parte abierta se uson ia para quitar las cosas, pero el mismo diseño",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-joyero-de-pie-con-espejo-1287544981",
-    "oferta": 55
+    "oferta": 50
   },
   {
     "id": 6,
@@ -99,7 +99,7 @@
     "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36\n2 - alt 201 qnch 53 larg 36\n3 - alt 201 anch 75  lar 58\n4 - alt 201 anch 75 larg 58",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-4-piezas-sin-puertas-1290577431",
-    "oferta": 275
+    "oferta": 260
   },
   {
     "id": 7,
@@ -116,7 +116,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-organizador-con-cajones-y-cesta-1287663252",
-    "oferta": 40
+    "oferta": 35
   },
   {
     "id": 8,
@@ -133,7 +133,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesa-comedor-pino-macizo-1287664020",
-    "oferta": 85
+    "oferta": 80
   },
   {
     "id": 10,
@@ -183,7 +183,7 @@
     "descripcion": "muy buen estado, de 2 puertas y estantes efecto roble",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-tv-aparador-bajo-madera-2-puertas-1287801343",
-    "oferta": 55
+    "oferta": 50
   },
   {
     "id": 13,
@@ -199,7 +199,8 @@
     },
     "descripcion": "sin problemas de calidad, no es smarttv, necesita un firetv o similar",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/toshiba-32-tv-1287803114"
+    "wallapop": "https://es.wallapop.com/item/toshiba-32-tv-1287803114",
+    "oferta": 40
   },
   {
     "id": 14,
@@ -215,7 +216,8 @@
     },
     "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241"
+    "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241",
+    "oferta": 350
   },
   {
     "id": 15,
@@ -232,7 +234,7 @@
     "descripcion": "buen estado, se relleno el puf hace poco",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/puf-redondo-tela-estampado-geometrico-1287816783",
-    "oferta": 45
+    "oferta": 40
   },
   {
     "id": 16,
@@ -248,7 +250,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/sillon-de-ratan-con-cojines-1287819623"
+    "wallapop": "https://es.wallapop.com/item/sillon-de-ratan-con-cojines-1287819623",
+    "oferta": 100
   },
   {
     "id": 17,
@@ -264,7 +267,8 @@
     },
     "descripcion": "buen estado, cojin algo sucio",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194"
+    "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194",
+    "oferta": 40
   },
   {
     "id": 18,
@@ -298,7 +302,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
-    "oferta": 45
+    "oferta": 40
   },
   {
     "id": 20,
@@ -331,7 +335,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
-    "oferta": 90
+    "oferta": 80
   },
   {
     "id": 22,
@@ -348,7 +352,7 @@
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
-    "oferta": 140
+    "oferta": 120
   },
   {
     "id": 24,
@@ -364,7 +368,8 @@
     },
     "descripcion": "muy buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/plancha-klindo-2800w-280ml-1288244405"
+    "wallapop": "https://es.wallapop.com/item/plancha-klindo-2800w-280ml-1288244405",
+    "oferta": 12
   },
   {
     "id": 25,
@@ -381,7 +386,7 @@
     "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787",
-    "oferta": 230
+    "oferta": 210
   },
   {
     "id": 26,
@@ -398,7 +403,7 @@
     "descripcion": "buen estado, algo de grasa",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/freidora-de-aire-negra-1288341155",
-    "oferta": 70
+    "oferta": 65
   },
   {
     "id": 27,
@@ -414,7 +419,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598"
+    "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598",
+    "oferta": 25
   },
   {
     "id": 28,
@@ -430,7 +436,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estanteria-bambu-5-baldas-1288343436"
+    "wallapop": "https://es.wallapop.com/item/estanteria-bambu-5-baldas-1288343436",
+    "oferta": 18
   },
   {
     "id": 29,
@@ -462,7 +469,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/comoda-bano-madera-y-plastico-1288347918"
+    "wallapop": "https://es.wallapop.com/item/comoda-bano-madera-y-plastico-1288347918",
+    "oferta": 8
   },
   {
     "id": 31,
@@ -478,7 +486,8 @@
     },
     "descripcion": "buen estado, con ganchos",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estanteria-zapatero-y-perchero-1288355723"
+    "wallapop": "https://es.wallapop.com/item/estanteria-zapatero-y-perchero-1288355723",
+    "oferta": 45
   },
   {
     "id": 32,
@@ -494,7 +503,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/banco-de-madera-para-entrada-1288357292"
+    "wallapop": "https://es.wallapop.com/item/banco-de-madera-para-entrada-1288357292",
+    "oferta": 25
   },
   {
     "id": 33,
@@ -510,7 +520,8 @@
     },
     "descripcion": "buen estado, no incluye cestas",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estanteria-kallax-blanca-1288417794"
+    "wallapop": "https://es.wallapop.com/item/estanteria-kallax-blanca-1288417794",
+    "oferta": 30
   },
   {
     "id": 34,
@@ -543,7 +554,8 @@
     },
     "descripcion": "casi nuevo",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/bicicleta-estatica-con-asiento-1288419469"
+    "wallapop": "https://es.wallapop.com/item/bicicleta-estatica-con-asiento-1288419469",
+    "oferta": 50
   },
   {
     "id": 36,
@@ -559,7 +571,8 @@
     },
     "descripcion": "buen estado, alguna mancha, blanco, plegado 33cm de ancho, se levantan ambas alas, con 6 cajones",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/mesa-plegable-extensible-con-cajon-1288359131"
+    "wallapop": "https://es.wallapop.com/item/mesa-plegable-extensible-con-cajon-1288359131",
+    "oferta": 70
   },
   {
     "id": 37,
@@ -575,7 +588,8 @@
     },
     "descripcion": "muy buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/camilla-de-masaje-aluminio-plegable-1287833602"
+    "wallapop": "https://es.wallapop.com/item/camilla-de-masaje-aluminio-plegable-1287833602",
+    "oferta": 60
   },
   {
     "id": 38,
@@ -591,7 +605,8 @@
     },
     "descripcion": "baja hasta 79cm altura, sube hasta 112cm altura, entradas cables, enganches, colgador cascos",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/escritorio-elevable-electrico-1288364077"
+    "wallapop": "https://es.wallapop.com/item/escritorio-elevable-electrico-1288364077",
+    "oferta": 110
   },
   {
     "id": 39,
@@ -606,7 +621,7 @@
       "largo": 21
     },
     "descripcion": "Se vende con cable VGA y adaptador HDMI",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/pantalla-asus-negra-1288420677",
     "oferta": 10
   },
@@ -657,7 +672,8 @@
     },
     "descripcion": "como nuevo",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estanteria-escalera-bambu-1288425189"
+    "wallapop": "https://es.wallapop.com/item/estanteria-escalera-bambu-1288425189",
+    "oferta": 35
   },
   {
     "id": 43,
@@ -673,7 +689,8 @@
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732"
+    "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732",
+    "oferta": 24
   },
   {
     "id": 44,
@@ -689,7 +706,8 @@
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/alfombra-fina-de-algodon-beige-1288426112"
+    "wallapop": "https://es.wallapop.com/item/alfombra-fina-de-algodon-beige-1288426112",
+    "oferta": 20
   },
   {
     "id": 45,
@@ -754,7 +772,8 @@
     },
     "descripcion": "se puede cambiar imagen o quedarsela",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 15
   },
   {
     "id": 50,
@@ -787,7 +806,7 @@
     "descripcion": "algo antigua, pero funciona bien, se abre para limpiar el polvo acomulado, viene con cargador",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/aspiradora-rowentta-x-pert-1288428057",
-    "oferta": 45
+    "oferta": 37
   },
   {
     "id": 52,
@@ -819,7 +838,8 @@
     },
     "descripcion": "buen estado,cable 46cm + foco",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 15
   },
   {
     "id": 55,
@@ -851,7 +871,8 @@
     },
     "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/raclette-korona-10-personas-1288432075"
+    "wallapop": "https://es.wallapop.com/item/raclette-korona-10-personas-1288432075",
+    "oferta": 25
   },
   {
     "id": 57,
@@ -867,7 +888,8 @@
     },
     "descripcion": "muy buen estado, se uso 3 veces",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/raclette-bestron-black-wood-2-personas-1288432749"
+    "wallapop": "https://es.wallapop.com/item/raclette-bestron-black-wood-2-personas-1288432749",
+    "oferta": 12
   },
   {
     "id": 58,
@@ -883,7 +905,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 20
   },
   {
     "id": 59,
@@ -899,7 +922,8 @@
     },
     "descripcion": "buen estado, pero sucio por antiguedad y uso",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 10
   },
   {
     "id": 60,
@@ -915,7 +939,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 10
   },
   {
     "id": 61,
@@ -931,7 +956,8 @@
     },
     "descripcion": "tabla desgastado, estructura buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 15
   },
   {
     "id": 62,
@@ -947,7 +973,8 @@
     },
     "descripcion": "buen estado, la imagen abierta se genero con ia para quitar contenido,es bastante fiel",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 8
   },
   {
     "id": 63,
@@ -963,7 +990,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/patinete-mini-cruiser-verde-1162626420"
+    "wallapop": "https://es.wallapop.com/item/patinete-mini-cruiser-verde-1162626420",
+    "oferta": 12
   },
   {
     "id": 64,
@@ -978,7 +1006,7 @@
       "largo": null
     },
     "descripcion": "buen estado incluye correa",
-    "estado": "reservado",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/patinete-infantil-azul-oxelo-1162630666"
   },
   {
@@ -1011,7 +1039,8 @@
     },
     "descripcion": "buen estado, esta sucio",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/pelota-de-yoga-menta-1287664970"
+    "wallapop": "https://es.wallapop.com/item/pelota-de-yoga-menta-1287664970",
+    "oferta": 15
   },
   {
     "id": 67,
@@ -1028,7 +1057,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326",
-    "oferta": 35
+    "oferta": 30
   },
   {
     "id": 68,
@@ -1237,6 +1266,6 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
-    "oferta": 45
+    "oferta": 40
   }
 ]
