@@ -149,6 +149,15 @@ function hasOffer(item) {
   return getOfferPrice(item) !== null;
 }
 
+function getDiscountAmount(item) {
+  const offerPrice = getOfferPrice(item);
+  if (offerPrice === null) {
+    return 0;
+  }
+  const regularPrice = getHerePrice(item);
+  return regularPrice - offerPrice;
+}
+
 function toAssetUrl(assetPath) {
   const normalized = String(assetPath || "").replace(/\\/g, "/");
   const encodedPath = normalized
@@ -619,11 +628,13 @@ function sortItems(items) {
     case "nameAsc":
       sorted.sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
       break;
+    case "discountDesc":
     default:
       sorted.sort((a, b) => {
-        const areaCompare = a.area.localeCompare(b.area, "es");
-        if (areaCompare !== 0) {
-          return areaCompare;
+        const discountA = getDiscountAmount(a);
+        const discountB = getDiscountAmount(b);
+        if (discountA !== discountB) {
+          return discountB - discountA;
         }
         return a.nombre.localeCompare(b.nombre, "es");
       });
