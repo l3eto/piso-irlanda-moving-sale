@@ -5,7 +5,7 @@
     "nombre": "Lavadora Candy",
     "unidades": 1,
     "precioWeb": 210,
-    "precioVenta": 250,
+    "precioVenta": 210,
     "medidas": {
       "alto": 84,
       "ancho": 60,
@@ -39,7 +39,7 @@
     "nombre": "Tumbona",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 70,
+    "precioVenta": 50,
     "medidas": {
       "alto": 100,
       "ancho": 67,
@@ -56,7 +56,7 @@
     "nombre": "Bici",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 70,
+    "precioVenta": 50,
     "medidas": {
       "alto": 90,
       "ancho": 45,
@@ -73,7 +73,7 @@
     "nombre": "Armario joyero con espejo de pie",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 70,
+    "precioVenta": 60,
     "medidas": {
       "alto": 157,
       "ancho": 41,
@@ -90,7 +90,7 @@
     "nombre": "Armario 4 piezas sin puertas",
     "unidades": 1,
     "precioWeb": 300,
-    "precioVenta": 330,
+    "precioVenta": 300,
     "medidas": {
       "alto": 201,
       "ancho": 278,
@@ -124,7 +124,7 @@
     "nombre": "Mesa de comedor de pino macizo",
     "unidades": 1,
     "precioWeb": 90,
-    "precioVenta": 100,
+    "precioVenta": 90,
     "medidas": {
       "alto": 80,
       "ancho": 135,
@@ -141,7 +141,7 @@
     "nombre": "Silla de comedor de madera con cojin",
     "unidades": 4,
     "precioWeb": 15,
-    "precioVenta": 25,
+    "precioVenta": 15,
     "medidas": {
       "alto": 90,
       "ancho": 40,
@@ -149,7 +149,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/silla-de-comedor-madera-con-cojin-1287793420"
+    "wallapop": "https://es.wallapop.com/item/silla-de-comedor-madera-con-cojin-1287793420",
+    "oferta": 12
   },
   {
     "id": 11,
@@ -174,7 +175,7 @@
     "nombre": "Mueble de TV / aparador bajo de 2 puertas con estantes centrales",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 80,
+    "precioVenta": 60,
     "medidas": {
       "alto": 40,
       "ancho": 110,
@@ -191,7 +192,7 @@
     "nombre": "Television Toshiba 32 pulgadas",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 70,
+    "precioVenta": 50,
     "medidas": {
       "alto": 44,
       "ancho": 77,
@@ -208,7 +209,7 @@
     "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
     "precioWeb": 400,
-    "precioVenta": 550,
+    "precioVenta": 400,
     "medidas": {
       "alto": 100,
       "ancho": 200,
@@ -220,35 +221,18 @@
     "oferta": 350
   },
   {
-    "id": 15,
-    "area": "Salon",
-    "nombre": "Puf redondo",
-    "unidades": 1,
-    "precioWeb": 50,
-    "precioVenta": 70,
-    "medidas": {
-      "alto": 35,
-      "ancho": 53,
-      "largo": 53
-    },
-    "descripcion": "buen estado, se relleno el puf hace poco",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/puf-redondo-tela-estampado-geometrico-1287816783",
-    "oferta": 40
-  },
-  {
     "id": 16,
     "area": "Salon",
-    "nombre": "Sillon ratán con cojines",
+    "nombre": "Sillon ratán",
     "unidades": 1,
     "precioWeb": 120,
-    "precioVenta": 150,
+    "precioVenta": 120,
     "medidas": {
       "alto": 79,
       "ancho": 81,
       "largo": 81
     },
-    "descripcion": "buen estado",
+    "descripcion": "buen estado, no incluye el cojin",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sillon-de-ratan-con-cojines-1287819623",
     "oferta": 100
@@ -273,19 +257,19 @@
   {
     "id": 18,
     "area": "Habitacion",
-    "nombre": "Cómoda Habitacion",
+    "nombre": "Cómoda de madera",
     "unidades": 1,
     "precioWeb": 110,
-    "precioVenta": 120,
+    "precioVenta": 100,
     "medidas": {
       "alto": 114,
       "ancho": 90,
       "largo": 45
     },
-    "descripcion": "buen estado",
+    "descripcion": "muy buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/comoda-de-madera-1288400446",
-    "oferta": 100
+    "oferta": 90
   },
   {
     "id": 19,
@@ -293,7 +277,7 @@
     "nombre": "Mesita noche blanca",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 60,
+    "precioVenta": 50,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -389,23 +373,6 @@
     "oferta": 210
   },
   {
-    "id": 26,
-    "area": "Cocina",
-    "nombre": "Airfryer",
-    "unidades": 1,
-    "precioWeb": 80,
-    "precioVenta": 90,
-    "medidas": {
-      "alto": 32,
-      "ancho": 29,
-      "largo": 29
-    },
-    "descripcion": "buen estado, algo de grasa",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/freidora-de-aire-negra-1288341155",
-    "oferta": 65
-  },
-  {
     "id": 27,
     "area": "Baño",
     "nombre": "Mueble bajo para lavabo",
@@ -478,7 +445,7 @@
     "nombre": "Estanteria zapatero y perchero",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 70,
+    "precioVenta": 50,
     "medidas": {
       "alto": 193,
       "ancho": 78,
@@ -543,10 +510,10 @@
   {
     "id": 35,
     "area": "Oficina",
-    "nombre": "Asiento con bici",
+    "nombre": "Bicicleta estática con asiento",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 70,
+    "precioVenta": 55,
     "medidas": {
       "alto": 76,
       "ancho": 59,
@@ -563,7 +530,7 @@
     "nombre": "Mesa plegable extensible con cajonera",
     "unidades": 1,
     "precioWeb": 80,
-    "precioVenta": 90,
+    "precioVenta": 80,
     "medidas": {
       "alto": 75,
       "ancho": 153,
@@ -580,7 +547,7 @@
     "nombre": "Camilla de masaje portátil de aluminio",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 80,
+    "precioVenta": 70,
     "medidas": {
       "alto": 60,
       "ancho": 59,
@@ -597,7 +564,7 @@
     "nombre": "Escritorio elevable electrico",
     "unidades": 1,
     "precioWeb": 120,
-    "precioVenta": 140,
+    "precioVenta": 120,
     "medidas": {
       "alto": 112,
       "ancho": 140,
@@ -664,7 +631,7 @@
     "nombre": "Estantería alta escalera bambú",
     "unidades": 2,
     "precioWeb": 40,
-    "precioVenta": 50,
+    "precioVenta": 40,
     "medidas": {
       "alto": 163,
       "ancho": 33,
@@ -681,7 +648,7 @@
     "nombre": "Alfombra gruesa",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 40,
+    "precioVenta": 30,
     "medidas": {
       "alto": 4,
       "ancho": 200,
@@ -698,7 +665,7 @@
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 30,
+    "precioVenta": 25,
     "medidas": {
       "alto": 2,
       "ancho": 162,
@@ -797,7 +764,7 @@
     "nombre": "Aspiradora Rowentta X-pert",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 55,
+    "precioVenta": 45,
     "medidas": {
       "alto": 23,
       "ancho": 24,
@@ -1031,7 +998,7 @@
     "nombre": "Pelota de yoga",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -1257,7 +1224,7 @@
     "nombre": "Mesita noche negra",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 60,
+    "precioVenta": 50,
     "medidas": {
       "alto": 66,
       "ancho": 54,
