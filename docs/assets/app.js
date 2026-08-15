@@ -17,6 +17,7 @@ const state = {
     currentItemIndex: 0
   },
   favorites: [],
+  favoriteImageIndexes: {},
   historySetup: false,
   isDirectEntry: false
 };
@@ -487,10 +488,12 @@ function renderFavorites() {
     itemDiv.className = `rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden transition hover:shadow-md ${statusClass}`;
     
     const itemImages = getImagesForItem(item.id);
-    const imageUrl = itemImages.length > 0 ? toAssetUrl(itemImages[0]) : null;
+    const currentImageIndex = state.favoriteImageIndexes[item.id] || 0;
+    const imageUrl = itemImages.length > 0 ? toAssetUrl(itemImages[currentImageIndex]) : null;
+    const hasMultipleImages = itemImages.length > 1;
     
     let imageHTML = `
-      <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+      <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden relative group">
         ${imageUrl ? `<img src="${imageUrl}" alt="${item.nombre}" class="w-full h-full object-cover" onerror="this.style.display='none'" />` : `
           <div class="flex flex-col items-center justify-center text-slate-400 text-xs text-center p-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -501,6 +504,11 @@ function renderFavorites() {
             No hay imagen
           </div>
         `}
+        ${hasMultipleImages ? `
+          <button class="favorite-img-prev absolute left-1 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition rounded bg-black/60 px-1 py-0.5 text-xs text-white hover:bg-black/80" data-item-id="${item.id}" data-direction="prev" title="Imagen anterior">‹</button>
+          <button class="favorite-img-next absolute right-1 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition rounded bg-black/60 px-1 py-0.5 text-xs text-white hover:bg-black/80" data-item-id="${item.id}" data-direction="next" title="Siguiente imagen">›</button>
+          <span class="absolute bottom-1 left-1/2 -translate-x-1/2 text-xs bg-black/60 text-white rounded px-1.5 py-0.5 font-semibold">${currentImageIndex + 1}/${itemImages.length}</span>
+        ` : ''}
       </div>
     `;
     
@@ -572,7 +580,31 @@ function renderFavorites() {
   elements.favoritesTotal.innerHTML = totalHTML;
   document.getElementById("favoritesCount").textContent = `${state.favorites.length} ${state.favorites.length === 1 ? "producto" : "productos"}`;
   
-  // Agregar event listeners
+  // Agregar event listeners para navegación de imágenes
+  elements.favoritesList.querySelectorAll(".favorite-img-prev, .favorite-img-next").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const itemId = Number.parseInt(e.target.dataset.itemId, 10);
+      const direction = e.target.dataset.direction;
+      const item = getItemById(itemId);
+      if (!item) return;
+      
+      const images = getImagesForItem(itemId);
+      if (images.length <= 1) return;
+      
+      const currentIndex = state.favoriteImageIndexes[itemId] || 0;
+      let newIndex = currentIndex + (direction === "next" ? 1 : -1);
+      
+      // Circular navigation
+      if (newIndex < 0) newIndex = images.length - 1;
+      if (newIndex >= images.length) newIndex = 0;
+      
+      state.favoriteImageIndexes[itemId] = newIndex;
+      renderFavorites();
+    });
+  });
+  
+  // Agregar event listeners para cantidad y eliminación
   elements.favoritesList.querySelectorAll(".favorite-qty-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
       const itemId = Number.parseInt(e.target.dataset.itemId, 10);
