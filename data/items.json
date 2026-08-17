@@ -327,7 +327,7 @@
     "nombre": "Colchón ortopedico",
     "unidades": 1,
     "precioWeb": 160,
-    "precioVenta": 180,
+    "precioVenta": 120,
     "medidas": {
       "alto": 26,
       "ancho": 162,
@@ -336,7 +336,7 @@
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
-    "oferta": 120
+    "oferta": 110
   },
   {
     "id": 24,
@@ -638,7 +638,7 @@
       "largo": 28
     },
     "descripcion": "como nuevo",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/estanteria-escalera-bambu-1288425189",
     "oferta": 35
   },
@@ -837,7 +837,7 @@
       "largo": 25
     },
     "descripcion": "muy buen estado, se uso 3 veces",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/raclette-korona-10-personas-1288432075",
     "oferta": 25
   },
@@ -854,7 +854,7 @@
       "largo": 11
     },
     "descripcion": "muy buen estado, se uso 3 veces",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/raclette-bestron-black-wood-2-personas-1288432749",
     "oferta": 12
   },
