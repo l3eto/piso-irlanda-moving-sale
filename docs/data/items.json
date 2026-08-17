@@ -105,7 +105,7 @@
     "id": 7,
     "area": "Salon",
     "nombre": "Mueble organizador tipo KALLAX con cajones y cesta",
-    "unidades": 2,
+    "unidades": 1,
     "precioWeb": 45,
     "precioVenta": 50,
     "medidas": {
@@ -402,7 +402,7 @@
       "largo": 33
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/estanteria-bambu-5-baldas-1288343436",
     "oferta": 18
   },
@@ -621,7 +621,7 @@
       "largo": 35
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/estanteria-de-esquina-de-bambu-1288422938",
     "oferta": 20
   },
@@ -638,7 +638,7 @@
       "largo": 28
     },
     "descripcion": "como nuevo",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/estanteria-escalera-bambu-1288425189",
     "oferta": 35
   },
@@ -705,7 +705,7 @@
       "largo": 30
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
     "oferta": 18
   },
@@ -888,7 +888,7 @@
       "largo": 38
     },
     "descripcion": "buen estado, pero sucio por antiguedad y uso",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
     "oferta": 10
   },
