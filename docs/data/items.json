@@ -301,7 +301,7 @@
       "largo": 45
     },
     "descripcion": "muy buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/comoda-de-madera-1288400446",
     "oferta": 80
   },
@@ -344,7 +344,7 @@
     "nombre": "Somier de láminas curvadas",
     "unidades": 1,
     "precioWeb": 100,
-    "precioVenta": 120,
+    "precioVenta": 90,
     "medidas": {
       "alto": 92,
       "ancho": 166,
@@ -1251,5 +1251,22 @@
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
     "oferta": 40
+  },
+  {
+    "id": 83,
+    "area": "Oficina",
+    "nombre": "Mesa gamer negra",
+    "unidades": 1,
+    "precioWeb": 50,
+    "precioVenta": 50,
+    "medidas": {
+      "alto": 75,
+      "ancho": 140,
+      "largo": 58
+    },
+    "descripcion": "buen estado",
+    "estado": "disponible",
+    "wallapop": "https://es.wallapop.com/item/mesa-gamer-negra-140x58-1293397294",
+    "oferta": 45
   }
 ]
