@@ -29,7 +29,7 @@
       "largo": 40
     },
     "descripcion": "se tiene que limpiar algo antes de calentar",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/parrilla-metalica-1287506692",
     "oferta": 8
   },
@@ -87,19 +87,53 @@
   {
     "id": 6,
     "area": "Habitacion",
-    "nombre": "Armario 4 piezas sin puertas",
+    "nombre": "Armario PAX modular ikea",
     "unidades": 1,
-    "precioWeb": 300,
+    "precioWeb": 70,
     "precioVenta": 300,
     "medidas": {
       "alto": 201,
-      "ancho": 278,
+      "ancho": 75,
       "largo": 58
     },
-    "descripcion": "muy buen estado. medidas: 1 - alt 201 anch 75 larg 36\n2 - alt 201 qnch 53 larg 36\n3 - alt 201 anch 75  lar 58\n4 - alt 201 anch 75 larg 58",
+    "descripcion": "arriba y abajo colgadores para perchas ropas, muy buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/armario-4-piezas-sin-puertas-1290577431",
+    "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
     "oferta": 260
+  },
+  {
+    "id": 81,
+    "area": "Habitacion",
+    "nombre": "Armario PAX modular ikea",
+    "unidades": 1,
+    "precioWeb": 70,
+    "precioVenta": 65,
+    "medidas": {
+      "alto": 201,
+      "ancho": 75,
+      "largo": 58
+    },
+    "descripcion": "arriba colgadores para perchas ropas y abajo rejillas colgador de ropa, muy buen estado",
+    "estado": "disponible",
+    "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
+    "oferta": 60
+  },
+  {
+    "id": 82,
+    "area": "Habitacion",
+    "nombre": "Armario PAX modular ikea",
+    "unidades": 2,
+    "precioWeb": 70,
+    "precioVenta": 65,
+    "medidas": {
+      "alto": 201,
+      "ancho": 75,
+      "largo": 58
+    },
+    "descripcion": "tablones de ropa",
+    "estado": "vendido",
+    "wallapop": "",
+    "oferta": 60
   },
   {
     "id": 7,
@@ -114,7 +148,7 @@
       "largo": 40
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mueble-organizador-con-cajones-y-cesta-1287663252",
     "oferta": 35
   },
@@ -571,7 +605,7 @@
       "largo": 60
     },
     "descripcion": "baja hasta 79cm altura, sube hasta 112cm altura, entradas cables, enganches, colgador cascos",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/escritorio-elevable-electrico-1288364077",
     "oferta": 110
   },
@@ -939,7 +973,7 @@
       "largo": 56
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/patinete-mini-cruiser-verde-1162626420",
     "oferta": 12
   },
@@ -1134,7 +1168,7 @@
       "largo": 5
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/perchero-colgante-para-puerta-1288433715"
   },
   {
