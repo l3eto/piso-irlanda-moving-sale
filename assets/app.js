@@ -389,7 +389,6 @@ function generateShareMessage() {
   
   let message = "Hola Beto! 👋\n\nMe interesan estos productos:\n\n";
   let total = 0;
-  let totalWithoutOffer = 0;
   
   for (const fav of state.favorites) {
     const item = getItemById(fav.id);
@@ -399,9 +398,7 @@ function generateShareMessage() {
     const regularPrice = getHerePrice(item);
     const price = hasOffer(item) ? getOfferPrice(item) : regularPrice;
     const itemTotal = price * fav.cantidad;
-    const itemTotalWithoutOffer = regularPrice * fav.cantidad;
     total += itemTotal;
-    totalWithoutOffer += itemTotalWithoutOffer;
     
     const status = normalizeEstado(item.estado);
     let statusLabel = "";
@@ -409,17 +406,10 @@ function generateShareMessage() {
     else if (status === "vendido") statusLabel = " ✓ (vendido)";
     
     message += `📌 Ref #${item.id} - ${item.nombre}\n`;
-    message += `   Precio: ${formatPrice(price)}`;
-    if (hasOffer(item)) {
-      message += ` (${formatPrice(regularPrice)} tachado)`;
-    }
-    message += ` x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
+    message += `   Precio: ${formatPrice(price)} x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
   }
   
   message += `💰 Total: ${formatPrice(total)}`;
-  if (total < totalWithoutOffer) {
-    message += ` (${formatPrice(totalWithoutOffer)} sin descuento)`;
-  }
   message += `\n\n¡Gracias!`;
   return message;
 }
@@ -1207,26 +1197,29 @@ function setupFavoritesUI() {
     }
   });
 
-  elements.shareButton.addEventListener("click", () => {
+  elements.shareButton.addEventListener("click", async () => {
     const message = generateShareMessage();
     
-    // Intentar usar Web Share API (la mejor opción)
-    if (navigator.share) {
-      navigator.share({
-        title: "Mi lista de productos",
-        text: message
-      }).catch(() => {
-        // Si el usuario cancela, no hacer nada
-      });
-    } else {
-      // Fallback: crear link de WhatsApp Web
-      const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+    try {
+      // Copiar al portapapeles
+      await navigator.clipboard.writeText(message);
       
-      // Intentar abrir en pestaña nueva
-      if (typeof window !== "undefined") {
-        window.open(whatsappUrl, "_blank");
-      }
+      // Mostrar feedback visual
+      const originalText = elements.shareButton.textContent;
+      const originalHTML = elements.shareButton.innerHTML;
+      
+      elements.shareButton.textContent = "✓ Copiado";
+      elements.shareButton.classList.add("bg-green-500");
+      elements.shareButton.classList.remove("bg-sky-500", "hover:bg-sky-600");
+      
+      setTimeout(() => {
+        elements.shareButton.innerHTML = originalHTML;
+        elements.shareButton.classList.remove("bg-green-500");
+        elements.shareButton.classList.add("bg-sky-500", "hover:bg-sky-600");
+      }, 2000);
+    } catch (err) {
+      console.error("Error al copiar:", err);
+      alert("Error al copiar el listado. Intenta de nuevo.");
     }
   });
 
