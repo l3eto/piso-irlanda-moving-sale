@@ -5,7 +5,7 @@
     "nombre": "Lavadora Candy",
     "unidades": 1,
     "precioWeb": 210,
-    "precioVenta": 210,
+    "precioVenta": 150,
     "medidas": {
       "alto": 84,
       "ancho": 60,
@@ -14,7 +14,7 @@
     "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
-    "oferta": 180
+    "oferta": 150
   },
   {
     "id": 2,
@@ -39,7 +39,7 @@
     "nombre": "Tumbona",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 50,
+    "precioVenta": 25,
     "medidas": {
       "alto": 100,
       "ancho": 67,
@@ -48,7 +48,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/tumbona-plegable-metal-y-tela-1287507255",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
     "nombre": "Bici",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 40,
+    "precioVenta": 25,
     "medidas": {
       "alto": 90,
       "ancho": 45,
@@ -65,7 +65,7 @@
     "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/bicicleta-de-montana-blanca-1287507786",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 5,
@@ -90,7 +90,7 @@
     "nombre": "Armario PAX modular ikea",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 65,
+    "precioVenta": 50,
     "medidas": {
       "alto": 201,
       "ancho": 75,
@@ -99,7 +99,7 @@
     "descripcion": "arriba y abajo colgadores para perchas ropas, muy buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
-    "oferta": 60
+    "oferta": 50
   },
   {
     "id": 81,
@@ -107,7 +107,7 @@
     "nombre": "Armario PAX modular ikea",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 65,
+    "precioVenta": 50,
     "medidas": {
       "alto": 201,
       "ancho": 75,
@@ -116,7 +116,7 @@
     "descripcion": "arriba colgadores para perchas ropas y abajo rejillas colgador de ropa, muy buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
-    "oferta": 60
+    "oferta": 50
   },
   {
     "id": 82,
@@ -158,7 +158,7 @@
     "nombre": "Mesa de comedor de pino macizo",
     "unidades": 1,
     "precioWeb": 90,
-    "precioVenta": 80,
+    "precioVenta": 50,
     "medidas": {
       "alto": 80,
       "ancho": 135,
@@ -167,7 +167,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesa-comedor-pino-macizo-1287664020",
-    "oferta": 70
+    "oferta": 50
   },
   {
     "id": 10,
@@ -175,7 +175,7 @@
     "nombre": "Silla de comedor de madera con cojin",
     "unidades": 4,
     "precioWeb": 15,
-    "precioVenta": 15,
+    "precioVenta": 6,
     "medidas": {
       "alto": 90,
       "ancho": 40,
@@ -184,7 +184,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/silla-de-comedor-madera-con-cojin-1287793420",
-    "oferta": 12
+    "oferta": 6
   },
   {
     "id": 11,
@@ -209,7 +209,7 @@
     "nombre": "Mueble de TV / aparador bajo de 2 puertas con estantes centrales",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 60,
+    "precioVenta": 40,
     "medidas": {
       "alto": 40,
       "ancho": 110,
@@ -218,7 +218,7 @@
     "descripcion": "muy buen estado, de 2 puertas y estantes efecto roble",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-tv-aparador-bajo-madera-2-puertas-1287801343",
-    "oferta": 50
+    "oferta": 40
   },
   {
     "id": 13,
@@ -226,7 +226,7 @@
     "nombre": "Television Toshiba 32 pulgadas",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 40,
+    "precioVenta": 25,
     "medidas": {
       "alto": 44,
       "ancho": 77,
@@ -235,7 +235,7 @@
     "descripcion": "sin problemas de calidad, no es smarttv, necesita un firetv o similar",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/toshiba-32-tv-1287803114",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 14,
@@ -243,7 +243,7 @@
     "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
     "precioWeb": 400,
-    "precioVenta": 340,
+    "precioVenta": 180,
     "medidas": {
       "alto": 100,
       "ancho": 200,
@@ -252,7 +252,7 @@
     "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241",
-    "oferta": 300
+    "oferta": 180
   },
   {
     "id": 16,
@@ -260,7 +260,7 @@
     "nombre": "Sillon ratán",
     "unidades": 1,
     "precioWeb": 120,
-    "precioVenta": 100,
+    "precioVenta": 50,
     "medidas": {
       "alto": 79,
       "ancho": 81,
@@ -269,7 +269,7 @@
     "descripcion": "buen estado, no incluye el cojin",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sillon-de-ratan-con-cojines-1287819623",
-    "oferta": 100
+    "oferta": 50
   },
   {
     "id": 17,
@@ -277,7 +277,7 @@
     "nombre": "Sillón de mimbre con cojín",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 60,
+    "precioVenta": 35,
     "medidas": {
       "alto": 79,
       "ancho": 59,
@@ -286,7 +286,7 @@
     "descripcion": "buen estado, cojin algo sucio",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194",
-    "oferta": 40
+    "oferta": 35
   },
   {
     "id": 18,
@@ -311,7 +311,7 @@
     "nombre": "Mesita noche blanca",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 50,
+    "precioVenta": 25,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -320,7 +320,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 20,
@@ -353,7 +353,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
-    "oferta": 80
+    "oferta": 50
   },
   {
     "id": 22,
@@ -361,7 +361,7 @@
     "nombre": "Colchón ortopedico",
     "unidades": 1,
     "precioWeb": 160,
-    "precioVenta": 120,
+    "precioVenta": 45,
     "medidas": {
       "alto": 26,
       "ancho": 162,
@@ -370,7 +370,7 @@
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
-    "oferta": 110
+    "oferta": 45
   },
   {
     "id": 24,
@@ -395,7 +395,7 @@
     "nombre": "Nevera Candy no frost",
     "unidades": 1,
     "precioWeb": 250,
-    "precioVenta": 280,
+    "precioVenta": 150,
     "medidas": {
       "alto": 182,
       "ancho": 55,
@@ -404,7 +404,7 @@
     "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787",
-    "oferta": 210
+    "oferta": 150
   },
   {
     "id": 27,
@@ -412,7 +412,7 @@
     "nombre": "Mueble bajo para lavabo",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 40,
+    "precioVenta": 25,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -479,7 +479,7 @@
     "nombre": "Estanteria zapatero y perchero",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 40,
+    "precioVenta": 25,
     "medidas": {
       "alto": 193,
       "ancho": 78,
@@ -488,7 +488,7 @@
     "descripcion": "buen estado, con ganchos",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/estanteria-zapatero-y-perchero-1288355723",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 32,
@@ -496,7 +496,7 @@
     "nombre": "Banco entrada",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 30,
+    "precioVenta": 25,
     "medidas": {
       "alto": 45,
       "ancho": 28,
@@ -530,7 +530,7 @@
     "nombre": "Estantería libros Kallax",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 35,
+    "precioVenta": 20,
     "medidas": {
       "alto": 98,
       "ancho": 66,
@@ -564,7 +564,7 @@
     "nombre": "Mesa plegable extensible con cajonera",
     "unidades": 1,
     "precioWeb": 80,
-    "precioVenta": 80,
+    "precioVenta": 40,
     "medidas": {
       "alto": 75,
       "ancho": 153,
@@ -573,7 +573,7 @@
     "descripcion": "buen estado, alguna mancha, blanco, plegado 33cm de ancho, se levantan ambas alas, con 6 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesa-plegable-extensible-con-cajon-1288359131",
-    "oferta": 70
+    "oferta": 40
   },
   {
     "id": 37,
@@ -682,7 +682,7 @@
     "nombre": "Alfombra gruesa",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 30,
+    "precioVenta": 20,
     "medidas": {
       "alto": 4,
       "ancho": 200,
@@ -691,7 +691,7 @@
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732",
-    "oferta": 24
+    "oferta": 20
   },
   {
     "id": 44,
@@ -699,7 +699,7 @@
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 2,
       "ancho": 162,
@@ -781,7 +781,7 @@
     "nombre": "Aspiradora Rowentta X-pert",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 45,
+    "precioVenta": 20,
     "medidas": {
       "alto": 23,
       "ancho": 24,
@@ -831,7 +831,7 @@
     "nombre": "Masajeador espalda",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 40,
+    "precioVenta": 20,
     "medidas": {
       "alto": 10,
       "ancho": 40,
@@ -839,7 +839,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/masajeador-de-espalda-1288366532"
+    "wallapop": "https://es.wallapop.com/item/masajeador-de-espalda-1288366532",
+    "oferta": 20
   },
   {
     "id": 56,
@@ -1015,7 +1016,7 @@
     "nombre": "Pelota de yoga",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 20,
+    "precioVenta": 10,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -1024,7 +1025,7 @@
     "descripcion": "buen estado, esta sucio",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/pelota-de-yoga-menta-1287664970",
-    "oferta": 15
+    "oferta": 10
   },
   {
     "id": 67,
@@ -1032,7 +1033,7 @@
     "nombre": "Estor enrollable de bambú natural",
     "unidades": 1,
     "precioWeb": 40,
-    "precioVenta": 45,
+    "precioVenta": 20,
     "medidas": {
       "alto": 1,
       "ancho": 175,
@@ -1041,7 +1042,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326",
-    "oferta": 30
+    "oferta": 20
   },
   {
     "id": 68,
@@ -1241,7 +1242,7 @@
     "nombre": "Mesita noche negra",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 50,
+    "precioVenta": 25,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -1250,7 +1251,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
-    "oferta": 40
+    "oferta": 25
   },
   {
     "id": 83,
@@ -1258,7 +1259,7 @@
     "nombre": "Mesa gamer negra",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 50,
+    "precioVenta": 40,
     "medidas": {
       "alto": 75,
       "ancho": 140,
@@ -1267,6 +1268,6 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesa-gamer-negra-140x58-1293397294",
-    "oferta": 45
+    "oferta": 40
   }
 ]
