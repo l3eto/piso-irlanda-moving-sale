@@ -839,7 +839,7 @@
       "largo": 30
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/masajeador-de-espalda-1288366532",
     "oferta": 20
   },
@@ -908,23 +908,6 @@
     },
     "descripcion": "buen estado, pero sucio por antiguedad y uso",
     "estado": "vendido",
-    "wallapop": "",
-    "oferta": 10
-  },
-  {
-    "id": 60,
-    "area": "Salon",
-    "nombre": "Silla plegable",
-    "unidades": 1,
-    "precioWeb": 15,
-    "precioVenta": 25,
-    "medidas": {
-      "alto": 78,
-      "ancho": 42,
-      "largo": 47
-    },
-    "descripcion": "buen estado",
-    "estado": "disponible",
     "wallapop": "",
     "oferta": 10
   },
