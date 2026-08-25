@@ -63,7 +63,7 @@
       "largo": 160
     },
     "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/bicicleta-de-montana-blanca-1287507786",
     "oferta": 25
   },
@@ -233,7 +233,7 @@
       "largo": 18
     },
     "descripcion": "sin problemas de calidad, no es smarttv, necesita un firetv o similar",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/toshiba-32-tv-1287803114",
     "oferta": 25
   },
@@ -378,16 +378,16 @@
     "nombre": "Plancha",
     "unidades": 1,
     "precioWeb": 15,
-    "precioVenta": 20,
+    "precioVenta": 9,
     "medidas": {
       "alto": 15,
       "ancho": 15,
       "largo": 30
     },
     "descripcion": "muy buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/plancha-klindo-2800w-280ml-1288244405",
-    "oferta": 12
+    "oferta": 9
   },
   {
     "id": 25,
@@ -412,7 +412,7 @@
     "nombre": "Mueble bajo para lavabo",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -421,7 +421,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 28,
@@ -765,15 +765,16 @@
     "nombre": "Cesto de fibra natural trenzada",
     "unidades": 2,
     "precioWeb": 8,
-    "precioVenta": 10,
+    "precioVenta": 6,
     "medidas": {
       "alto": 25,
       "ancho": 29,
       "largo": 29
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/cesto-de-fibra-natural-trenzada-con-asas-1288426567"
+    "estado": "vendido",
+    "wallapop": "https://es.wallapop.com/item/cesto-de-fibra-natural-trenzada-con-asas-1288426567",
+    "oferta": 6
   },
   {
     "id": 51,
@@ -790,7 +791,7 @@
     "descripcion": "algo antigua, pero funciona bien, se abre para limpiar el polvo acomulado, viene con cargador",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/aspiradora-rowentta-x-pert-1288428057",
-    "oferta": 37
+    "oferta": 20
   },
   {
     "id": 52,
@@ -882,14 +883,14 @@
     "nombre": "Alfombra yute trenzado",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 30,
+    "precioVenta": 20,
     "medidas": {
       "alto": 2,
       "ancho": 123,
       "largo": 123
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
     "oferta": 20
   },
@@ -933,7 +934,7 @@
     "nombre": "Mesa auxiliar redonda",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 30,
+    "precioVenta": 10,
     "medidas": {
       "alto": 41,
       "ancho": 40,
@@ -942,7 +943,7 @@
     "descripcion": "tabla desgastado, estructura buen estado",
     "estado": "disponible",
     "wallapop": "",
-    "oferta": 15
+    "oferta": 10
   },
   {
     "id": 62,
@@ -1114,15 +1115,16 @@
     "nombre": "Colgante decorativo de macramé con hojas",
     "unidades": 1,
     "precioWeb": 12,
-    "precioVenta": 18,
+    "precioVenta": 8,
     "medidas": {
       "alto": 2,
       "ancho": 40,
       "largo": 56
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": ""
+    "estado": "vendido",
+    "wallapop": "",
+    "oferta": 8
   },
   {
     "id": 73,
@@ -1146,15 +1148,16 @@
     "nombre": "Lámpara de suelo de ratán/mimbre sintético trenzado",
     "unidades": 1,
     "precioWeb": 12,
-    "precioVenta": 16,
+    "precioVenta": 8,
     "medidas": {
       "alto": 27,
       "ancho": 13,
       "largo": 13
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": ""
+    "estado": "vendido",
+    "wallapop": "",
+    "oferta": 8
   },
   {
     "id": 75,
@@ -1178,15 +1181,16 @@
     "nombre": "Colgante decorativo de madera",
     "unidades": 1,
     "precioWeb": 8,
-    "precioVenta": 10,
+    "precioVenta": 4,
     "medidas": {
       "alto": 1,
       "ancho": 16,
       "largo": 46
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": ""
+    "estado": "vendido",
+    "wallapop": "",
+    "oferta": 4
   },
   {
     "id": 77,
