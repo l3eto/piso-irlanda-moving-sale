@@ -5,7 +5,7 @@
     "nombre": "Lavadora Candy",
     "unidades": 1,
     "precioWeb": 210,
-    "precioVenta": 150,
+    "precioVenta": 125,
     "medidas": {
       "alto": 84,
       "ancho": 60,
@@ -14,7 +14,7 @@
     "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
-    "oferta": 150
+    "oferta": 125
   },
   {
     "id": 2,
@@ -90,7 +90,7 @@
     "nombre": "Armario PAX modular ikea",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 50,
+    "precioVenta": 35,
     "medidas": {
       "alto": 201,
       "ancho": 75,
@@ -99,7 +99,7 @@
     "descripcion": "arriba y abajo colgadores para perchas ropas, muy buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
-    "oferta": 50
+    "oferta": 35
   },
   {
     "id": 81,
@@ -107,16 +107,16 @@
     "nombre": "Armario PAX modular ikea",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 50,
+    "precioVenta": 35,
     "medidas": {
       "alto": 201,
       "ancho": 75,
       "largo": 58
     },
     "descripcion": "arriba colgadores para perchas ropas y abajo rejillas colgador de ropa, muy buen estado",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
-    "oferta": 50
+    "oferta": 35
   },
   {
     "id": 82,
@@ -209,7 +209,7 @@
     "nombre": "Mueble de TV / aparador bajo de 2 puertas con estantes centrales",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 40,
+    "precioVenta": 30,
     "medidas": {
       "alto": 40,
       "ancho": 110,
@@ -218,7 +218,7 @@
     "descripcion": "muy buen estado, de 2 puertas y estantes efecto roble",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-tv-aparador-bajo-madera-2-puertas-1287801343",
-    "oferta": 40
+    "oferta": 30
   },
   {
     "id": 13,
@@ -243,7 +243,7 @@
     "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
     "precioWeb": 400,
-    "precioVenta": 180,
+    "precioVenta": 140,
     "medidas": {
       "alto": 100,
       "ancho": 200,
@@ -252,7 +252,7 @@
     "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241",
-    "oferta": 180
+    "oferta": 140
   },
   {
     "id": 16,
@@ -260,16 +260,16 @@
     "nombre": "Sillon ratán",
     "unidades": 1,
     "precioWeb": 120,
-    "precioVenta": 50,
+    "precioVenta": 40,
     "medidas": {
       "alto": 79,
       "ancho": 81,
       "largo": 81
     },
     "descripcion": "buen estado, no incluye el cojin",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/sillon-de-ratan-con-cojines-1287819623",
-    "oferta": 50
+    "oferta": 40
   },
   {
     "id": 17,
@@ -311,7 +311,7 @@
     "nombre": "Mesita noche blanca",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -320,7 +320,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 20,
@@ -344,7 +344,7 @@
     "nombre": "Somier de láminas curvadas",
     "unidades": 1,
     "precioWeb": 100,
-    "precioVenta": 90,
+    "precioVenta": 30,
     "medidas": {
       "alto": 92,
       "ancho": 166,
@@ -353,7 +353,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
-    "oferta": 50
+    "oferta": 30
   },
   {
     "id": 22,
@@ -395,7 +395,7 @@
     "nombre": "Nevera Candy no frost",
     "unidades": 1,
     "precioWeb": 250,
-    "precioVenta": 150,
+    "precioVenta": 125,
     "medidas": {
       "alto": 182,
       "ancho": 55,
@@ -404,7 +404,7 @@
     "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787",
-    "oferta": 150
+    "oferta": 125
   },
   {
     "id": 27,
@@ -496,7 +496,7 @@
     "nombre": "Banco entrada",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 45,
       "ancho": 28,
@@ -505,7 +505,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/banco-de-madera-para-entrada-1288357292",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 33,
@@ -554,7 +554,7 @@
       "largo": 80
     },
     "descripcion": "casi nuevo",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/bicicleta-estatica-con-asiento-1288419469",
     "oferta": 45
   },
@@ -571,7 +571,7 @@
       "largo": 80
     },
     "descripcion": "buen estado, alguna mancha, blanco, plegado 33cm de ancho, se levantan ambas alas, con 6 cajones",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mesa-plegable-extensible-con-cajon-1288359131",
     "oferta": 40
   },
@@ -682,7 +682,7 @@
     "nombre": "Alfombra gruesa",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 20,
+    "precioVenta": 14,
     "medidas": {
       "alto": 4,
       "ancho": 200,
@@ -691,7 +691,7 @@
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732",
-    "oferta": 20
+    "oferta": 14
   },
   {
     "id": 44,
@@ -699,7 +699,7 @@
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 20,
+    "precioVenta": 14,
     "medidas": {
       "alto": 2,
       "ancho": 162,
@@ -708,7 +708,7 @@
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/alfombra-fina-de-algodon-beige-1288426112",
-    "oferta": 20
+    "oferta": 14
   },
   {
     "id": 45,
@@ -789,7 +789,7 @@
       "largo": 125
     },
     "descripcion": "algo antigua, pero funciona bien, se abre para limpiar el polvo acomulado, viene con cargador",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/aspiradora-rowentta-x-pert-1288428057",
     "oferta": 20
   },
@@ -1229,7 +1229,7 @@
     "nombre": "Mesita noche negra",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -1238,7 +1238,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 83,
