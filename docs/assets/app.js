@@ -405,8 +405,13 @@ function generateShareMessage() {
     if (status === "reservado") statusLabel = " ⏳ (reservado)";
     else if (status === "vendido") statusLabel = " ✓ (vendido)";
     
+    const medidas = item.medidas;
+    const dimensionesLabel = medidas
+      ? ` - Dimensiones: ${medidas.alto}x${medidas.ancho}x${medidas.largo} cm`
+      : "";
+    
     message += `📌 Ref #${item.id} - ${item.nombre}\n`;
-    message += `   Precio: ${formatPrice(price)} x ${fav.cantidad} = ${formatPrice(itemTotal)}${statusLabel}\n\n`;
+    message += `   Precio: ${formatPrice(price)}${dimensionesLabel}${statusLabel}\n\n`;
   }
   
   message += `💰 Total: ${formatPrice(total)}`;
