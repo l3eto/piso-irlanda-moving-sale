@@ -90,7 +90,7 @@
     "nombre": "Armario PAX modular ikea",
     "unidades": 1,
     "precioWeb": 70,
-    "precioVenta": 35,
+    "precioVenta": 30,
     "medidas": {
       "alto": 201,
       "ancho": 75,
@@ -99,7 +99,7 @@
     "descripcion": "arriba y abajo colgadores para perchas ropas, muy buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/armario-blanco-para-colgar-ropa-1293453504",
-    "oferta": 35
+    "oferta": 30
   },
   {
     "id": 81,
@@ -155,36 +155,19 @@
   {
     "id": 8,
     "area": "Comedor",
-    "nombre": "Mesa de comedor de pino macizo",
+    "nombre": "Mesa de comedor de pino macizo con sillas",
     "unidades": 1,
     "precioWeb": 90,
-    "precioVenta": 50,
+    "precioVenta": 40,
     "medidas": {
       "alto": 80,
       "ancho": 135,
       "largo": 74
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mesa-comedor-pino-macizo-1287664020",
-    "oferta": 50
-  },
-  {
-    "id": 10,
-    "area": "Salon",
-    "nombre": "Silla de comedor de madera con cojin",
-    "unidades": 4,
-    "precioWeb": 15,
-    "precioVenta": 6,
-    "medidas": {
-      "alto": 90,
-      "ancho": 40,
-      "largo": 42
-    },
-    "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/silla-de-comedor-madera-con-cojin-1287793420",
-    "oferta": 6
+    "oferta": 40
   },
   {
     "id": 11,
@@ -361,7 +344,7 @@
     "nombre": "Colchón ortopedico",
     "unidades": 1,
     "precioWeb": 160,
-    "precioVenta": 45,
+    "precioVenta": 30,
     "medidas": {
       "alto": 26,
       "ancho": 162,
@@ -370,7 +353,7 @@
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
-    "oferta": 45
+    "oferta": 30
   },
   {
     "id": 24,
@@ -404,7 +387,7 @@
     "descripcion": "muy buen estado, comprado hace 2 años",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787",
-    "oferta": 125
+    "oferta": 90
   },
   {
     "id": 27,
@@ -412,7 +395,7 @@
     "nombre": "Mueble bajo para lavabo",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 20,
+    "precioVenta": 15,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -421,7 +404,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598",
-    "oferta": 20
+    "oferta": 15
   },
   {
     "id": 28,
@@ -520,7 +503,7 @@
       "largo": 30
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/estanteria-kallax-ikea-blanca-1288418320",
     "oferta": 20
   },
@@ -665,16 +648,16 @@
     "nombre": "Alfombra gruesa",
     "unidades": 1,
     "precioWeb": 30,
-    "precioVenta": 14,
+    "precioVenta": 10,
     "medidas": {
       "alto": 4,
       "ancho": 200,
       "largo": 135
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/alfombra-gruesa-beige-1288425732",
-    "oferta": 14
+    "oferta": 10
   },
   {
     "id": 44,
@@ -917,14 +900,14 @@
     "nombre": "Cesto ropa con tapa",
     "unidades": 1,
     "precioWeb": 15,
-    "precioVenta": 20,
+    "precioVenta": 10,
     "medidas": {
       "alto": 62,
       "ancho": 42,
       "largo": 36
     },
     "descripcion": "buen estado, la imagen abierta se genero con ia para quitar contenido,es bastante fiel",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
     "oferta": 8
   },
