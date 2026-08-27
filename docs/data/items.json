@@ -5,7 +5,7 @@
     "nombre": "Lavadora Candy",
     "unidades": 1,
     "precioWeb": 210,
-    "precioVenta": 125,
+    "precioVenta": 90,
     "medidas": {
       "alto": 84,
       "ancho": 60,
@@ -14,7 +14,7 @@
     "descripcion": "buen estado, se cambio hace un año la puerta",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
-    "oferta": 125
+    "oferta": 90
   },
   {
     "id": 2,
@@ -39,7 +39,7 @@
     "nombre": "Tumbona",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 100,
       "ancho": 67,
@@ -48,7 +48,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/tumbona-plegable-metal-y-tela-1287507255",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 4,
@@ -209,7 +209,7 @@
     "nombre": "Mueble de TV / aparador bajo de 2 puertas con estantes centrales",
     "unidades": 1,
     "precioWeb": 60,
-    "precioVenta": 30,
+    "precioVenta": 20,
     "medidas": {
       "alto": 40,
       "ancho": 110,
@@ -218,7 +218,7 @@
     "descripcion": "muy buen estado, de 2 puertas y estantes efecto roble",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mueble-tv-aparador-bajo-madera-2-puertas-1287801343",
-    "oferta": 30
+    "oferta": 20
   },
   {
     "id": 13,
@@ -243,7 +243,7 @@
     "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
     "precioWeb": 400,
-    "precioVenta": 140,
+    "precioVenta": 90,
     "medidas": {
       "alto": 100,
       "ancho": 200,
@@ -252,7 +252,7 @@
     "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241",
-    "oferta": 140
+    "oferta": 90
   },
   {
     "id": 16,
@@ -277,7 +277,7 @@
     "nombre": "Sillón de mimbre con cojín",
     "unidades": 1,
     "precioWeb": 50,
-    "precioVenta": 35,
+    "precioVenta": 20,
     "medidas": {
       "alto": 79,
       "ancho": 59,
@@ -286,7 +286,7 @@
     "descripcion": "buen estado, cojin algo sucio",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194",
-    "oferta": 35
+    "oferta": 20
   },
   {
     "id": 18,
@@ -311,7 +311,7 @@
     "nombre": "Mesita noche blanca",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 20,
+    "precioVenta": 15,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -320,7 +320,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
-    "oferta": 20
+    "oferta": 15
   },
   {
     "id": 20,
@@ -344,7 +344,7 @@
     "nombre": "Somier de láminas curvadas",
     "unidades": 1,
     "precioWeb": 100,
-    "precioVenta": 30,
+    "precioVenta": 20,
     "medidas": {
       "alto": 92,
       "ancho": 166,
@@ -353,7 +353,7 @@
     "descripcion": "buen estado",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
-    "oferta": 30
+    "oferta": 20
   },
   {
     "id": 22,
@@ -457,29 +457,12 @@
     "wallapop": "https://es.wallapop.com/item/cesto-organizador-bambu-4-compartimentos-1288344282"
   },
   {
-    "id": 30,
-    "area": "Baño",
-    "nombre": "Cómoda baño",
-    "unidades": 1,
-    "precioWeb": 10,
-    "precioVenta": 10,
-    "medidas": {
-      "alto": 74,
-      "ancho": 28,
-      "largo": 20
-    },
-    "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/comoda-bano-madera-y-plastico-1288347918",
-    "oferta": 8
-  },
-  {
     "id": 31,
     "area": "Recibidor",
     "nombre": "Estanteria zapatero y perchero",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 25,
+    "precioVenta": 20,
     "medidas": {
       "alto": 193,
       "ancho": 78,
@@ -488,7 +471,7 @@
     "descripcion": "buen estado, con ganchos",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/estanteria-zapatero-y-perchero-1288355723",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 32,
@@ -1000,7 +983,7 @@
     "nombre": "Pelota de yoga",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 10,
+    "precioVenta": 8,
     "medidas": {
       "alto": 60,
       "ancho": 60,
@@ -1009,7 +992,7 @@
     "descripcion": "buen estado, esta sucio",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/pelota-de-yoga-menta-1287664970",
-    "oferta": 10
+    "oferta": 8
   },
   {
     "id": 67,
@@ -1082,7 +1065,7 @@
     "nombre": "Adornos de pared tipo pluma",
     "unidades": 2,
     "precioWeb": 5,
-    "precioVenta": 6,
+    "precioVenta": 2,
     "medidas": {
       "alto": 2,
       "ancho": 35,
@@ -1090,7 +1073,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 2
   },
   {
     "id": 72,
@@ -1115,7 +1099,7 @@
     "nombre": "Atrapasueños (dreamcatcher) decorativo de estilo boho",
     "unidades": 1,
     "precioWeb": 10,
-    "precioVenta": 12,
+    "precioVenta": 5,
     "medidas": {
       "alto": 2,
       "ancho": 34,
@@ -1123,7 +1107,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 5
   },
   {
     "id": 74,
@@ -1181,7 +1166,7 @@
     "nombre": "Cuadro limpieza",
     "unidades": 1,
     "precioWeb": 6,
-    "precioVenta": 8,
+    "precioVenta": 3,
     "medidas": {
       "alto": 3,
       "ancho": 40,
@@ -1189,7 +1174,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 3
   },
   {
     "id": 78,
@@ -1197,7 +1183,7 @@
     "nombre": "Cuadros madera blanco",
     "unidades": 2,
     "precioWeb": 8,
-    "precioVenta": 10,
+    "precioVenta": 4,
     "medidas": {
       "alto": 53,
       "ancho": 42,
@@ -1205,7 +1191,8 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": ""
+    "wallapop": "",
+    "oferta": 4
   },
   {
     "id": 79,
@@ -1229,7 +1216,7 @@
     "nombre": "Mesita noche negra",
     "unidades": 2,
     "precioWeb": 50,
-    "precioVenta": 20,
+    "precioVenta": 15,
     "medidas": {
       "alto": 66,
       "ancho": 54,
@@ -1238,7 +1225,7 @@
     "descripcion": "buen estado, 2 cajones",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
-    "oferta": 20
+    "oferta": 15
   },
   {
     "id": 83,
