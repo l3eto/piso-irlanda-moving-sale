@@ -12,9 +12,9 @@
       "largo": 52
     },
     "descripcion": "buen estado, se cambio hace un año la puerta",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/lavadora-candy-rapido-1288398180",
-    "oferta": 90
+    "oferta": 50
   },
   {
     "id": 2,
@@ -334,7 +334,7 @@
       "largo": 208
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/somier-de-laminas-curvadas-madera-1287834725",
     "oferta": 20
   },
@@ -402,7 +402,7 @@
       "largo": 40
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mueble-bajo-lavabo-blanco-y-madera-1288345598",
     "oferta": 15
   },
@@ -891,7 +891,7 @@
       "largo": 40
     },
     "descripcion": "tabla desgastado, estructura buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
     "oferta": 10
   },
