@@ -63,9 +63,9 @@
       "largo": 160
     },
     "descripcion": "de segunda, la cadena se ve oxidada, pero es funcional",
-    "estado": "reservado",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/bicicleta-de-montana-blanca-1287507786",
-    "oferta": 25
+    "oferta": 20
   },
   {
     "id": 5,
@@ -226,16 +226,16 @@
     "nombre": "Sofá cama de 2 plazas",
     "unidades": 1,
     "precioWeb": 400,
-    "precioVenta": 90,
+    "precioVenta": 60,
     "medidas": {
       "alto": 100,
       "ancho": 200,
       "largo": 100
     },
     "descripcion": "buen estado, algo sucio, con cama pasa a 200cm largo, colchon incluido",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/sofa-cama-2-plazas-beige-gris-1287809241",
-    "oferta": 90
+    "oferta": 60
   },
   {
     "id": 16,
@@ -344,7 +344,7 @@
     "nombre": "Colchón ortopedico",
     "unidades": 1,
     "precioWeb": 160,
-    "precioVenta": 30,
+    "precioVenta": 20,
     "medidas": {
       "alto": 26,
       "ancho": 162,
@@ -353,7 +353,7 @@
     "descripcion": "buen estado, alguna mancha",
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/colchon-ortopedico-tela-1287835828",
-    "oferta": 30
+    "oferta": 20
   },
   {
     "id": 24,
@@ -469,7 +469,7 @@
       "largo": 100
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "reservado",
     "wallapop": "https://es.wallapop.com/item/banco-de-madera-para-entrada-1288357292",
     "oferta": 20
   },
@@ -992,7 +992,7 @@
     },
     "descripcion": "buen estado",
     "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1288433326",
+    "wallapop": "https://es.wallapop.com/item/estor-enrollable-bambu-natural-1296152596",
     "oferta": 20
   },
   {
@@ -1193,22 +1193,5 @@
     "estado": "disponible",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-negra-de-madera-1288401845",
     "oferta": 15
-  },
-  {
-    "id": 83,
-    "area": "Oficina",
-    "nombre": "Mesa gamer negra",
-    "unidades": 1,
-    "precioWeb": 50,
-    "precioVenta": 40,
-    "medidas": {
-      "alto": 75,
-      "ancho": 140,
-      "largo": 58
-    },
-    "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": "https://es.wallapop.com/item/mesa-gamer-negra-140x58-1293397294",
-    "oferta": 40
   }
 ]
