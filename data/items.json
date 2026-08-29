@@ -46,7 +46,7 @@
       "largo": 169
     },
     "descripcion": "buen estado",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/tumbona-plegable-metal-y-tela-1287507255",
     "oferta": 20
   },
@@ -267,7 +267,7 @@
       "largo": 60
     },
     "descripcion": "buen estado, cojin algo sucio",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/sillon-de-mimbre-con-cojin-1288414194",
     "oferta": 20
   },
@@ -301,7 +301,7 @@
       "largo": 38
     },
     "descripcion": "buen estado, 2 cajones",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/mesita-de-noche-blanca-con-rayas-1288400883",
     "oferta": 15
   },
@@ -385,9 +385,9 @@
       "largo": 60
     },
     "descripcion": "muy buen estado, comprado hace 2 años",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/nevera-blanca-candy-no-frost-1288244787",
-    "oferta": 90
+    "oferta": 50
   },
   {
     "id": 27,
@@ -665,16 +665,16 @@
     "nombre": "Alfombra fina algodón",
     "unidades": 1,
     "precioWeb": 25,
-    "precioVenta": 14,
+    "precioVenta": 10,
     "medidas": {
       "alto": 2,
       "ancho": 162,
       "largo": 219
     },
     "descripcion": "buen estado, solo se tiene q limpiar un poco",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "https://es.wallapop.com/item/alfombra-fina-de-algodon-beige-1288426112",
-    "oferta": 14
+    "oferta": 10
   },
   {
     "id": 45,
@@ -698,15 +698,16 @@
     "nombre": "Lámpara negra",
     "unidades": 1,
     "precioWeb": 10,
-    "precioVenta": 15,
+    "precioVenta": 5,
     "medidas": {
       "alto": 24,
       "ancho": 15,
       "largo": 15
     },
     "descripcion": "algo antigua, pero funciona bien, intensidades",
-    "estado": "disponible",
-    "wallapop": ""
+    "estado": "vendido",
+    "wallapop": "",
+    "oferta": 5
   },
   {
     "id": 49,
@@ -714,16 +715,16 @@
     "nombre": "Cuadro madera marco",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 30,
+    "precioVenta": 10,
     "medidas": {
       "alto": 4,
       "ancho": 73,
       "largo": 104
     },
     "descripcion": "se puede cambiar imagen o quedarsela",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
-    "oferta": 15
+    "oferta": 10
   },
   {
     "id": 50,
@@ -781,16 +782,16 @@
     "nombre": "Lámpara comedor",
     "unidades": 1,
     "precioWeb": 20,
-    "precioVenta": 30,
+    "precioVenta": 8,
     "medidas": {
       "alto": 43,
       "ancho": 40,
       "largo": 40
     },
     "descripcion": "buen estado,cable 46cm + foco",
-    "estado": "disponible",
+    "estado": "vendido",
     "wallapop": "",
-    "oferta": 15
+    "oferta": 8
   },
   {
     "id": 55,
@@ -1159,23 +1160,6 @@
     "estado": "disponible",
     "wallapop": "",
     "oferta": 3
-  },
-  {
-    "id": 78,
-    "area": "Decoracion",
-    "nombre": "Cuadros madera blanco",
-    "unidades": 2,
-    "precioWeb": 8,
-    "precioVenta": 4,
-    "medidas": {
-      "alto": 53,
-      "ancho": 42,
-      "largo": 4
-    },
-    "descripcion": "buen estado",
-    "estado": "disponible",
-    "wallapop": "",
-    "oferta": 4
   },
   {
     "id": 79,
